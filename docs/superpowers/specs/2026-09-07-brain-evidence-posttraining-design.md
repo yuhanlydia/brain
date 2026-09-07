@@ -332,4 +332,4 @@ Implementation proceeds in this order:
 4. **P3 ten-percent pilot:** vanilla OPSD before evidence gating, and evidence gating before RLVR. Stop if the privileged teacher advantage is below 0.05 nat/token, gate coverage is outside 10%-90%, or more than 50% of RLVR groups have zero reward variance.
 5. **P4 full evaluation:** seeds 41/42/43, paired bootstrap for Brain-to-Text, and unique-image cluster bootstrap for BrainHub.
 
-The first implementation selects VINDEX as the BrainHub backend. UMBRAE remains a later baseline adapter rather than a second simultaneous backend.
+The first implementation selects UMBRAE as the BrainHub grounding backend because its Shikra token-replacement path is already implemented and reproducible. VINDEX remains a later stronger baseline adapter rather than a second simultaneous backend.
