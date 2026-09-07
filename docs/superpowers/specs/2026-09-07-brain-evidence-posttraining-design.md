@@ -72,7 +72,7 @@ Adapters translate BIT or Shikra-specific tensors into this protocol.
 - Pointwise KL clipping.
 - WER sequence reward.
 - Bounding-box IoU, threshold, and invalid-format rewards.
-- Optional hybrid objective, applied sequentially rather than hiding incomparable losses in one scalar.
+- Optional staged hybrid: CE checkpoint -> OPSD checkpoint -> RLVR checkpoint. OPSD and RLVR are not silently mixed into one scalar objective.
 
 ### 4.3 Brain-evidence gates and controls
 
@@ -94,7 +94,35 @@ Initial gates:
 - `counterfactual`: keeps supervision only where the correct brain trial changes the prediction more than a matched wrong trial.
 - `reliability_counterfactual`: product of the two signals.
 
-Gate tensors are stop-gradient weights. Every proposed gate must be compared with the uniform gate under matched compute.
+For the main evidence gate:
+
+```math
+\Delta_T^t
+=
+\log p_T^t(\cdot\mid privilege_i)
+-
+\log p_T^t(\cdot\mid privilege_j),
+```
+
+```math
+\Delta_B^t
+=
+\log p_S^t(\cdot\mid brain_i)
+-
+\log p_S^t(\cdot\mid brain_j),
+```
+
+```math
+g_t
+=
+\operatorname{stopgrad}
+\left[
+\rho_t
+\max(0,\cos(\Delta_T^t,\Delta_B^t))
+\right].
+```
+
+The cosine may be estimated on the union of the teacher top-K vocabulary entries to save memory, but the final distillation loss remains full-vocabulary KL. Gate tensors are stop-gradient weights. Every proposed gate must be compared with the uniform gate under matched compute.
 
 ### 4.4 Evaluation
 
@@ -125,7 +153,7 @@ p_S(\cdot\mid x,\hat y_{<t})
 \right].
 ```
 
-Teacher parameters are frozen. The student sees no privileged transcript in its inference context. Transcript and G2P-derived phoneme privilege are separate experiment arms.
+Teacher parameters are a frozen copy of the CE checkpoint. If LoRA is enabled, the frozen teacher adapter and trainable student adapter share one loaded base model and run sequentially; the changing student adapter must never serve as teacher. The student sees no privileged transcript in its inference context. Transcript and G2P-derived phoneme privilege are separate experiment arms, with phoneme privilege as the main condition and transcript privilege as an oracle upper bound.
 
 The final sequence reward is:
 
@@ -173,17 +201,17 @@ r_{box}
 
 The dense IoU term is mandatory because threshold-only reward is too sparse at current brain-grounding accuracy.
 
-A matched-negative trial (x_j) has the same subject/session and, when possible, the same queried class:
+A matched-negative trial (x_j) has the same subject/session and, when possible, the same queried class. In the first release it is an independent diagnostic, not part of the reward:
 
 ```math
-r_{evidence}
+U_{ground}
 =
-r_{box}(\hat b(x_i),b_i)
+\operatorname{IoU}(\hat b(x_i),b_i)
 -
-\gamma r_{box}(\hat b(x_j),b_i).
+\operatorname{IoU}(\hat b(x_j),b_i).
 ```
 
-Multiple instances use Hungarian matching with false-positive and false-negative penalties. The evaluator reports the original BrainHub protocol and an all-instance/absent-object corrected protocol.
+This prevents a reward from looking better merely by making the wrong-brain branch worse. A counterfactual reward is allowed only as a separately named ablation after the diagnostic result is established. Multiple instances use Hungarian matching with false-positive and false-negative penalties. The evaluator reports the original BrainHub protocol and an all-instance/absent-object corrected protocol.
 
 ### BrainHub baselines
 
@@ -228,9 +256,10 @@ The default configuration must fit a 16 GB GPU:
 - one student rollout per example for OPSD;
 - bounded generation length;
 - cached frozen teacher logits only when mathematically equivalent;
+- sequential teacher/student/wrong-control forwards rather than simultaneous model copies;
 - activation checkpointing and bf16/fp16 selected by hardware.
 
-A 24 GB profile may increase sequence length or rollout group size, but must not silently change the method. Full 7B RLVR is optional; projector/adapter/LoRA training is the supported path.
+A 16 GB run has a 14.5 GiB peak-allocation gate; a 24 GB run has a 22 GiB gate. The 24 GB profile may increase sequence length or rollout group size, but must not silently change the method. Full 7B RLVR is optional; projector/adapter/LoRA training is the supported path. The default Brain-to-Text model is the stronger compact audio-LLM route; 7B is a scale control.
 
 ## 9. Repository layout
 
@@ -289,5 +318,18 @@ The initial implementation is accepted when:
 4. WER matches a trusted reference implementation on substitutions, deletions, and insertions.
 5. IoU rewards reject malformed boxes and handle degenerate geometry.
 6. A tiny synthetic model completes CE, OPSD, and reward-optimization smoke runs on CPU.
-7. The 16 GB dry-run configuration resolves without loading private data.
-8. README gives exact setup, data preparation, smoke-test, and first real experiment commands.
+7. Equal-reward RLVR groups are skipped and their rate is logged.
+8. The 16 GB dry-run configuration resolves without loading private data and enforces the 14.5 GiB gate.
+9. README gives exact setup, data preparation, smoke-test, and first real experiment commands.
+
+## 11. Execution gates
+
+Implementation proceeds in this order:
+
+1. **P0 CPU synthetic CI:** unit tests, toy overfit, checkpoint-resume equivalence.
+2. **P1 real-shape smoke:** eight examples and three training steps per adapter; verify gradients, finite losses, and peak memory.
+3. **P2 baseline fidelity:** reproduce BIT validation behavior and one pinned VINDEX/BrainHub checkpoint before testing new objectives.
+4. **P3 ten-percent pilot:** vanilla OPSD before evidence gating, and evidence gating before RLVR. Stop if the privileged teacher advantage is below 0.05 nat/token, gate coverage is outside 10%-90%, or more than 50% of RLVR groups have zero reward variance.
+5. **P4 full evaluation:** seeds 41/42/43, paired bootstrap for Brain-to-Text, and unique-image cluster bootstrap for BrainHub.
+
+The first implementation selects VINDEX as the BrainHub backend. UMBRAE remains a later baseline adapter rather than a second simultaneous backend.
