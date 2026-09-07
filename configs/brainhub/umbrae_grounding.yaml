@@ -1,0 +1,18 @@
+extends: ../experiments/confirmatory.yaml
+hardware_profile: ../hardware/gpu24gb.yaml
+experiment:
+  name: brainhub_umbrae_grounding
+  benchmark: brainhub
+task: visual_grounding
+method: evidence_iou_rlvr
+adapter:
+  name: brainhub
+  backend: umbrae
+  manifest: null
+  requires_user_manifest: true
+reward:
+  iou_threshold: 0.5
+  threshold_bonus: 0.25
+  invalid_penalty: 1.0
+resources:
+  estimated_peak_allocation_gib: 21.5

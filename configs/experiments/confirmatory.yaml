@@ -1,0 +1,47 @@
+mode: confirmatory
+hardware_profile: ../hardware/gpu16gb.yaml
+method: interaction_projection
+seeds: [41, 42, 43]
+negative_sampling:
+  k: 4
+  same_subject: true
+  same_session: true
+  duration_tolerance: 0.15
+  duration_matching: true
+  reliability_matching: true
+  deterministic_sampler: true
+  aggregation: mean
+  hard_phonetic_negatives: true
+  distinct_pronunciations: true
+  log_effective_k: true
+  shortfall_policy: skip_and_log
+controls:
+  control_brain:
+    scope: anchor_subject_session
+    same_subject: true
+    same_session: true
+    use_own_pronunciation: true
+    pronunciation_distinct_from: [anchor, negative]
+  null_permutations: 999
+  null_alpha: 0.05
+  null_target: final_signed_normalized_alignment
+  brain_only_source: frozen_crossfit_ce
+  brain_only_provenance: train_only_cross_fitted
+  identical_prefix: true
+  shared_vocabulary_support: true
+reliability:
+  provenance: train_only_cross_fitted
+  cross_fitted: true
+stability:
+  provenance: train_only_cross_fitted
+  cross_fitted: true
+  missing_stability_fallback: 0.0
+diagnostics:
+  effective_k: true
+  negative_validity: true
+  shortfall_reason: true
+training:
+  rollout_count: 1
+  max_generation_tokens: 192
+resources:
+  estimated_peak_allocation_gib: 14.0

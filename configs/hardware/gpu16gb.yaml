@@ -1,0 +1,11 @@
+hardware:
+  profile: gpu16gb
+  total_memory_gib: 16
+training:
+  micro_batch_size: 1
+  gradient_accumulation_steps: 16
+  precision: bf16
+  quantization_bits: 4
+  activation_checkpointing: true
+resources:
+  max_peak_allocation_gib: 14.5

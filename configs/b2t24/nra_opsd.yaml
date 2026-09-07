@@ -1,0 +1,15 @@
+extends: ../experiments/confirmatory.yaml
+hardware_profile: ../hardware/gpu16gb.yaml
+experiment:
+  name: b2t24_nra_opsd
+  benchmark: brain_to_text_2024
+task: brain_to_text
+method: interaction_projection
+adapter:
+  name: bit
+  manifest: null
+  requires_user_manifest: true
+privilege:
+  type: phonemes
+resources:
+  estimated_peak_allocation_gib: 14.25

@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brain-evidence"
+version = "0.1.0"
+description = "Evidence-aware post-training utilities for brain-conditioned generation"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24,<2.3",
+    "PyYAML>=6.0",
+    "torch>=2.1",
+]
+
+[project.scripts]
+brain-train = "brain_evidence.cli.train:main"
+brain-evaluate = "brain_evidence.cli.evaluate:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"

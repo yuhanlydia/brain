@@ -1,0 +1,11 @@
+hardware:
+  profile: gpu24gb
+  total_memory_gib: 24
+training:
+  micro_batch_size: 1
+  gradient_accumulation_steps: 8
+  precision: bf16
+  quantization_bits: 4
+  activation_checkpointing: true
+resources:
+  max_peak_allocation_gib: 22.0
