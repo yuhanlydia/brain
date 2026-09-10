@@ -1,6 +1,14 @@
 # Brain-Evidence Post-Training Design
 
-**Status:** Draft for user review  
+> **Superseded on 2026-09-10.** This document records the earlier
+> four-cell/counterfactual-gate design. It is retained for provenance, but it
+> is not the implementation target. See
+> [`2026-09-10-npp-opsd-design.md`](2026-09-10-npp-opsd-design.md) for the
+> approved Neural Posterior-Predictive OPSD design. Do not restore or use the
+> four-cell/counterfactual-gate design below as an implementation or benchmark
+> requirement; only the 2026-09-10 specification is binding.
+
+**Status:** Superseded; provenance only
 **Date:** 2026-09-07  
 **Repository:** `yuhanlydia/brain`
 

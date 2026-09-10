@@ -1,0 +1,29 @@
+method: bypass_diagnostic
+backend: vindex
+task: nsd_vqa
+hardware_profile: configs/hardware/gpu16gb.yaml
+paths:
+  vindex_checkout:
+  model:
+  data:
+  manifest:
+experiment:
+  phase: P3
+  purpose: neural_bypass_diagnostic
+  seed: 41
+  subjects: [subj01, subj02, subj05, subj07]
+  data_fraction: 0.10
+  output_dir: outputs/p3_vindex_bypass_seed41
+  methods: [ce, exact-image-opsd]
+  controls: [correct, shuffled]
+candidate_count: 4
+micro_batch_size: 1
+generation:
+  max_new_tokens: 64
+model:
+  size: 7B
+  quantization: 4-bit
+  frozen: true
+trainable:
+  projector: true
+  lora: true

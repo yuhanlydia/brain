@@ -1,0 +1,23 @@
+method: NPP-OPSD
+trainer:
+  alpha_scale: 1.0
+  alpha_max: 1.0
+backend: brainjanus
+task: nsd_vqa
+hardware_profile: configs/hardware/gpu24gb.yaml
+paths:
+  brainjanus_checkout:
+  model:
+  data:
+  manifest:
+candidate_count: 4
+micro_batch_size: 1
+generation:
+  max_new_tokens: 96
+model:
+  size: 7B
+  quantization: 4-bit
+  frozen: true
+trainable:
+  projector: true
+  lora: true
