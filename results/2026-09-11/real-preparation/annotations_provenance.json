@@ -1,0 +1,70 @@
+{
+  "purpose": "annotation preparation only; no evaluation or test-label tuning",
+  "vqa_revision": "363198d258ef8fb56f55e211142dcce848ce3219",
+  "vqa_annotation_type": "automatically generated NSD-VQA annotations",
+  "coco_source": "http://images.cocodataset.org/annotations/annotations_trainval2017.zip",
+  "vqa_source_sha256": "e1bf6e728452017fc06947c6e6f98f930094438c7b3126389a294e1730ceb74f",
+  "caption_source_sha256": {
+    "captions_train2017.json": "4b62086319480e0739ef390d04084515defb9c213ff13605a036061e33314317",
+    "captions_val2017.json": "afe3b30e403dd7f228e2373023abbd60042a6e10ec6874d3652df034d289ebb9"
+  },
+  "coco_archive_sha256": "113a836d90195ee1f884e704da6304dfaaecff1f023f49b6ca93c4aaae470268",
+  "manifest_sha256": "394427194584ea1fc6b54195a8e0c8ca0b44eef0a0e83b2fb278c23a7bf4797c",
+  "image_counts": {
+    "train": 32504,
+    "val": 3496,
+    "test": 1000
+  },
+  "question_counts": {
+    "train": 711218,
+    "val": 76591,
+    "test": 19919
+  },
+  "caption_counts": {
+    "train": 162603,
+    "val": 17487,
+    "test": 5003
+  },
+  "question_categories": {
+    "scene": 44510,
+    "location": 36475,
+    "animal": 7703,
+    "animal yes/no": 15114,
+    "household yes/no": 70552,
+    "position": 184974,
+    "color": 66831,
+    "counting": 190898,
+    "other yes/no": 29689,
+    "person yes/no": 28688,
+    "sport yes/no": 17329,
+    "plant yes/no": 11037,
+    "action": 13534,
+    "vehicle": 6563,
+    "vehicle yes/no": 12294,
+    "pose": 26039,
+    "food yes/no": 6887,
+    "clothing yes/no": 2833,
+    "electronic yes/no": 4146,
+    "holding": 7998,
+    "structure yes/no": 7527,
+    "landscape yes/no": 2030,
+    "food": 4038,
+    "building yes/no": 1390,
+    "natural yes/no": 1132,
+    "appliance yes/no": 4919,
+    "toy yes/no": 221,
+    "accessory yes/no": 712,
+    "water yes/no": 381,
+    "transport yes/no": 629,
+    "furniture yes/no": 574,
+    "toilet yes/no": 81
+  },
+  "output_sha256": {
+    "vqa_train.jsonl": "55d9a4c5e7a3aab0fd2fb4c46eae4797077d1560c4f223da0fdbf294dbf8a79f",
+    "vqa_val.jsonl": "8c20b90607799ce4ae166493db42fa6d689195ee2cdcadcf8c9ac593997b2066",
+    "vqa_test.jsonl": "da6227a90f68ee0532de021c07516a2eb1ab84d7395996ce69bf97bb3a45c81a",
+    "captions_train.jsonl": "f88bca8f8874046c89994dbd4aa1550af4b37ae4a527be7bb17a810c143dbc8b",
+    "captions_val.jsonl": "92cc991a8a7b7cd3a1131ffd9eaf18e44b375d225bf0401099145f3e0db65fab",
+    "captions_test.jsonl": "3a821fd2c16e2ead980ea7826bffa72a585d68da6872a9c92af96cfc5eba0394"
+  }
+}

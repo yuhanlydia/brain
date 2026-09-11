@@ -47,9 +47,12 @@ For a task metric `M`, report:
 NDG = M(correct brain) - mean_pi M(predeclared shuffled brain)
 ```
 
-The primary success criterion is conjunctive: NPP-OPSD must improve **both**
-task quality and NDG over CE and the strong OPSD controls. A task-only gain or
-an NDG-only gain is not a successful method claim.
+The current user-approved evaluation is exploratory: positive changes in task
+quality, neural dependence, or other measured performance are useful findings.
+There is no fixed accuracy threshold or requirement that task quality and NDG
+improve together before continuing the experiment matrix. Report each change
+against its matched baseline, with uncertainty and negative results alongside
+positive ones. A task-quality gain alone does not establish neural dependence.
 
 ## Wrong-subject control boundary
 
@@ -73,11 +76,18 @@ validation belongs to the external dataset/evaluation factory.
 
 ## Interpretation and result status
 
-P3 first tests the neural-bypass premise on 10% of the data with seed 41:
-exact-image OPSD should improve task quality while leaving NDG unchanged or
-worse. If that phenomenon is absent, or P4 NPP-OPSD does not improve both task
-quality and NDG over strong OPSD controls, stop the method claim rather than
-reframing the criterion after seeing results.
+P3 diagnoses the neural-bypass premise on 10% of the data with seed 41:
+measure whether exact-image OPSD improves task quality while leaving NDG
+unchanged or worse. Its outcome is a diagnostic, not a stop condition. Continue
+P4 and the remaining comparisons regardless of that pattern. Preserve the
+measured outcomes rather than changing metrics or selecting favorable test
+subsets after seeing results.
+
+On 2026-09-11 the user replaced strict performance gates with this exploratory
+policy and requested reusable experiment code. Prioritize explicit configuration,
+resumable runs, shared data preparation, and complete diagnostic artifacts.
+Numerical failures, invalid data provenance, or unavailable implementations
+still require a fix or an explicit unresolved status; they are not valid results.
 
 No real benchmark values are included in this repository. This document is a
 preregistered comparison contract, not a result table or SOTA claim.

@@ -1,0 +1,24 @@
+{
+  "purpose": "real gradient preflight; not NPP/P1/accuracy result",
+  "optimizer_steps": 0,
+  "question": "Is bench in the image?",
+  "rollout": "Yes, there is a wooden bench",
+  "fixed_rollout_tokens": 8,
+  "full_vocabulary_size": 32000,
+  "exact_image_kl": 0.1754472702741623,
+  "projector": {
+    "parameter_count": 20979712,
+    "gradients_present": 4,
+    "all_finite": true,
+    "gradient_norm": 10.090899374956786
+  },
+  "lora": {
+    "parameter_count": 4194304,
+    "gradients_present": 128,
+    "all_finite": true,
+    "gradient_norm": 1.3758325125043493
+  },
+  "frozen_base_has_gradient": false,
+  "teacher_projector_has_gradient": false,
+  "max_memory_allocated_bytes": 5376635904
+}

@@ -1,0 +1,22 @@
+{
+  "purpose": "COCO caption reference join only; no metrics/test tuning",
+  "source": "http://images.cocodataset.org/annotations/annotations_trainval2017.zip",
+  "total_image_count": 37000,
+  "total_caption_count": 185093,
+  "split_image_counts": {
+    "train": 32504,
+    "val": 3496,
+    "test": 1000
+  },
+  "split_reference_counts": {
+    "train": 162603,
+    "val": 17487,
+    "test": 5003
+  },
+  "missing_images": [],
+  "output_sha256": {
+    "train": "f88bca8f8874046c89994dbd4aa1550af4b37ae4a527be7bb17a810c143dbc8b",
+    "val": "92cc991a8a7b7cd3a1131ffd9eaf18e44b375d225bf0401099145f3e0db65fab",
+    "test": "3a821fd2c16e2ead980ea7826bffa72a585d68da6872a9c92af96cfc5eba0394"
+  }
+}

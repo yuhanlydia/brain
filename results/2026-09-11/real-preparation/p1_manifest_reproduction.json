@@ -1,0 +1,8 @@
+{
+  "purpose": "P1-only development cohort; full runs must refit on their own training split",
+  "trials": 46,
+  "images": 33,
+  "questions": 706,
+  "source_validation_trials": 3,
+  "manifest_sha256": "c8d778c440844ea41fc17ac80d5ab73e17d25f0845d5dc5122593248aee10bcc"
+}

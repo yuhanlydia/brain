@@ -1,0 +1,33 @@
+{
+  "type": "real_brain_to_text_preparatory_probe",
+  "not_full_P1": true,
+  "optimizer_steps": 0,
+  "trial_id": "subj01_trial000037",
+  "image_id": "nsd02548",
+  "model_revision": "4481d270cc22fd5c4d1bb5df129622006ccd9234",
+  "encoder_checkpoint_revision": "ae1c5993cee072950869486391c3d2603fd8fcd8",
+  "brain_tokens_shape": [
+    1,
+    256,
+    4096
+  ],
+  "input_embeddings_shape": [
+    1,
+    305,
+    4096
+  ],
+  "missing_language_model_keys": [],
+  "excluded_separately_loaded_projector_keys": [
+    "model.mm_projector.0.bias",
+    "model.mm_projector.0.weight",
+    "model.mm_projector.2.bias",
+    "model.mm_projector.2.weight"
+  ],
+  "quantization": "nf4",
+  "compute_dtype": "bfloat16",
+  "generation_tokens": 24,
+  "generated_text": "The image features a kitchen scene with various appliances and items. There is a refrigerator, a mic",
+  "generation_limit": 24,
+  "max_memory_allocated_bytes": 4999473664,
+  "quality_evaluated": false
+}

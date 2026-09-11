@@ -78,6 +78,14 @@ and names the image and both splits.
   external backend it requires local data, checkpoints, and a pinned checkout
   containing `brain_npp_factory.py`; it fails loudly if they are unavailable.
 
+The bounded real VINDEX P1 adapter is available with `pip install -e '.[vindex]'`.
+The exact CUDA 12.6 environment used for verification is recorded in
+`requirements/p1-real-cu126.lock`.
+Copy `integrations/vindex/brain_npp_factory.py` into the pinned VINDEX checkout,
+then use an ignored `configs/nsd/local_*.yaml` with `paths.features`, `paths.vqa`,
+`paths.calibration`, and `paths.projector`. It supports only subject-01,
+correct-brain `npp-opsd` P1 and fails closed for later phases and methods.
+
 The checked-in P1-P4 YAML files are explicit contracts for that external
 factory, not claims that core `brain_npp` implements VINDEX/BrainJanus data
 loading or the named baseline algorithms. See [the reproduction guide](docs/reproduction.md)

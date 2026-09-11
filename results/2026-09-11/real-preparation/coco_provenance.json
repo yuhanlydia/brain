@@ -1,0 +1,5 @@
+{
+  "source": "http://images.cocodataset.org/annotations/annotations_trainval2017.zip",
+  "official_listing": "https://raw.githubusercontent.com/cocodataset/cocodataset.github.io/master/dataset/download.htm",
+  "archive_sha256": "113a836d90195ee1f884e704da6304dfaaecff1f023f49b6ca93c4aaae470268"
+}

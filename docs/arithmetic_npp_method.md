@@ -69,8 +69,10 @@ Run seeds 41/42/43 across subjects 01/02/05/07. Report VQA accuracy (primary),
 caption metrics where applicable, mean ± standard deviation, paired bootstrap
 confidence intervals, and subject/session-stratified results. Required brain
 specific controls are correct, within-session shuffled, zero, covariance-
-matched noise, and wrong-subject inputs. A gain counts as brain-supported only
-if correct brain beats all negative controls and is stable across sessions.
+matched noise, and wrong-subject inputs. Report gains in each measured outcome
+as exploratory findings, without a fixed performance gate for continuing runs.
+Claims about neural dependence require support from the control and session
+comparisons; task accuracy alone is insufficient evidence for that interpretation.
 
 No NSD or 7B result is claimed by the repository until these external runs
 produce artifacts.

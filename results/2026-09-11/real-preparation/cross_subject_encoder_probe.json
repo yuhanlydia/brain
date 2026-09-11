@@ -1,0 +1,63 @@
+{
+  "purpose": "cross-subject real encoder forward only; no training or accuracy evaluation",
+  "checkpoint_revision": "77d4f8e1c1d6d417a363ac32c380f12924bd92c8",
+  "checkpoint": "train_logs/brainx/last.pth",
+  "source_revision": "8c1795c434a41cdd38ce6628b7e1a774f31d9483",
+  "architecture": "UMBRAE BrainX; not VINDEX BrainXS",
+  "strict_loaded_state_tensor_count": 90,
+  "subjects": {
+    "subj01": {
+      "input_shape": [
+        1,
+        15724
+      ],
+      "output_shape": [
+        1,
+        256,
+        1024
+      ],
+      "finite": true,
+      "zero_difference_l2": 92.2145004272461
+    },
+    "subj02": {
+      "input_shape": [
+        1,
+        14278
+      ],
+      "output_shape": [
+        1,
+        256,
+        1024
+      ],
+      "finite": true,
+      "zero_difference_l2": 110.6268539428711
+    },
+    "subj05": {
+      "input_shape": [
+        1,
+        13039
+      ],
+      "output_shape": [
+        1,
+        256,
+        1024
+      ],
+      "finite": true,
+      "zero_difference_l2": 145.42625427246094
+    },
+    "subj07": {
+      "input_shape": [
+        1,
+        12682
+      ],
+      "output_shape": [
+        1,
+        256,
+        1024
+      ],
+      "finite": true,
+      "zero_difference_l2": 119.47695922851562
+    }
+  },
+  "max_memory_allocated_bytes": 635809792
+}

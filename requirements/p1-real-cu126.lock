@@ -1,0 +1,16 @@
+# Realized environment for the verified P1 run (CUDA 12.6).
+torch==2.13.0+cu126
+numpy==2.2.6
+PyYAML==6.0.3
+transformers==4.45.2
+peft==0.13.2
+accelerate==1.0.1
+bitsandbytes==0.50.2
+Pillow==12.2.0
+sentencepiece==0.2.2
+protobuf==7.36.1
+einops==0.8.2
+einops-exts==0.0.4
+torchvision==0.28.0+cu126
+h5py==3.16.0
+pyarrow==25.0.1
