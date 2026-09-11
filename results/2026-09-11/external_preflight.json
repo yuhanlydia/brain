@@ -1,0 +1,65 @@
+[
+  {
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "config": "configs/nsd/brainjanus7b_npp.yaml",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "error: brainjanus: missing required local paths: paths.brainjanus_checkout, paths.model, paths.data\n"
+  },
+  {
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "config": "configs/nsd/p1_vindex_real_shape_smoke.yaml",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "error: vindex: missing required local paths: paths.vindex_checkout, paths.model, paths.data\n"
+  },
+  {
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "config": "configs/nsd/p2_vindex_baselines.yaml",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "error: vindex: missing required local paths: paths.vindex_checkout, paths.model, paths.data\n"
+  },
+  {
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "config": "configs/nsd/p3_vindex_bypass_seed41.yaml",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "error: vindex: missing required local paths: paths.vindex_checkout, paths.model, paths.data\n"
+  },
+  {
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "config": "configs/nsd/p4_vindex_npp_seed41.yaml",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "error: vindex: missing required local paths: paths.vindex_checkout, paths.model, paths.data\n"
+  },
+  {
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "config": "configs/nsd/p4_vindex_npp_seed42.yaml",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "error: vindex: missing required local paths: paths.vindex_checkout, paths.model, paths.data\n"
+  },
+  {
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "config": "configs/nsd/p4_vindex_npp_seed43.yaml",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "error: vindex: missing required local paths: paths.vindex_checkout, paths.model, paths.data\n"
+  },
+  {
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "config": "configs/nsd/vindex_llava7b_captioning.yaml",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "error: vindex: missing required local paths: paths.vindex_checkout, paths.model, paths.data\n"
+  },
+  {
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "config": "configs/nsd/vindex_llava7b_npp.yaml",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "error: vindex: missing required local paths: paths.vindex_checkout, paths.model, paths.data\n"
+  }
+]

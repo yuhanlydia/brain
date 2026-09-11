@@ -1,0 +1,129 @@
+{
+  "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+  "python": "3.10.12",
+  "torch": "2.13.0+cu126",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "backends": {
+    "vindex": {
+      "commit": "ad0dab49e99d18a179097e9b79246f7ca3559f1b",
+      "factory_present": false,
+      "source": "https://github.com/weihaox/VINDEX"
+    },
+    "brainjanus": {
+      "commit": "6d797688c26c0f2ac2ff2be21f4598fe2b1ed946",
+      "factory_present": false,
+      "source": "https://github.com/HaitaoWuTJU/BrainJanus"
+    }
+  },
+  "profiles": [
+    {
+      "template": "configs/nsd/brainjanus7b_npp.yaml",
+      "local_config": "configs/nsd/local_brainjanus7b_npp.yaml",
+      "backend": "brainjanus",
+      "missing_paths": [
+        "model",
+        "data",
+        "manifest"
+      ],
+      "factory_present": false
+    },
+    {
+      "template": "configs/nsd/p1_vindex_real_shape_smoke.yaml",
+      "local_config": "configs/nsd/local_p1_vindex_real_shape_smoke.yaml",
+      "backend": "vindex",
+      "missing_paths": [
+        "model",
+        "data",
+        "manifest"
+      ],
+      "factory_present": false
+    },
+    {
+      "template": "configs/nsd/p2_vindex_baselines.yaml",
+      "local_config": "configs/nsd/local_p2_vindex_baselines.yaml",
+      "backend": "vindex",
+      "missing_paths": [
+        "model",
+        "data",
+        "manifest"
+      ],
+      "factory_present": false
+    },
+    {
+      "template": "configs/nsd/p3_vindex_bypass_seed41.yaml",
+      "local_config": "configs/nsd/local_p3_vindex_bypass_seed41.yaml",
+      "backend": "vindex",
+      "missing_paths": [
+        "model",
+        "data",
+        "manifest"
+      ],
+      "factory_present": false
+    },
+    {
+      "template": "configs/nsd/p4_vindex_npp_seed41.yaml",
+      "local_config": "configs/nsd/local_p4_vindex_npp_seed41.yaml",
+      "backend": "vindex",
+      "missing_paths": [
+        "model",
+        "data",
+        "manifest"
+      ],
+      "factory_present": false
+    },
+    {
+      "template": "configs/nsd/p4_vindex_npp_seed42.yaml",
+      "local_config": "configs/nsd/local_p4_vindex_npp_seed42.yaml",
+      "backend": "vindex",
+      "missing_paths": [
+        "model",
+        "data",
+        "manifest"
+      ],
+      "factory_present": false
+    },
+    {
+      "template": "configs/nsd/p4_vindex_npp_seed43.yaml",
+      "local_config": "configs/nsd/local_p4_vindex_npp_seed43.yaml",
+      "backend": "vindex",
+      "missing_paths": [
+        "model",
+        "data",
+        "manifest"
+      ],
+      "factory_present": false
+    },
+    {
+      "template": "configs/nsd/vindex_llava7b_captioning.yaml",
+      "local_config": "configs/nsd/local_vindex_llava7b_captioning.yaml",
+      "backend": "vindex",
+      "missing_paths": [
+        "model",
+        "data",
+        "manifest"
+      ],
+      "factory_present": false
+    },
+    {
+      "template": "configs/nsd/vindex_llava7b_npp.yaml",
+      "local_config": "configs/nsd/local_vindex_llava7b_npp.yaml",
+      "backend": "vindex",
+      "missing_paths": [
+        "model",
+        "data",
+        "manifest"
+      ],
+      "factory_present": false
+    }
+  ],
+  "real_experiments_completed": 0,
+  "required_next_inputs": [
+    "NSD single-trial data and images",
+    "manifest preserving trial/subject/session/run/repeat and image-group splits",
+    "VQA/caption labels and candidate mapping",
+    "pinned model and brain-encoder checkpoints",
+    "conforming training factory/runner for each backend"
+  ],
+  "note": "Backend sources were inspected locally; no real data, weights or conforming factory were available."
+}

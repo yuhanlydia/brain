@@ -1,0 +1,86 @@
+[
+  {
+    "run": "toy_cpu_seed314159",
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "initial": 0.29107943177223206,
+    "final": 0.012887472100555897,
+    "prefix_consistent": true
+  },
+  {
+    "run": "toy_cpu_seed41",
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "initial": 0.2866820335388184,
+    "final": 0.011022795736789704,
+    "prefix_consistent": true
+  },
+  {
+    "run": "toy_cpu_seed42",
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "initial": 0.2822286605834961,
+    "final": 0.005578107293695211,
+    "prefix_consistent": true
+  },
+  {
+    "run": "toy_cpu_seed43",
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "initial": 0.2805737167596817,
+    "final": 0.007381930854171515,
+    "prefix_consistent": true
+  },
+  {
+    "run": "toy_cpu_geometric_kl_seed314159",
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "initial": 0.1024843230843544,
+    "final": 0.005263935448601842,
+    "prefix_consistent": true
+  },
+  {
+    "run": "toy_cpu_geometric_kl_seed41",
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "initial": 0.10170905739068985,
+    "final": 0.005200922256335616,
+    "prefix_consistent": true
+  },
+  {
+    "run": "toy_cpu_geometric_kl_seed42",
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "initial": 0.10646546930074692,
+    "final": 0.0026803174056112765,
+    "prefix_consistent": true
+  },
+  {
+    "run": "toy_cpu_geometric_kl_seed43",
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "initial": 0.1024259090423584,
+    "final": 0.0032545603811740876,
+    "prefix_consistent": true
+  },
+  {
+    "run": "toy_cpu_raw_strength_seed314159",
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "initial": 0.09111681878566742,
+    "final": 0.010747529100626707,
+    "prefix_consistent": true
+  },
+  {
+    "run": "toy_cpu_raw_strength_seed41",
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "initial": 0.09127958118915558,
+    "final": 0.008316394314169884,
+    "prefix_consistent": true
+  },
+  {
+    "run": "toy_cpu_raw_strength_seed42",
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "initial": 0.08991961032152176,
+    "final": 0.0027312373742461203,
+    "prefix_consistent": true
+  },
+  {
+    "run": "toy_cpu_raw_strength_seed43",
+    "commit": "e9197ef53ed74df2822ed7544b71e97d4b64bfe7",
+    "initial": 0.08929280042648316,
+    "final": 0.0030874212738126517,
+    "prefix_consistent": true
+  }
+]
