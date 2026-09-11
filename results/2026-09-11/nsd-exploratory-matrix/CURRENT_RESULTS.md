@@ -1,6 +1,6 @@
 # NSD exploratory matrix report
 
-Matrix status: **partial** (10/164 validated complete).
+Matrix status: **partial** (11/164 validated complete).
 No performance threshold filters this report.
 
 | Case | Status | Available conditions | Validation findings |
@@ -15,7 +15,7 @@ No performance threshold filters this report.
 | P2_nsd_vqa_subj01_seed41_vad-style-full-image | complete | 7 | none |
 | P4_nsd_vqa_subj01_seed41_npp-opsd | complete | 7 | none |
 | P4_nsd_vqa_subj01_seed41_npp-geometric | complete | 7 | none |
-| P4_nsd_vqa_subj01_seed41_npp-information-gain | pending | 0 | checkpoint_identity_missing |
+| P4_nsd_vqa_subj01_seed41_npp-information-gain | complete | 7 | none |
 | P4_nsd_vqa_subj01_seed41_npp-sqrt-information-gain | pending | 0 | checkpoint_identity_missing |
 | P2_nsd_vqa_subj02_seed41_ce | pending | 0 | checkpoint_identity_missing |
 | P2_nsd_vqa_subj02_seed41_exact-image-opsd | pending | 0 | checkpoint_identity_missing |
@@ -201,5 +201,19 @@ Relative to the matched CE case, accuracy differs by 0.7812
 points (interval -5.4688 to 6.2500)
 and delta-NDG is 0.80 points (interval
 -7.20 to 9.60).
+These are exploratory single-subject, single-seed measurements; the full matrix
+continues without performance stopping thresholds.
+
+## Eleventh completed case: NPP information gain
+
+Subject01/seed41 NPP information gain completed the matched 256-example, 16-update
+budget and 893 required predictions. Accuracy is 46.8750%, with
+category macro accuracy 46.73611%. Matched correct-minus-shuffled
+NDG is 9.60 percentage points (95% image-bootstrap
+interval -0.80 to 20.00; n=125).
+Relative to the matched CE case, paired accuracy difference is 3.9062
+points (interval -4.6875 to 12.5000);
+paired delta-NDG is 2.40 points (interval
+-8.00 to 12.80).
 These are exploratory single-subject, single-seed measurements; the full matrix
 continues without performance stopping thresholds.
