@@ -1,0 +1,27 @@
+{
+  "purpose": "caption metric dependency plumbing only; handcrafted examples are not model benchmark results",
+  "versions": {
+    "pycocoevalcap": "1.2",
+    "pycocotools": "2.0.11",
+    "nltk": "3.10.3"
+  },
+  "java": "openjdk version \"11.0.32\" 2026-07-21\nOpenJDK Runtime Environment (build 11.0.32+9-post-1ubuntu1-22.04-Ubuntu)\nOpenJDK 64-Bit Server VM (build 11.0.32+9-post-1ubuntu1-22.04-Ubuntu, mixed mode, sharing)\n",
+  "source": "https://nlp.stanford.edu/software/stanford-corenlp-full-2015-12-09.zip",
+  "sha256": {
+    "/root/brain-assets/stanford-corenlp-full-2015-12-09.zip": "c3e8f129d56cbcd9747ee6615736fb4bc023c5ea550e50465fdf3138fdb9a187",
+    "/usr/local/lib/python3.10/dist-packages/pycocoevalcap/spice/lib/stanford-corenlp-3.6.0.jar": "d341d5863276f55782c5ef73212222d6b3b48e02ae1951ab6de7618d28b12742",
+    "/usr/local/lib/python3.10/dist-packages/pycocoevalcap/spice/lib/stanford-corenlp-3.6.0-models.jar": "d285157bd7887ee3018094b5dbae092e49088b023361ccdb550ee1daf9b2c9bd"
+  },
+  "plumbing_results": {
+    "METEOR": 1.0,
+    "ROUGE_L": 1.0,
+    "CIDEr": 5.890062361775137,
+    "SPICE": 0.9444444444444444,
+    "SPICE_object_precision": 1.0
+  },
+  "notes": [
+    "Java11 legacy reflective-access warning does not prevent completion.",
+    "SPICE categories without tuples return NaN; store null with explicit undefined count, never silently perfect zero-denominator precision.",
+    "SPICE object precision is a reference-grounded proxy, not proof of all factual correctness or an independent CHAIR evaluation."
+  ]
+}

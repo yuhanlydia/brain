@@ -1,0 +1,3816 @@
+{
+  "schema_version": 1,
+  "selection_seed": 41001,
+  "image_count": 128,
+  "purpose": "pre-outcome category-stratified exploratory shared-test subset",
+  "selection_policy": "rare categories first; up to floor(images/categories) distinct images per category, then globally hashed unused-image fill",
+  "category_counts": {
+    "accessory yes/no": 4,
+    "action": 4,
+    "animal": 4,
+    "animal yes/no": 4,
+    "appliance yes/no": 4,
+    "building yes/no": 4,
+    "clothing yes/no": 4,
+    "color": 5,
+    "counting": 9,
+    "electronic yes/no": 4,
+    "food": 4,
+    "food yes/no": 4,
+    "furniture yes/no": 4,
+    "holding": 4,
+    "household yes/no": 4,
+    "landscape yes/no": 4,
+    "location": 4,
+    "natural yes/no": 4,
+    "other yes/no": 4,
+    "person yes/no": 4,
+    "plant yes/no": 4,
+    "pose": 4,
+    "position": 4,
+    "scene": 4,
+    "sport yes/no": 4,
+    "structure yes/no": 4,
+    "toilet yes/no": 1,
+    "toy yes/no": 1,
+    "transport yes/no": 4,
+    "vehicle": 4,
+    "vehicle yes/no": 4,
+    "water yes/no": 4
+  },
+  "full_test_category_counts": {
+    "accessory yes/no": 19,
+    "action": 344,
+    "animal": 261,
+    "animal yes/no": 474,
+    "appliance yes/no": 124,
+    "building yes/no": 44,
+    "clothing yes/no": 84,
+    "color": 1903,
+    "counting": 5228,
+    "electronic yes/no": 112,
+    "food": 81,
+    "food yes/no": 173,
+    "furniture yes/no": 21,
+    "holding": 209,
+    "household yes/no": 1900,
+    "landscape yes/no": 59,
+    "location": 987,
+    "natural yes/no": 29,
+    "other yes/no": 800,
+    "person yes/no": 754,
+    "plant yes/no": 316,
+    "pose": 656,
+    "position": 3086,
+    "scene": 994,
+    "sport yes/no": 487,
+    "structure yes/no": 225,
+    "toilet yes/no": 1,
+    "toy yes/no": 1,
+    "transport yes/no": 14,
+    "vehicle": 173,
+    "vehicle yes/no": 344,
+    "water yes/no": 16
+  },
+  "input_sha256": {
+    "vqa_test.jsonl": "da6227a90f68ee0532de021c07516a2eb1ab84d7395996ce69bf97bb3a45c81a",
+    "nsd_manifest.jsonl": "394427194584ea1fc6b54195a8e0c8ca0b44eef0a0e83b2fb278c23a7bf4797c",
+    "captions_test.jsonl": "3a821fd2c16e2ead980ea7826bffa72a585d68da6872a9c92af96cfc5eba0394"
+  },
+  "evaluation_policy": {
+    "main_repeats": [
+      0
+    ],
+    "repeat_diagnostics": [
+      [
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "caption_image_ids": [
+      "nsd33245",
+      "nsd43156",
+      "nsd51148",
+      "nsd28751",
+      "nsd37059",
+      "nsd08807",
+      "nsd03164",
+      "nsd17374",
+      "nsd12798",
+      "nsd13662",
+      "nsd30887",
+      "nsd18505",
+      "nsd08262",
+      "nsd26351",
+      "nsd11932",
+      "nsd31936",
+      "nsd40575",
+      "nsd59091",
+      "nsd14528",
+      "nsd57435",
+      "nsd43164",
+      "nsd47290",
+      "nsd58164",
+      "nsd72080",
+      "nsd53891",
+      "nsd62365",
+      "nsd37801",
+      "nsd60186",
+      "nsd47656",
+      "nsd33906",
+      "nsd49957",
+      "nsd07039",
+      "nsd32772",
+      "nsd64893",
+      "nsd24517",
+      "nsd15025",
+      "nsd24560",
+      "nsd43984",
+      "nsd20820",
+      "nsd49152",
+      "nsd04612",
+      "nsd43288",
+      "nsd25578",
+      "nsd19573",
+      "nsd15793",
+      "nsd69918",
+      "nsd69240",
+      "nsd36569",
+      "nsd14808",
+      "nsd11487",
+      "nsd72015",
+      "nsd06514",
+      "nsd11333",
+      "nsd66946",
+      "nsd34418",
+      "nsd44705",
+      "nsd50882",
+      "nsd54147",
+      "nsd44736",
+      "nsd72312",
+      "nsd66580",
+      "nsd69854",
+      "nsd09722",
+      "nsd63449",
+      "nsd34126",
+      "nsd56066",
+      "nsd61797",
+      "nsd37927",
+      "nsd19292",
+      "nsd30672",
+      "nsd53489",
+      "nsd47033",
+      "nsd25702",
+      "nsd49156",
+      "nsd38853",
+      "nsd25746",
+      "nsd25284",
+      "nsd46523",
+      "nsd25602",
+      "nsd17485",
+      "nsd43428",
+      "nsd10064",
+      "nsd70368",
+      "nsd29021",
+      "nsd11159",
+      "nsd29660",
+      "nsd34874",
+      "nsd56290",
+      "nsd65414",
+      "nsd39402",
+      "nsd65232",
+      "nsd30935",
+      "nsd46002",
+      "nsd50114",
+      "nsd31964",
+      "nsd03682",
+      "nsd55107",
+      "nsd60519",
+      "nsd46274",
+      "nsd19642",
+      "nsd25371",
+      "nsd33289",
+      "nsd69007",
+      "nsd30847",
+      "nsd51051",
+      "nsd62228",
+      "nsd27972",
+      "nsd42299",
+      "nsd25570",
+      "nsd07954",
+      "nsd67237",
+      "nsd08415",
+      "nsd69839",
+      "nsd21192",
+      "nsd38641",
+      "nsd66643",
+      "nsd43445",
+      "nsd22957",
+      "nsd26307",
+      "nsd16702",
+      "nsd60251",
+      "nsd14931",
+      "nsd51928",
+      "nsd62748",
+      "nsd68741",
+      "nsd06558",
+      "nsd65769",
+      "nsd19436"
+    ],
+    "reporting": "sample micro accuracy is stratified-subset accuracy, not full-test prevalence-weighted accuracy; report category macro separately"
+  },
+  "examples": [
+    {
+      "image_id": "nsd33245",
+      "question_id": 708039,
+      "answer_id": 708039,
+      "category": "position",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial008867",
+          "subj01_trial012451",
+          "subj01_trial017965"
+        ],
+        "subj02": [
+          "subj02_trial008867",
+          "subj02_trial012451",
+          "subj02_trial017965"
+        ],
+        "subj05": [
+          "subj05_trial008867",
+          "subj05_trial012451",
+          "subj05_trial017965"
+        ],
+        "subj07": [
+          "subj07_trial008867",
+          "subj07_trial012451",
+          "subj07_trial017965"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd43156",
+      "question_id": 920318,
+      "answer_id": 920318,
+      "category": "holding",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial022615",
+          "subj01_trial022719",
+          "subj01_trial023073"
+        ],
+        "subj02": [
+          "subj02_trial022615",
+          "subj02_trial022719",
+          "subj02_trial023073"
+        ],
+        "subj05": [
+          "subj05_trial022615",
+          "subj05_trial022719",
+          "subj05_trial023073"
+        ],
+        "subj07": [
+          "subj07_trial022615",
+          "subj07_trial022719",
+          "subj07_trial023073"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd51148",
+      "question_id": 1090412,
+      "answer_id": 1090412,
+      "category": "location",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial017439",
+          "subj01_trial018028",
+          "subj01_trial018275"
+        ],
+        "subj02": [
+          "subj02_trial017439",
+          "subj02_trial018028",
+          "subj02_trial018275"
+        ],
+        "subj05": [
+          "subj05_trial017439",
+          "subj05_trial018028",
+          "subj05_trial018275"
+        ],
+        "subj07": [
+          "subj07_trial017439",
+          "subj07_trial018028",
+          "subj07_trial018275"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd28751",
+      "question_id": 612093,
+      "answer_id": 612093,
+      "category": "person yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial002285",
+          "subj01_trial002639",
+          "subj01_trial014825"
+        ],
+        "subj02": [
+          "subj02_trial002285",
+          "subj02_trial002639",
+          "subj02_trial014825"
+        ],
+        "subj05": [
+          "subj05_trial002285",
+          "subj05_trial002639",
+          "subj05_trial014825"
+        ],
+        "subj07": [
+          "subj07_trial002285",
+          "subj07_trial002639",
+          "subj07_trial014825"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd37059",
+      "question_id": 790154,
+      "answer_id": 790154,
+      "category": "counting",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial010678",
+          "subj01_trial011294",
+          "subj01_trial017074"
+        ],
+        "subj02": [
+          "subj02_trial010678",
+          "subj02_trial011294",
+          "subj02_trial017074"
+        ],
+        "subj05": [
+          "subj05_trial010678",
+          "subj05_trial011294",
+          "subj05_trial017074"
+        ],
+        "subj07": [
+          "subj07_trial010678",
+          "subj07_trial011294",
+          "subj07_trial017074"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd08807",
+      "question_id": 185642,
+      "answer_id": 185642,
+      "category": "color",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial001995",
+          "subj01_trial004177",
+          "subj01_trial004946"
+        ],
+        "subj02": [
+          "subj02_trial001995",
+          "subj02_trial004177",
+          "subj02_trial004946"
+        ],
+        "subj05": [
+          "subj05_trial001995",
+          "subj05_trial004177",
+          "subj05_trial004946"
+        ],
+        "subj07": [
+          "subj07_trial001995",
+          "subj07_trial004177",
+          "subj07_trial004946"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd03164",
+      "question_id": 66454,
+      "answer_id": 66454,
+      "category": "color",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial011591",
+          "subj01_trial017580",
+          "subj01_trial017601"
+        ],
+        "subj02": [
+          "subj02_trial011591",
+          "subj02_trial017580",
+          "subj02_trial017601"
+        ],
+        "subj05": [
+          "subj05_trial011591",
+          "subj05_trial017580",
+          "subj05_trial017601"
+        ],
+        "subj07": [
+          "subj07_trial011591",
+          "subj07_trial017580",
+          "subj07_trial017601"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd17374",
+      "question_id": 368127,
+      "answer_id": 368127,
+      "category": "other yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial008822",
+          "subj01_trial010231",
+          "subj01_trial010365"
+        ],
+        "subj02": [
+          "subj02_trial008822",
+          "subj02_trial010231",
+          "subj02_trial010365"
+        ],
+        "subj05": [
+          "subj05_trial008822",
+          "subj05_trial010231",
+          "subj05_trial010365"
+        ],
+        "subj07": [
+          "subj07_trial008822",
+          "subj07_trial010231",
+          "subj07_trial010365"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd12798",
+      "question_id": 270590,
+      "answer_id": 270590,
+      "category": "location",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial009898",
+          "subj01_trial011475",
+          "subj01_trial029370"
+        ],
+        "subj02": [
+          "subj02_trial009898",
+          "subj02_trial011475",
+          "subj02_trial029370"
+        ],
+        "subj05": [
+          "subj05_trial009898",
+          "subj05_trial011475",
+          "subj05_trial029370"
+        ],
+        "subj07": [
+          "subj07_trial009898",
+          "subj07_trial011475",
+          "subj07_trial029370"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd13662",
+      "question_id": 289480,
+      "answer_id": 289480,
+      "category": "color",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial002065",
+          "subj01_trial022376",
+          "subj01_trial028386"
+        ],
+        "subj02": [
+          "subj02_trial002065",
+          "subj02_trial022376",
+          "subj02_trial028386"
+        ],
+        "subj05": [
+          "subj05_trial002065",
+          "subj05_trial022376",
+          "subj05_trial028386"
+        ],
+        "subj07": [
+          "subj07_trial002065",
+          "subj07_trial022376",
+          "subj07_trial028386"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd30887",
+      "question_id": 657608,
+      "answer_id": 657608,
+      "category": "location",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial010504",
+          "subj01_trial010833",
+          "subj01_trial026752"
+        ],
+        "subj02": [
+          "subj02_trial010504",
+          "subj02_trial010833",
+          "subj02_trial026752"
+        ],
+        "subj05": [
+          "subj05_trial010504",
+          "subj05_trial010833",
+          "subj05_trial026752"
+        ],
+        "subj07": [
+          "subj07_trial010504",
+          "subj07_trial010833",
+          "subj07_trial026752"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd18505",
+      "question_id": 392716,
+      "answer_id": 392716,
+      "category": "person yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004170",
+          "subj01_trial015031",
+          "subj01_trial027261"
+        ],
+        "subj02": [
+          "subj02_trial004170",
+          "subj02_trial015031",
+          "subj02_trial027261"
+        ],
+        "subj05": [
+          "subj05_trial004170",
+          "subj05_trial015031",
+          "subj05_trial027261"
+        ],
+        "subj07": [
+          "subj07_trial004170",
+          "subj07_trial015031",
+          "subj07_trial027261"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd08262",
+      "question_id": 174454,
+      "answer_id": 174454,
+      "category": "person yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial005000",
+          "subj01_trial025233",
+          "subj01_trial025741"
+        ],
+        "subj02": [
+          "subj02_trial005000",
+          "subj02_trial025233",
+          "subj02_trial025741"
+        ],
+        "subj05": [
+          "subj05_trial005000",
+          "subj05_trial025233",
+          "subj05_trial025741"
+        ],
+        "subj07": [
+          "subj07_trial005000",
+          "subj07_trial025233",
+          "subj07_trial025741"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd26351",
+      "question_id": 560735,
+      "answer_id": 560735,
+      "category": "color",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial000685",
+          "subj01_trial009515",
+          "subj01_trial016126"
+        ],
+        "subj02": [
+          "subj02_trial000685",
+          "subj02_trial009515",
+          "subj02_trial016126"
+        ],
+        "subj05": [
+          "subj05_trial000685",
+          "subj05_trial009515",
+          "subj05_trial016126"
+        ],
+        "subj07": [
+          "subj07_trial000685",
+          "subj07_trial009515",
+          "subj07_trial016126"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd11932",
+      "question_id": 252512,
+      "answer_id": 252512,
+      "category": "color",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial001404",
+          "subj01_trial006700",
+          "subj01_trial012718"
+        ],
+        "subj02": [
+          "subj02_trial001404",
+          "subj02_trial006700",
+          "subj02_trial012718"
+        ],
+        "subj05": [
+          "subj05_trial001404",
+          "subj05_trial006700",
+          "subj05_trial012718"
+        ],
+        "subj07": [
+          "subj07_trial001404",
+          "subj07_trial006700",
+          "subj07_trial012718"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd31936",
+      "question_id": 680130,
+      "answer_id": 680130,
+      "category": "animal yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial007934",
+          "subj01_trial019702",
+          "subj01_trial019770"
+        ],
+        "subj02": [
+          "subj02_trial007934",
+          "subj02_trial019702",
+          "subj02_trial019770"
+        ],
+        "subj05": [
+          "subj05_trial007934",
+          "subj05_trial019702",
+          "subj05_trial019770"
+        ],
+        "subj07": [
+          "subj07_trial007934",
+          "subj07_trial019702",
+          "subj07_trial019770"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd40575",
+      "question_id": 864221,
+      "answer_id": 864221,
+      "category": "counting",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial000305",
+          "subj01_trial003633",
+          "subj01_trial007701"
+        ],
+        "subj02": [
+          "subj02_trial000305",
+          "subj02_trial003633",
+          "subj02_trial007701"
+        ],
+        "subj05": [
+          "subj05_trial000305",
+          "subj05_trial003633",
+          "subj05_trial007701"
+        ],
+        "subj07": [
+          "subj07_trial000305",
+          "subj07_trial003633",
+          "subj07_trial007701"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd59091",
+      "question_id": 1261122,
+      "answer_id": 1261122,
+      "category": "counting",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial028930",
+          "subj01_trial029073",
+          "subj01_trial029293"
+        ],
+        "subj02": [
+          "subj02_trial028930",
+          "subj02_trial029073",
+          "subj02_trial029293"
+        ],
+        "subj05": [
+          "subj05_trial028930",
+          "subj05_trial029073",
+          "subj05_trial029293"
+        ],
+        "subj07": [
+          "subj07_trial028930",
+          "subj07_trial029073",
+          "subj07_trial029293"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd14528",
+      "question_id": 307736,
+      "answer_id": 307736,
+      "category": "counting",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial000600",
+          "subj01_trial000724",
+          "subj01_trial000845"
+        ],
+        "subj02": [
+          "subj02_trial000600",
+          "subj02_trial000724",
+          "subj02_trial000845"
+        ],
+        "subj05": [
+          "subj05_trial000600",
+          "subj05_trial000724",
+          "subj05_trial000845"
+        ],
+        "subj07": [
+          "subj07_trial000600",
+          "subj07_trial000724",
+          "subj07_trial000845"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd57435",
+      "question_id": 1225174,
+      "answer_id": 1225174,
+      "category": "counting",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial002169",
+          "subj01_trial005129",
+          "subj01_trial007846"
+        ],
+        "subj02": [
+          "subj02_trial002169",
+          "subj02_trial005129",
+          "subj02_trial007846"
+        ],
+        "subj05": [
+          "subj05_trial002169",
+          "subj05_trial005129",
+          "subj05_trial007846"
+        ],
+        "subj07": [
+          "subj07_trial002169",
+          "subj07_trial005129",
+          "subj07_trial007846"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd43164",
+      "question_id": 920523,
+      "answer_id": 920523,
+      "category": "counting",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial014112",
+          "subj01_trial014146",
+          "subj01_trial014224"
+        ],
+        "subj02": [
+          "subj02_trial014112",
+          "subj02_trial014146",
+          "subj02_trial014224"
+        ],
+        "subj05": [
+          "subj05_trial014112",
+          "subj05_trial014146",
+          "subj05_trial014224"
+        ],
+        "subj07": [
+          "subj07_trial014112",
+          "subj07_trial014146",
+          "subj07_trial014224"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd47290",
+      "question_id": 1007983,
+      "answer_id": 1007983,
+      "category": "counting",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial003655",
+          "subj01_trial004627",
+          "subj01_trial017097"
+        ],
+        "subj02": [
+          "subj02_trial003655",
+          "subj02_trial004627",
+          "subj02_trial017097"
+        ],
+        "subj05": [
+          "subj05_trial003655",
+          "subj05_trial004627",
+          "subj05_trial017097"
+        ],
+        "subj07": [
+          "subj07_trial003655",
+          "subj07_trial004627",
+          "subj07_trial017097"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd58164",
+      "question_id": 1241186,
+      "answer_id": 1241186,
+      "category": "other yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial014625",
+          "subj01_trial020046",
+          "subj01_trial027450"
+        ],
+        "subj02": [
+          "subj02_trial014625",
+          "subj02_trial020046",
+          "subj02_trial027450"
+        ],
+        "subj05": [
+          "subj05_trial014625",
+          "subj05_trial020046",
+          "subj05_trial027450"
+        ],
+        "subj07": [
+          "subj07_trial014625",
+          "subj07_trial020046",
+          "subj07_trial027450"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd72080",
+      "question_id": 1538448,
+      "answer_id": 1538448,
+      "category": "person yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial000440",
+          "subj01_trial019206",
+          "subj01_trial023223"
+        ],
+        "subj02": [
+          "subj02_trial000440",
+          "subj02_trial019206",
+          "subj02_trial023223"
+        ],
+        "subj05": [
+          "subj05_trial000440",
+          "subj05_trial019206",
+          "subj05_trial023223"
+        ],
+        "subj07": [
+          "subj07_trial000440",
+          "subj07_trial019206",
+          "subj07_trial023223"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd53891",
+      "question_id": 1149899,
+      "answer_id": 1149899,
+      "category": "household yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial000943",
+          "subj01_trial000990",
+          "subj01_trial011729"
+        ],
+        "subj02": [
+          "subj02_trial000943",
+          "subj02_trial000990",
+          "subj02_trial011729"
+        ],
+        "subj05": [
+          "subj05_trial000943",
+          "subj05_trial000990",
+          "subj05_trial011729"
+        ],
+        "subj07": [
+          "subj07_trial000943",
+          "subj07_trial000990",
+          "subj07_trial011729"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd62365",
+      "question_id": 1330547,
+      "answer_id": 1330547,
+      "category": "landscape yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial001355",
+          "subj01_trial024372",
+          "subj01_trial024505"
+        ],
+        "subj02": [
+          "subj02_trial001355",
+          "subj02_trial024372",
+          "subj02_trial024505"
+        ],
+        "subj05": [
+          "subj05_trial001355",
+          "subj05_trial024372",
+          "subj05_trial024505"
+        ],
+        "subj07": [
+          "subj07_trial001355",
+          "subj07_trial024372",
+          "subj07_trial024505"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd37801",
+      "question_id": 805260,
+      "answer_id": 805260,
+      "category": "counting",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004525",
+          "subj01_trial025081",
+          "subj01_trial025946"
+        ],
+        "subj02": [
+          "subj02_trial004525",
+          "subj02_trial025081",
+          "subj02_trial025946"
+        ],
+        "subj05": [
+          "subj05_trial004525",
+          "subj05_trial025081",
+          "subj05_trial025946"
+        ],
+        "subj07": [
+          "subj07_trial004525",
+          "subj07_trial025081",
+          "subj07_trial025946"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd60186",
+      "question_id": 1284052,
+      "answer_id": 1284052,
+      "category": "household yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial006740",
+          "subj01_trial011818",
+          "subj01_trial012028"
+        ],
+        "subj02": [
+          "subj02_trial006740",
+          "subj02_trial011818",
+          "subj02_trial012028"
+        ],
+        "subj05": [
+          "subj05_trial006740",
+          "subj05_trial011818",
+          "subj05_trial012028"
+        ],
+        "subj07": [
+          "subj07_trial006740",
+          "subj07_trial011818",
+          "subj07_trial012028"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd47656",
+      "question_id": 1015738,
+      "answer_id": 1015738,
+      "category": "household yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial025127",
+          "subj01_trial026841",
+          "subj01_trial026947"
+        ],
+        "subj02": [
+          "subj02_trial025127",
+          "subj02_trial026841",
+          "subj02_trial026947"
+        ],
+        "subj05": [
+          "subj05_trial025127",
+          "subj05_trial026841",
+          "subj05_trial026947"
+        ],
+        "subj07": [
+          "subj07_trial025127",
+          "subj07_trial026841",
+          "subj07_trial026947"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd33906",
+      "question_id": 721742,
+      "answer_id": 721742,
+      "category": "sport yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial016086",
+          "subj01_trial024142",
+          "subj01_trial026924"
+        ],
+        "subj02": [
+          "subj02_trial016086",
+          "subj02_trial024142",
+          "subj02_trial026924"
+        ],
+        "subj05": [
+          "subj05_trial016086",
+          "subj05_trial024142",
+          "subj05_trial026924"
+        ],
+        "subj07": [
+          "subj07_trial016086",
+          "subj07_trial024142",
+          "subj07_trial026924"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd49957",
+      "question_id": 1065168,
+      "answer_id": 1065168,
+      "category": "counting",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial007446",
+          "subj01_trial022034",
+          "subj01_trial028952"
+        ],
+        "subj02": [
+          "subj02_trial007446",
+          "subj02_trial022034",
+          "subj02_trial028952"
+        ],
+        "subj05": [
+          "subj05_trial007446",
+          "subj05_trial022034",
+          "subj05_trial028952"
+        ],
+        "subj07": [
+          "subj07_trial007446",
+          "subj07_trial022034",
+          "subj07_trial028952"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd07039",
+      "question_id": 148588,
+      "answer_id": 148588,
+      "category": "household yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial010023",
+          "subj01_trial010046",
+          "subj01_trial010919"
+        ],
+        "subj02": [
+          "subj02_trial010023",
+          "subj02_trial010046",
+          "subj02_trial010919"
+        ],
+        "subj05": [
+          "subj05_trial010023",
+          "subj05_trial010046",
+          "subj05_trial010919"
+        ],
+        "subj07": [
+          "subj07_trial010023",
+          "subj07_trial010046",
+          "subj07_trial010919"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd32772",
+      "question_id": 698068,
+      "answer_id": 698068,
+      "category": "position",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial015978",
+          "subj01_trial016036",
+          "subj01_trial016129"
+        ],
+        "subj02": [
+          "subj02_trial015978",
+          "subj02_trial016036",
+          "subj02_trial016129"
+        ],
+        "subj05": [
+          "subj05_trial015978",
+          "subj05_trial016036",
+          "subj05_trial016129"
+        ],
+        "subj07": [
+          "subj07_trial015978",
+          "subj07_trial016036",
+          "subj07_trial016129"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd64893",
+      "question_id": 1384317,
+      "answer_id": 1384317,
+      "category": "location",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial025719",
+          "subj01_trial028496",
+          "subj01_trial029868"
+        ],
+        "subj02": [
+          "subj02_trial025719",
+          "subj02_trial028496",
+          "subj02_trial029868"
+        ],
+        "subj05": [
+          "subj05_trial025719",
+          "subj05_trial028496",
+          "subj05_trial029868"
+        ],
+        "subj07": [
+          "subj07_trial025719",
+          "subj07_trial028496",
+          "subj07_trial029868"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd24517",
+      "question_id": 521583,
+      "answer_id": 521583,
+      "category": "other yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial006243",
+          "subj01_trial006249",
+          "subj01_trial006552"
+        ],
+        "subj02": [
+          "subj02_trial006243",
+          "subj02_trial006249",
+          "subj02_trial006552"
+        ],
+        "subj05": [
+          "subj05_trial006243",
+          "subj05_trial006249",
+          "subj05_trial006552"
+        ],
+        "subj07": [
+          "subj07_trial006243",
+          "subj07_trial006249",
+          "subj07_trial006552"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd15025",
+      "question_id": 318396,
+      "answer_id": 318396,
+      "category": "scene",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial005639",
+          "subj01_trial025301",
+          "subj01_trial025679"
+        ],
+        "subj02": [
+          "subj02_trial005639",
+          "subj02_trial025301",
+          "subj02_trial025679"
+        ],
+        "subj05": [
+          "subj05_trial005639",
+          "subj05_trial025301",
+          "subj05_trial025679"
+        ],
+        "subj07": [
+          "subj07_trial005639",
+          "subj07_trial025301",
+          "subj07_trial025679"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd24560",
+      "question_id": 522444,
+      "answer_id": 522444,
+      "category": "position",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial015179",
+          "subj01_trial015554",
+          "subj01_trial020681"
+        ],
+        "subj02": [
+          "subj02_trial015179",
+          "subj02_trial015554",
+          "subj02_trial020681"
+        ],
+        "subj05": [
+          "subj05_trial015179",
+          "subj05_trial015554",
+          "subj05_trial020681"
+        ],
+        "subj07": [
+          "subj07_trial015179",
+          "subj07_trial015554",
+          "subj07_trial020681"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd43984",
+      "question_id": 938036,
+      "answer_id": 938036,
+      "category": "sport yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004923",
+          "subj01_trial014296",
+          "subj01_trial020650"
+        ],
+        "subj02": [
+          "subj02_trial004923",
+          "subj02_trial014296",
+          "subj02_trial020650"
+        ],
+        "subj05": [
+          "subj05_trial004923",
+          "subj05_trial014296",
+          "subj05_trial020650"
+        ],
+        "subj07": [
+          "subj07_trial004923",
+          "subj07_trial014296",
+          "subj07_trial020650"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd20820",
+      "question_id": 442163,
+      "answer_id": 442163,
+      "category": "structure yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial005876",
+          "subj01_trial014447",
+          "subj01_trial019551"
+        ],
+        "subj02": [
+          "subj02_trial005876",
+          "subj02_trial014447",
+          "subj02_trial019551"
+        ],
+        "subj05": [
+          "subj05_trial005876",
+          "subj05_trial014447",
+          "subj05_trial019551"
+        ],
+        "subj07": [
+          "subj07_trial005876",
+          "subj07_trial014447",
+          "subj07_trial019551"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd49152",
+      "question_id": 1047870,
+      "answer_id": 1047870,
+      "category": "animal yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial026600",
+          "subj01_trial026963",
+          "subj01_trial027013"
+        ],
+        "subj02": [
+          "subj02_trial026600",
+          "subj02_trial026963",
+          "subj02_trial027013"
+        ],
+        "subj05": [
+          "subj05_trial026600",
+          "subj05_trial026963",
+          "subj05_trial027013"
+        ],
+        "subj07": [
+          "subj07_trial026600",
+          "subj07_trial026963",
+          "subj07_trial027013"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd04612",
+      "question_id": 97168,
+      "answer_id": 97168,
+      "category": "position",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial020590",
+          "subj01_trial022480",
+          "subj01_trial029596"
+        ],
+        "subj02": [
+          "subj02_trial020590",
+          "subj02_trial022480",
+          "subj02_trial029596"
+        ],
+        "subj05": [
+          "subj05_trial020590",
+          "subj05_trial022480",
+          "subj05_trial029596"
+        ],
+        "subj07": [
+          "subj07_trial020590",
+          "subj07_trial022480",
+          "subj07_trial029596"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd43288",
+      "question_id": 923346,
+      "answer_id": 923346,
+      "category": "scene",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial021935",
+          "subj01_trial022544",
+          "subj01_trial022575"
+        ],
+        "subj02": [
+          "subj02_trial021935",
+          "subj02_trial022544",
+          "subj02_trial022575"
+        ],
+        "subj05": [
+          "subj05_trial021935",
+          "subj05_trial022544",
+          "subj05_trial022575"
+        ],
+        "subj07": [
+          "subj07_trial021935",
+          "subj07_trial022544",
+          "subj07_trial022575"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd25578",
+      "question_id": 543908,
+      "answer_id": 543908,
+      "category": "action",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial018191",
+          "subj01_trial018211",
+          "subj01_trial019649"
+        ],
+        "subj02": [
+          "subj02_trial018191",
+          "subj02_trial018211",
+          "subj02_trial019649"
+        ],
+        "subj05": [
+          "subj05_trial018191",
+          "subj05_trial018211",
+          "subj05_trial019649"
+        ],
+        "subj07": [
+          "subj07_trial018191",
+          "subj07_trial018211",
+          "subj07_trial019649"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd19573",
+      "question_id": 415552,
+      "answer_id": 415552,
+      "category": "vehicle",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial024497",
+          "subj01_trial024949",
+          "subj01_trial029010"
+        ],
+        "subj02": [
+          "subj02_trial024497",
+          "subj02_trial024949",
+          "subj02_trial029010"
+        ],
+        "subj05": [
+          "subj05_trial024497",
+          "subj05_trial024949",
+          "subj05_trial029010"
+        ],
+        "subj07": [
+          "subj07_trial024497",
+          "subj07_trial024949",
+          "subj07_trial029010"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd15793",
+      "question_id": 334747,
+      "answer_id": 334747,
+      "category": "pose",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial005663",
+          "subj01_trial028524",
+          "subj01_trial029733"
+        ],
+        "subj02": [
+          "subj02_trial005663",
+          "subj02_trial028524",
+          "subj02_trial029733"
+        ],
+        "subj05": [
+          "subj05_trial005663",
+          "subj05_trial028524",
+          "subj05_trial029733"
+        ],
+        "subj07": [
+          "subj07_trial005663",
+          "subj07_trial028524",
+          "subj07_trial029733"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd69918",
+      "question_id": 1492412,
+      "answer_id": 1492412,
+      "category": "scene",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial014772",
+          "subj01_trial021200",
+          "subj01_trial024046"
+        ],
+        "subj02": [
+          "subj02_trial014772",
+          "subj02_trial021200",
+          "subj02_trial024046"
+        ],
+        "subj05": [
+          "subj05_trial014772",
+          "subj05_trial021200",
+          "subj05_trial024046"
+        ],
+        "subj07": [
+          "subj07_trial014772",
+          "subj07_trial021200",
+          "subj07_trial024046"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd69240",
+      "question_id": 1477856,
+      "answer_id": 1477856,
+      "category": "building yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial008649",
+          "subj01_trial008840",
+          "subj01_trial008896"
+        ],
+        "subj02": [
+          "subj02_trial008649",
+          "subj02_trial008840",
+          "subj02_trial008896"
+        ],
+        "subj05": [
+          "subj05_trial008649",
+          "subj05_trial008840",
+          "subj05_trial008896"
+        ],
+        "subj07": [
+          "subj07_trial008649",
+          "subj07_trial008840",
+          "subj07_trial008896"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd36569",
+      "question_id": 779663,
+      "answer_id": 779663,
+      "category": "structure yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial008728",
+          "subj01_trial008857",
+          "subj01_trial026260"
+        ],
+        "subj02": [
+          "subj02_trial008728",
+          "subj02_trial008857",
+          "subj02_trial026260"
+        ],
+        "subj05": [
+          "subj05_trial008728",
+          "subj05_trial008857",
+          "subj05_trial026260"
+        ],
+        "subj07": [
+          "subj07_trial008728",
+          "subj07_trial008857",
+          "subj07_trial026260"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd14808",
+      "question_id": 313700,
+      "answer_id": 313700,
+      "category": "scene",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial012226",
+          "subj01_trial017958",
+          "subj01_trial026558"
+        ],
+        "subj02": [
+          "subj02_trial012226",
+          "subj02_trial017958",
+          "subj02_trial026558"
+        ],
+        "subj05": [
+          "subj05_trial012226",
+          "subj05_trial017958",
+          "subj05_trial026558"
+        ],
+        "subj07": [
+          "subj07_trial012226",
+          "subj07_trial017958",
+          "subj07_trial026558"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd11487",
+      "question_id": 243189,
+      "answer_id": 243189,
+      "category": "holding",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial016905",
+          "subj01_trial017175",
+          "subj01_trial024455"
+        ],
+        "subj02": [
+          "subj02_trial016905",
+          "subj02_trial017175",
+          "subj02_trial024455"
+        ],
+        "subj05": [
+          "subj05_trial016905",
+          "subj05_trial017175",
+          "subj05_trial024455"
+        ],
+        "subj07": [
+          "subj07_trial016905",
+          "subj07_trial017175",
+          "subj07_trial024455"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd72015",
+      "question_id": 1537079,
+      "answer_id": 1537079,
+      "category": "appliance yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004375",
+          "subj01_trial011092",
+          "subj01_trial013172"
+        ],
+        "subj02": [
+          "subj02_trial004375",
+          "subj02_trial011092",
+          "subj02_trial013172"
+        ],
+        "subj05": [
+          "subj05_trial004375",
+          "subj05_trial011092",
+          "subj05_trial013172"
+        ],
+        "subj07": [
+          "subj07_trial004375",
+          "subj07_trial011092",
+          "subj07_trial013172"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd06514",
+      "question_id": 137624,
+      "answer_id": 137624,
+      "category": "pose",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial013542",
+          "subj01_trial019339",
+          "subj01_trial026141"
+        ],
+        "subj02": [
+          "subj02_trial013542",
+          "subj02_trial019339",
+          "subj02_trial026141"
+        ],
+        "subj05": [
+          "subj05_trial013542",
+          "subj05_trial019339",
+          "subj05_trial026141"
+        ],
+        "subj07": [
+          "subj07_trial013542",
+          "subj07_trial019339",
+          "subj07_trial026141"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd11333",
+      "question_id": 239901,
+      "answer_id": 239901,
+      "category": "holding",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial001772",
+          "subj01_trial021928",
+          "subj01_trial022087"
+        ],
+        "subj02": [
+          "subj02_trial001772",
+          "subj02_trial021928",
+          "subj02_trial022087"
+        ],
+        "subj05": [
+          "subj05_trial001772",
+          "subj05_trial021928",
+          "subj05_trial022087"
+        ],
+        "subj07": [
+          "subj07_trial001772",
+          "subj07_trial021928",
+          "subj07_trial022087"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd66946",
+      "question_id": 1428128,
+      "answer_id": 1428128,
+      "category": "vehicle",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial014266",
+          "subj01_trial019368",
+          "subj01_trial019489"
+        ],
+        "subj02": [
+          "subj02_trial014266",
+          "subj02_trial019368",
+          "subj02_trial019489"
+        ],
+        "subj05": [
+          "subj05_trial014266",
+          "subj05_trial019368",
+          "subj05_trial019489"
+        ],
+        "subj07": [
+          "subj07_trial014266",
+          "subj07_trial019368",
+          "subj07_trial019489"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd34418",
+      "question_id": 732812,
+      "answer_id": 732812,
+      "category": "structure yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial015707",
+          "subj01_trial015713",
+          "subj01_trial024017"
+        ],
+        "subj02": [
+          "subj02_trial015707",
+          "subj02_trial015713",
+          "subj02_trial024017"
+        ],
+        "subj05": [
+          "subj05_trial015707",
+          "subj05_trial015713",
+          "subj05_trial024017"
+        ],
+        "subj07": [
+          "subj07_trial015707",
+          "subj07_trial015713",
+          "subj07_trial024017"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd44705",
+      "question_id": 953315,
+      "answer_id": 953315,
+      "category": "pose",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004951",
+          "subj01_trial005006",
+          "subj01_trial005039"
+        ],
+        "subj02": [
+          "subj02_trial004951",
+          "subj02_trial005006",
+          "subj02_trial005039"
+        ],
+        "subj05": [
+          "subj05_trial004951",
+          "subj05_trial005006",
+          "subj05_trial005039"
+        ],
+        "subj07": [
+          "subj07_trial004951",
+          "subj07_trial005006",
+          "subj07_trial005039"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd50882",
+      "question_id": 1084757,
+      "answer_id": 1084757,
+      "category": "vehicle yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial019248",
+          "subj01_trial019596",
+          "subj01_trial019602"
+        ],
+        "subj02": [
+          "subj02_trial019248",
+          "subj02_trial019596",
+          "subj02_trial019602"
+        ],
+        "subj05": [
+          "subj05_trial019248",
+          "subj05_trial019596",
+          "subj05_trial019602"
+        ],
+        "subj07": [
+          "subj07_trial019248",
+          "subj07_trial019596",
+          "subj07_trial019602"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd54147",
+      "question_id": 1155307,
+      "answer_id": 1155307,
+      "category": "accessory yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial025420",
+          "subj01_trial025655",
+          "subj01_trial025806"
+        ],
+        "subj02": [
+          "subj02_trial025420",
+          "subj02_trial025655",
+          "subj02_trial025806"
+        ],
+        "subj05": [
+          "subj05_trial025420",
+          "subj05_trial025655",
+          "subj05_trial025806"
+        ],
+        "subj07": [
+          "subj07_trial025420",
+          "subj07_trial025655",
+          "subj07_trial025806"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd44736",
+      "question_id": 953987,
+      "answer_id": 953987,
+      "category": "plant yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004406",
+          "subj01_trial027090",
+          "subj01_trial027513"
+        ],
+        "subj02": [
+          "subj02_trial004406",
+          "subj02_trial027090",
+          "subj02_trial027513"
+        ],
+        "subj05": [
+          "subj05_trial004406",
+          "subj05_trial027090",
+          "subj05_trial027513"
+        ],
+        "subj07": [
+          "subj07_trial004406",
+          "subj07_trial027090",
+          "subj07_trial027513"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd72312",
+      "question_id": 1543579,
+      "answer_id": 1543579,
+      "category": "pose",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial002919",
+          "subj01_trial003085",
+          "subj01_trial003372"
+        ],
+        "subj02": [
+          "subj02_trial002919",
+          "subj02_trial003085",
+          "subj02_trial003372"
+        ],
+        "subj05": [
+          "subj05_trial002919",
+          "subj05_trial003085",
+          "subj05_trial003372"
+        ],
+        "subj07": [
+          "subj07_trial002919",
+          "subj07_trial003085",
+          "subj07_trial003372"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd66580",
+      "question_id": 1420562,
+      "answer_id": 1420562,
+      "category": "action",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial006818",
+          "subj01_trial010563",
+          "subj01_trial020954"
+        ],
+        "subj02": [
+          "subj02_trial006818",
+          "subj02_trial010563",
+          "subj02_trial020954"
+        ],
+        "subj05": [
+          "subj05_trial006818",
+          "subj05_trial010563",
+          "subj05_trial020954"
+        ],
+        "subj07": [
+          "subj07_trial006818",
+          "subj07_trial010563",
+          "subj07_trial020954"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd69854",
+      "question_id": 1490974,
+      "answer_id": 1490974,
+      "category": "vehicle yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial011616",
+          "subj01_trial015164",
+          "subj01_trial016370"
+        ],
+        "subj02": [
+          "subj02_trial011616",
+          "subj02_trial015164",
+          "subj02_trial016370"
+        ],
+        "subj05": [
+          "subj05_trial011616",
+          "subj05_trial015164",
+          "subj05_trial016370"
+        ],
+        "subj07": [
+          "subj07_trial011616",
+          "subj07_trial015164",
+          "subj07_trial016370"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd09722",
+      "question_id": 205324,
+      "answer_id": 205324,
+      "category": "sport yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004355",
+          "subj01_trial007663",
+          "subj01_trial027314"
+        ],
+        "subj02": [
+          "subj02_trial004355",
+          "subj02_trial007663",
+          "subj02_trial027314"
+        ],
+        "subj05": [
+          "subj05_trial004355",
+          "subj05_trial007663",
+          "subj05_trial027314"
+        ],
+        "subj07": [
+          "subj07_trial004355",
+          "subj07_trial007663",
+          "subj07_trial027314"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd63449",
+      "question_id": 1353155,
+      "answer_id": 1353155,
+      "category": "other yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial022330",
+          "subj01_trial024132",
+          "subj01_trial024254"
+        ],
+        "subj02": [
+          "subj02_trial022330",
+          "subj02_trial024132",
+          "subj02_trial024254"
+        ],
+        "subj05": [
+          "subj05_trial022330",
+          "subj05_trial024132",
+          "subj05_trial024254"
+        ],
+        "subj07": [
+          "subj07_trial022330",
+          "subj07_trial024132",
+          "subj07_trial024254"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd34126",
+      "question_id": 726558,
+      "answer_id": 726558,
+      "category": "sport yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial002833",
+          "subj01_trial006912",
+          "subj01_trial008124"
+        ],
+        "subj02": [
+          "subj02_trial002833",
+          "subj02_trial006912",
+          "subj02_trial008124"
+        ],
+        "subj05": [
+          "subj05_trial002833",
+          "subj05_trial006912",
+          "subj05_trial008124"
+        ],
+        "subj07": [
+          "subj07_trial002833",
+          "subj07_trial006912",
+          "subj07_trial008124"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd56066",
+      "question_id": 1195970,
+      "answer_id": 1195970,
+      "category": "animal yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial010430",
+          "subj01_trial010526",
+          "subj01_trial025204"
+        ],
+        "subj02": [
+          "subj02_trial010430",
+          "subj02_trial010526",
+          "subj02_trial025204"
+        ],
+        "subj05": [
+          "subj05_trial010430",
+          "subj05_trial010526",
+          "subj05_trial025204"
+        ],
+        "subj07": [
+          "subj07_trial010430",
+          "subj07_trial010526",
+          "subj07_trial025204"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd61797",
+      "question_id": 1318423,
+      "answer_id": 1318423,
+      "category": "vehicle yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004079",
+          "subj01_trial011531",
+          "subj01_trial020470"
+        ],
+        "subj02": [
+          "subj02_trial004079",
+          "subj02_trial011531",
+          "subj02_trial020470"
+        ],
+        "subj05": [
+          "subj05_trial004079",
+          "subj05_trial011531",
+          "subj05_trial020470"
+        ],
+        "subj07": [
+          "subj07_trial004079",
+          "subj07_trial011531",
+          "subj07_trial020470"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd37927",
+      "question_id": 807881,
+      "answer_id": 807881,
+      "category": "holding",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial021959",
+          "subj01_trial022293",
+          "subj01_trial024681"
+        ],
+        "subj02": [
+          "subj02_trial021959",
+          "subj02_trial022293",
+          "subj02_trial024681"
+        ],
+        "subj05": [
+          "subj05_trial021959",
+          "subj05_trial022293",
+          "subj05_trial024681"
+        ],
+        "subj07": [
+          "subj07_trial021959",
+          "subj07_trial022293",
+          "subj07_trial024681"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd19292",
+      "question_id": 409706,
+      "answer_id": 409706,
+      "category": "structure yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004316",
+          "subj01_trial004391",
+          "subj01_trial028481"
+        ],
+        "subj02": [
+          "subj02_trial004316",
+          "subj02_trial004391",
+          "subj02_trial028481"
+        ],
+        "subj05": [
+          "subj05_trial004316",
+          "subj05_trial004391",
+          "subj05_trial028481"
+        ],
+        "subj07": [
+          "subj07_trial004316",
+          "subj07_trial004391",
+          "subj07_trial028481"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd30672",
+      "question_id": 653152,
+      "answer_id": 653152,
+      "category": "animal",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial014280",
+          "subj01_trial014457",
+          "subj01_trial014536"
+        ],
+        "subj02": [
+          "subj02_trial014280",
+          "subj02_trial014457",
+          "subj02_trial014536"
+        ],
+        "subj05": [
+          "subj05_trial014280",
+          "subj05_trial014457",
+          "subj05_trial014536"
+        ],
+        "subj07": [
+          "subj07_trial014280",
+          "subj07_trial014457",
+          "subj07_trial014536"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd53489",
+      "question_id": 1141122,
+      "answer_id": 1141122,
+      "category": "food yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial029546",
+          "subj01_trial029616",
+          "subj01_trial029761"
+        ],
+        "subj02": [
+          "subj02_trial029546",
+          "subj02_trial029616",
+          "subj02_trial029761"
+        ],
+        "subj05": [
+          "subj05_trial029546",
+          "subj05_trial029616",
+          "subj05_trial029761"
+        ],
+        "subj07": [
+          "subj07_trial029546",
+          "subj07_trial029616",
+          "subj07_trial029761"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd47033",
+      "question_id": 1002364,
+      "answer_id": 1002364,
+      "category": "landscape yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial017306",
+          "subj01_trial017761",
+          "subj01_trial024307"
+        ],
+        "subj02": [
+          "subj02_trial017306",
+          "subj02_trial017761",
+          "subj02_trial024307"
+        ],
+        "subj05": [
+          "subj05_trial017306",
+          "subj05_trial017761",
+          "subj05_trial024307"
+        ],
+        "subj07": [
+          "subj07_trial017306",
+          "subj07_trial017761",
+          "subj07_trial024307"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd25702",
+      "question_id": 546519,
+      "answer_id": 546519,
+      "category": "appliance yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial015147",
+          "subj01_trial019302",
+          "subj01_trial019434"
+        ],
+        "subj02": [
+          "subj02_trial015147",
+          "subj02_trial019302",
+          "subj02_trial019434"
+        ],
+        "subj05": [
+          "subj05_trial015147",
+          "subj05_trial019302",
+          "subj05_trial019434"
+        ],
+        "subj07": [
+          "subj07_trial015147",
+          "subj07_trial019302",
+          "subj07_trial019434"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd49156",
+      "question_id": 1047927,
+      "answer_id": 1047927,
+      "category": "animal",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial008261",
+          "subj01_trial027295",
+          "subj01_trial028761"
+        ],
+        "subj02": [
+          "subj02_trial008261",
+          "subj02_trial027295",
+          "subj02_trial028761"
+        ],
+        "subj05": [
+          "subj05_trial008261",
+          "subj05_trial027295",
+          "subj05_trial028761"
+        ],
+        "subj07": [
+          "subj07_trial008261",
+          "subj07_trial027295",
+          "subj07_trial028761"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd38853",
+      "question_id": 827346,
+      "answer_id": 827346,
+      "category": "food yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004981",
+          "subj01_trial018557",
+          "subj01_trial018630"
+        ],
+        "subj02": [
+          "subj02_trial004981",
+          "subj02_trial018557",
+          "subj02_trial018630"
+        ],
+        "subj05": [
+          "subj05_trial004981",
+          "subj05_trial018557",
+          "subj05_trial018630"
+        ],
+        "subj07": [
+          "subj07_trial004981",
+          "subj07_trial018557",
+          "subj07_trial018630"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd25746",
+      "question_id": 547441,
+      "answer_id": 547441,
+      "category": "action",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial015291",
+          "subj01_trial021983",
+          "subj01_trial022266"
+        ],
+        "subj02": [
+          "subj02_trial015291",
+          "subj02_trial021983",
+          "subj02_trial022266"
+        ],
+        "subj05": [
+          "subj05_trial015291",
+          "subj05_trial021983",
+          "subj05_trial022266"
+        ],
+        "subj07": [
+          "subj07_trial015291",
+          "subj07_trial021983",
+          "subj07_trial022266"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd25284",
+      "question_id": 537782,
+      "answer_id": 537782,
+      "category": "vehicle yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial002325",
+          "subj01_trial003853",
+          "subj01_trial014689"
+        ],
+        "subj02": [
+          "subj02_trial002325",
+          "subj02_trial003853",
+          "subj02_trial014689"
+        ],
+        "subj05": [
+          "subj05_trial002325",
+          "subj05_trial003853",
+          "subj05_trial014689"
+        ],
+        "subj07": [
+          "subj07_trial002325",
+          "subj07_trial003853",
+          "subj07_trial014689"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd46523",
+      "question_id": 991850,
+      "answer_id": 991850,
+      "category": "animal yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial013449",
+          "subj01_trial013977",
+          "subj01_trial025731"
+        ],
+        "subj02": [
+          "subj02_trial013449",
+          "subj02_trial013977",
+          "subj02_trial025731"
+        ],
+        "subj05": [
+          "subj05_trial013449",
+          "subj05_trial013977",
+          "subj05_trial025731"
+        ],
+        "subj07": [
+          "subj07_trial013449",
+          "subj07_trial013977",
+          "subj07_trial025731"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd25602",
+      "question_id": 544398,
+      "answer_id": 544398,
+      "category": "plant yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial011149",
+          "subj01_trial016385",
+          "subj01_trial028675"
+        ],
+        "subj02": [
+          "subj02_trial011149",
+          "subj02_trial016385",
+          "subj02_trial028675"
+        ],
+        "subj05": [
+          "subj05_trial011149",
+          "subj05_trial016385",
+          "subj05_trial028675"
+        ],
+        "subj07": [
+          "subj07_trial011149",
+          "subj07_trial016385",
+          "subj07_trial028675"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd17485",
+      "question_id": 370513,
+      "answer_id": 370513,
+      "category": "clothing yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial010918",
+          "subj01_trial014341",
+          "subj01_trial015363"
+        ],
+        "subj02": [
+          "subj02_trial010918",
+          "subj02_trial014341",
+          "subj02_trial015363"
+        ],
+        "subj05": [
+          "subj05_trial010918",
+          "subj05_trial014341",
+          "subj05_trial015363"
+        ],
+        "subj07": [
+          "subj07_trial010918",
+          "subj07_trial014341",
+          "subj07_trial015363"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd43428",
+      "question_id": 926214,
+      "answer_id": 926214,
+      "category": "food yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004179",
+          "subj01_trial004433",
+          "subj01_trial004559"
+        ],
+        "subj02": [
+          "subj02_trial004179",
+          "subj02_trial004433",
+          "subj02_trial004559"
+        ],
+        "subj05": [
+          "subj05_trial004179",
+          "subj05_trial004433",
+          "subj05_trial004559"
+        ],
+        "subj07": [
+          "subj07_trial004179",
+          "subj07_trial004433",
+          "subj07_trial004559"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd10064",
+      "question_id": 212756,
+      "answer_id": 212756,
+      "category": "food yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004222",
+          "subj01_trial004309",
+          "subj01_trial014659"
+        ],
+        "subj02": [
+          "subj02_trial004222",
+          "subj02_trial004309",
+          "subj02_trial014659"
+        ],
+        "subj05": [
+          "subj05_trial004222",
+          "subj05_trial004309",
+          "subj05_trial014659"
+        ],
+        "subj07": [
+          "subj07_trial004222",
+          "subj07_trial004309",
+          "subj07_trial014659"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd70368",
+      "question_id": 1501711,
+      "answer_id": 1501711,
+      "category": "vehicle",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial026252",
+          "subj01_trial026393",
+          "subj01_trial026675"
+        ],
+        "subj02": [
+          "subj02_trial026252",
+          "subj02_trial026393",
+          "subj02_trial026675"
+        ],
+        "subj05": [
+          "subj05_trial026252",
+          "subj05_trial026393",
+          "subj05_trial026675"
+        ],
+        "subj07": [
+          "subj07_trial026252",
+          "subj07_trial026393",
+          "subj07_trial026675"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd29021",
+      "question_id": 617668,
+      "answer_id": 617668,
+      "category": "landscape yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial019240",
+          "subj01_trial021304",
+          "subj01_trial025003"
+        ],
+        "subj02": [
+          "subj02_trial019240",
+          "subj02_trial021304",
+          "subj02_trial025003"
+        ],
+        "subj05": [
+          "subj05_trial019240",
+          "subj05_trial021304",
+          "subj05_trial025003"
+        ],
+        "subj07": [
+          "subj07_trial019240",
+          "subj07_trial021304",
+          "subj07_trial025003"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd11159",
+      "question_id": 235900,
+      "answer_id": 235900,
+      "category": "plant yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial000701",
+          "subj01_trial002318",
+          "subj01_trial002419"
+        ],
+        "subj02": [
+          "subj02_trial000701",
+          "subj02_trial002318",
+          "subj02_trial002419"
+        ],
+        "subj05": [
+          "subj05_trial000701",
+          "subj05_trial002318",
+          "subj05_trial002419"
+        ],
+        "subj07": [
+          "subj07_trial000701",
+          "subj07_trial002318",
+          "subj07_trial002419"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd29660",
+      "question_id": 631859,
+      "answer_id": 631859,
+      "category": "plant yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial027953",
+          "subj01_trial028044",
+          "subj01_trial028110"
+        ],
+        "subj02": [
+          "subj02_trial027953",
+          "subj02_trial028044",
+          "subj02_trial028110"
+        ],
+        "subj05": [
+          "subj05_trial027953",
+          "subj05_trial028044",
+          "subj05_trial028110"
+        ],
+        "subj07": [
+          "subj07_trial027953",
+          "subj07_trial028044",
+          "subj07_trial028110"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd34874",
+      "question_id": 742519,
+      "answer_id": 742519,
+      "category": "action",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004481",
+          "subj01_trial020065",
+          "subj01_trial025942"
+        ],
+        "subj02": [
+          "subj02_trial004481",
+          "subj02_trial020065",
+          "subj02_trial025942"
+        ],
+        "subj05": [
+          "subj05_trial004481",
+          "subj05_trial020065",
+          "subj05_trial025942"
+        ],
+        "subj07": [
+          "subj07_trial004481",
+          "subj07_trial020065",
+          "subj07_trial025942"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd56290",
+      "question_id": 1200619,
+      "answer_id": 1200619,
+      "category": "vehicle",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial014806",
+          "subj01_trial015475",
+          "subj01_trial028823"
+        ],
+        "subj02": [
+          "subj02_trial014806",
+          "subj02_trial015475",
+          "subj02_trial028823"
+        ],
+        "subj05": [
+          "subj05_trial014806",
+          "subj05_trial015475",
+          "subj05_trial028823"
+        ],
+        "subj07": [
+          "subj07_trial014806",
+          "subj07_trial015475",
+          "subj07_trial028823"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd65414",
+      "question_id": 1395769,
+      "answer_id": 1395769,
+      "category": "animal",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial000201",
+          "subj01_trial024434",
+          "subj01_trial028407"
+        ],
+        "subj02": [
+          "subj02_trial000201",
+          "subj02_trial024434",
+          "subj02_trial028407"
+        ],
+        "subj05": [
+          "subj05_trial000201",
+          "subj05_trial024434",
+          "subj05_trial028407"
+        ],
+        "subj07": [
+          "subj07_trial000201",
+          "subj07_trial024434",
+          "subj07_trial028407"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd39402",
+      "question_id": 839160,
+      "answer_id": 839160,
+      "category": "food",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial007813",
+          "subj01_trial010237",
+          "subj01_trial010832"
+        ],
+        "subj02": [
+          "subj02_trial007813",
+          "subj02_trial010237",
+          "subj02_trial010832"
+        ],
+        "subj05": [
+          "subj05_trial007813",
+          "subj05_trial010237",
+          "subj05_trial010832"
+        ],
+        "subj07": [
+          "subj07_trial007813",
+          "subj07_trial010237",
+          "subj07_trial010832"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd65232",
+      "question_id": 1391630,
+      "answer_id": 1391630,
+      "category": "electronic yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial021048",
+          "subj01_trial024987",
+          "subj01_trial026648"
+        ],
+        "subj02": [
+          "subj02_trial021048",
+          "subj02_trial024987",
+          "subj02_trial026648"
+        ],
+        "subj05": [
+          "subj05_trial021048",
+          "subj05_trial024987",
+          "subj05_trial026648"
+        ],
+        "subj07": [
+          "subj07_trial021048",
+          "subj07_trial024987",
+          "subj07_trial026648"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd30935",
+      "question_id": 658590,
+      "answer_id": 658590,
+      "category": "clothing yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial027730",
+          "subj01_trial028382",
+          "subj01_trial028436"
+        ],
+        "subj02": [
+          "subj02_trial027730",
+          "subj02_trial028382",
+          "subj02_trial028436"
+        ],
+        "subj05": [
+          "subj05_trial027730",
+          "subj05_trial028382",
+          "subj05_trial028436"
+        ],
+        "subj07": [
+          "subj07_trial027730",
+          "subj07_trial028382",
+          "subj07_trial028436"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd46002",
+      "question_id": 980820,
+      "answer_id": 980820,
+      "category": "electronic yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial000000",
+          "subj01_trial012802",
+          "subj01_trial025836"
+        ],
+        "subj02": [
+          "subj02_trial000000",
+          "subj02_trial012802",
+          "subj02_trial025836"
+        ],
+        "subj05": [
+          "subj05_trial000000",
+          "subj05_trial012802",
+          "subj05_trial025836"
+        ],
+        "subj07": [
+          "subj07_trial000000",
+          "subj07_trial012802",
+          "subj07_trial025836"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd50114",
+      "question_id": 1068446,
+      "answer_id": 1068446,
+      "category": "animal",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004214",
+          "subj01_trial004423",
+          "subj01_trial012941"
+        ],
+        "subj02": [
+          "subj02_trial004214",
+          "subj02_trial004423",
+          "subj02_trial012941"
+        ],
+        "subj05": [
+          "subj05_trial004214",
+          "subj05_trial004423",
+          "subj05_trial012941"
+        ],
+        "subj07": [
+          "subj07_trial004214",
+          "subj07_trial004423",
+          "subj07_trial012941"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd31964",
+      "question_id": 680790,
+      "answer_id": 680790,
+      "category": "electronic yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial003826",
+          "subj01_trial003887",
+          "subj01_trial004395"
+        ],
+        "subj02": [
+          "subj02_trial003826",
+          "subj02_trial003887",
+          "subj02_trial004395"
+        ],
+        "subj05": [
+          "subj05_trial003826",
+          "subj05_trial003887",
+          "subj05_trial004395"
+        ],
+        "subj07": [
+          "subj07_trial003826",
+          "subj07_trial003887",
+          "subj07_trial004395"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd03682",
+      "question_id": 77501,
+      "answer_id": 77501,
+      "category": "furniture yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial002758",
+          "subj01_trial005086",
+          "subj01_trial021561"
+        ],
+        "subj02": [
+          "subj02_trial002758",
+          "subj02_trial005086",
+          "subj02_trial021561"
+        ],
+        "subj05": [
+          "subj05_trial002758",
+          "subj05_trial005086",
+          "subj05_trial021561"
+        ],
+        "subj07": [
+          "subj07_trial002758",
+          "subj07_trial005086",
+          "subj07_trial021561"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd55107",
+      "question_id": 1175464,
+      "answer_id": 1175464,
+      "category": "electronic yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial018349",
+          "subj01_trial018608",
+          "subj01_trial018726"
+        ],
+        "subj02": [
+          "subj02_trial018349",
+          "subj02_trial018608",
+          "subj02_trial018726"
+        ],
+        "subj05": [
+          "subj05_trial018349",
+          "subj05_trial018608",
+          "subj05_trial018726"
+        ],
+        "subj07": [
+          "subj07_trial018349",
+          "subj07_trial018608",
+          "subj07_trial018726"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd60519",
+      "question_id": 1291076,
+      "answer_id": 1291076,
+      "category": "appliance yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial026503",
+          "subj01_trial027114",
+          "subj01_trial027182"
+        ],
+        "subj02": [
+          "subj02_trial026503",
+          "subj02_trial027114",
+          "subj02_trial027182"
+        ],
+        "subj05": [
+          "subj05_trial026503",
+          "subj05_trial027114",
+          "subj05_trial027182"
+        ],
+        "subj07": [
+          "subj07_trial026503",
+          "subj07_trial027114",
+          "subj07_trial027182"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd46274",
+      "question_id": 986652,
+      "answer_id": 986652,
+      "category": "clothing yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial019344",
+          "subj01_trial019439",
+          "subj01_trial022818"
+        ],
+        "subj02": [
+          "subj02_trial019344",
+          "subj02_trial019439",
+          "subj02_trial022818"
+        ],
+        "subj05": [
+          "subj05_trial019344",
+          "subj05_trial019439",
+          "subj05_trial022818"
+        ],
+        "subj07": [
+          "subj07_trial019344",
+          "subj07_trial019439",
+          "subj07_trial022818"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd19642",
+      "question_id": 417076,
+      "answer_id": 417076,
+      "category": "appliance yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial022799",
+          "subj01_trial029005",
+          "subj01_trial029107"
+        ],
+        "subj02": [
+          "subj02_trial022799",
+          "subj02_trial029005",
+          "subj02_trial029107"
+        ],
+        "subj05": [
+          "subj05_trial022799",
+          "subj05_trial029005",
+          "subj05_trial029107"
+        ],
+        "subj07": [
+          "subj07_trial022799",
+          "subj07_trial029005",
+          "subj07_trial029107"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd25371",
+      "question_id": 539662,
+      "answer_id": 539662,
+      "category": "food",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial012363",
+          "subj01_trial021734",
+          "subj01_trial022394"
+        ],
+        "subj02": [
+          "subj02_trial012363",
+          "subj02_trial021734",
+          "subj02_trial022394"
+        ],
+        "subj05": [
+          "subj05_trial012363",
+          "subj05_trial021734",
+          "subj05_trial022394"
+        ],
+        "subj07": [
+          "subj07_trial012363",
+          "subj07_trial021734",
+          "subj07_trial022394"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd33289",
+      "question_id": 708963,
+      "answer_id": 708963,
+      "category": "transport yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial006692",
+          "subj01_trial016695",
+          "subj01_trial027023"
+        ],
+        "subj02": [
+          "subj02_trial006692",
+          "subj02_trial016695",
+          "subj02_trial027023"
+        ],
+        "subj05": [
+          "subj05_trial006692",
+          "subj05_trial016695",
+          "subj05_trial027023"
+        ],
+        "subj07": [
+          "subj07_trial006692",
+          "subj07_trial016695",
+          "subj07_trial027023"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd69007",
+      "question_id": 1472774,
+      "answer_id": 1472774,
+      "category": "water yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial003179",
+          "subj01_trial003528",
+          "subj01_trial017001"
+        ],
+        "subj02": [
+          "subj02_trial003179",
+          "subj02_trial003528",
+          "subj02_trial017001"
+        ],
+        "subj05": [
+          "subj05_trial003179",
+          "subj05_trial003528",
+          "subj05_trial017001"
+        ],
+        "subj07": [
+          "subj07_trial003179",
+          "subj07_trial003528",
+          "subj07_trial017001"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd30847",
+      "question_id": 656830,
+      "answer_id": 656830,
+      "category": "accessory yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial000996",
+          "subj01_trial005580",
+          "subj01_trial029630"
+        ],
+        "subj02": [
+          "subj02_trial000996",
+          "subj02_trial005580",
+          "subj02_trial029630"
+        ],
+        "subj05": [
+          "subj05_trial000996",
+          "subj05_trial005580",
+          "subj05_trial029630"
+        ],
+        "subj07": [
+          "subj07_trial000996",
+          "subj07_trial005580",
+          "subj07_trial029630"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd51051",
+      "question_id": 1088382,
+      "answer_id": 1088382,
+      "category": "building yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004879",
+          "subj01_trial022528",
+          "subj01_trial022714"
+        ],
+        "subj02": [
+          "subj02_trial004879",
+          "subj02_trial022528",
+          "subj02_trial022714"
+        ],
+        "subj05": [
+          "subj05_trial004879",
+          "subj05_trial022528",
+          "subj05_trial022714"
+        ],
+        "subj07": [
+          "subj07_trial004879",
+          "subj07_trial022528",
+          "subj07_trial022714"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd62228",
+      "question_id": 1327731,
+      "answer_id": 1327731,
+      "category": "furniture yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004762",
+          "subj01_trial004911",
+          "subj01_trial015223"
+        ],
+        "subj02": [
+          "subj02_trial004762",
+          "subj02_trial004911",
+          "subj02_trial015223"
+        ],
+        "subj05": [
+          "subj05_trial004762",
+          "subj05_trial004911",
+          "subj05_trial015223"
+        ],
+        "subj07": [
+          "subj07_trial004762",
+          "subj07_trial004911",
+          "subj07_trial015223"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd27972",
+      "question_id": 595021,
+      "answer_id": 595021,
+      "category": "clothing yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial009615",
+          "subj01_trial010197",
+          "subj01_trial024965"
+        ],
+        "subj02": [
+          "subj02_trial009615",
+          "subj02_trial010197",
+          "subj02_trial024965"
+        ],
+        "subj05": [
+          "subj05_trial009615",
+          "subj05_trial010197",
+          "subj05_trial024965"
+        ],
+        "subj07": [
+          "subj07_trial009615",
+          "subj07_trial010197",
+          "subj07_trial024965"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd42299",
+      "question_id": 901629,
+      "answer_id": 901629,
+      "category": "toilet yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial001461",
+          "subj01_trial001563",
+          "subj01_trial027125"
+        ],
+        "subj02": [
+          "subj02_trial001461",
+          "subj02_trial001563",
+          "subj02_trial027125"
+        ],
+        "subj05": [
+          "subj05_trial001461",
+          "subj05_trial001563",
+          "subj05_trial027125"
+        ],
+        "subj07": [
+          "subj07_trial001461",
+          "subj07_trial001563",
+          "subj07_trial027125"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd25570",
+      "question_id": 543719,
+      "answer_id": 543719,
+      "category": "food",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial014876",
+          "subj01_trial023863",
+          "subj01_trial026343"
+        ],
+        "subj02": [
+          "subj02_trial014876",
+          "subj02_trial023863",
+          "subj02_trial026343"
+        ],
+        "subj05": [
+          "subj05_trial014876",
+          "subj05_trial023863",
+          "subj05_trial026343"
+        ],
+        "subj07": [
+          "subj07_trial014876",
+          "subj07_trial023863",
+          "subj07_trial026343"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd07954",
+      "question_id": 167888,
+      "answer_id": 167888,
+      "category": "landscape yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial013633",
+          "subj01_trial021347",
+          "subj01_trial023671"
+        ],
+        "subj02": [
+          "subj02_trial013633",
+          "subj02_trial021347",
+          "subj02_trial023671"
+        ],
+        "subj05": [
+          "subj05_trial013633",
+          "subj05_trial021347",
+          "subj05_trial023671"
+        ],
+        "subj07": [
+          "subj07_trial013633",
+          "subj07_trial021347",
+          "subj07_trial023671"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd67237",
+      "question_id": 1434294,
+      "answer_id": 1434294,
+      "category": "food",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial016790",
+          "subj01_trial018642",
+          "subj01_trial018905"
+        ],
+        "subj02": [
+          "subj02_trial016790",
+          "subj02_trial018642",
+          "subj02_trial018905"
+        ],
+        "subj05": [
+          "subj05_trial016790",
+          "subj05_trial018642",
+          "subj05_trial018905"
+        ],
+        "subj07": [
+          "subj07_trial016790",
+          "subj07_trial018642",
+          "subj07_trial018905"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd08415",
+      "question_id": 177596,
+      "answer_id": 177596,
+      "category": "building yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial004679",
+          "subj01_trial012661",
+          "subj01_trial028671"
+        ],
+        "subj02": [
+          "subj02_trial004679",
+          "subj02_trial012661",
+          "subj02_trial028671"
+        ],
+        "subj05": [
+          "subj05_trial004679",
+          "subj05_trial012661",
+          "subj05_trial028671"
+        ],
+        "subj07": [
+          "subj07_trial004679",
+          "subj07_trial012661",
+          "subj07_trial028671"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd69839",
+      "question_id": 1490650,
+      "answer_id": 1490650,
+      "category": "building yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial013971",
+          "subj01_trial014472",
+          "subj01_trial014750"
+        ],
+        "subj02": [
+          "subj02_trial013971",
+          "subj02_trial014472",
+          "subj02_trial014750"
+        ],
+        "subj05": [
+          "subj05_trial013971",
+          "subj05_trial014472",
+          "subj05_trial014750"
+        ],
+        "subj07": [
+          "subj07_trial013971",
+          "subj07_trial014472",
+          "subj07_trial014750"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd21192",
+      "question_id": 450021,
+      "answer_id": 450021,
+      "category": "accessory yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial006511",
+          "subj01_trial006704",
+          "subj01_trial006858"
+        ],
+        "subj02": [
+          "subj02_trial006511",
+          "subj02_trial006704",
+          "subj02_trial006858"
+        ],
+        "subj05": [
+          "subj05_trial006511",
+          "subj05_trial006704",
+          "subj05_trial006858"
+        ],
+        "subj07": [
+          "subj07_trial006511",
+          "subj07_trial006704",
+          "subj07_trial006858"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd38641",
+      "question_id": 822748,
+      "answer_id": 822748,
+      "category": "furniture yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial003640",
+          "subj01_trial013665",
+          "subj01_trial016396"
+        ],
+        "subj02": [
+          "subj02_trial003640",
+          "subj02_trial013665",
+          "subj02_trial016396"
+        ],
+        "subj05": [
+          "subj05_trial003640",
+          "subj05_trial013665",
+          "subj05_trial016396"
+        ],
+        "subj07": [
+          "subj07_trial003640",
+          "subj07_trial013665",
+          "subj07_trial016396"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd66643",
+      "question_id": 1421883,
+      "answer_id": 1421883,
+      "category": "furniture yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial022815",
+          "subj01_trial022871",
+          "subj01_trial022965"
+        ],
+        "subj02": [
+          "subj02_trial022815",
+          "subj02_trial022871",
+          "subj02_trial022965"
+        ],
+        "subj05": [
+          "subj05_trial022815",
+          "subj05_trial022871",
+          "subj05_trial022965"
+        ],
+        "subj07": [
+          "subj07_trial022815",
+          "subj07_trial022871",
+          "subj07_trial022965"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd43445",
+      "question_id": 926526,
+      "answer_id": 926526,
+      "category": "accessory yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial005335",
+          "subj01_trial005551",
+          "subj01_trial014123"
+        ],
+        "subj02": [
+          "subj02_trial005335",
+          "subj02_trial005551",
+          "subj02_trial014123"
+        ],
+        "subj05": [
+          "subj05_trial005335",
+          "subj05_trial005551",
+          "subj05_trial014123"
+        ],
+        "subj07": [
+          "subj07_trial005335",
+          "subj07_trial005551",
+          "subj07_trial014123"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd22957",
+      "question_id": 488289,
+      "answer_id": 488289,
+      "category": "transport yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial013808",
+          "subj01_trial019542",
+          "subj01_trial020165"
+        ],
+        "subj02": [
+          "subj02_trial013808",
+          "subj02_trial019542",
+          "subj02_trial020165"
+        ],
+        "subj05": [
+          "subj05_trial013808",
+          "subj05_trial019542",
+          "subj05_trial020165"
+        ],
+        "subj07": [
+          "subj07_trial013808",
+          "subj07_trial019542",
+          "subj07_trial020165"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd26307",
+      "question_id": 559678,
+      "answer_id": 559678,
+      "category": "water yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial003903",
+          "subj01_trial005857",
+          "subj01_trial027495"
+        ],
+        "subj02": [
+          "subj02_trial003903",
+          "subj02_trial005857",
+          "subj02_trial027495"
+        ],
+        "subj05": [
+          "subj05_trial003903",
+          "subj05_trial005857",
+          "subj05_trial027495"
+        ],
+        "subj07": [
+          "subj07_trial003903",
+          "subj07_trial005857",
+          "subj07_trial027495"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd16702",
+      "question_id": 354085,
+      "answer_id": 354085,
+      "category": "transport yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial000781",
+          "subj01_trial002782",
+          "subj01_trial009532"
+        ],
+        "subj02": [
+          "subj02_trial000781",
+          "subj02_trial002782",
+          "subj02_trial009532"
+        ],
+        "subj05": [
+          "subj05_trial000781",
+          "subj05_trial002782",
+          "subj05_trial009532"
+        ],
+        "subj07": [
+          "subj07_trial000781",
+          "subj07_trial002782",
+          "subj07_trial009532"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd60251",
+      "question_id": 1285429,
+      "answer_id": 1285429,
+      "category": "transport yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial011976",
+          "subj01_trial012152",
+          "subj01_trial013049"
+        ],
+        "subj02": [
+          "subj02_trial011976",
+          "subj02_trial012152",
+          "subj02_trial013049"
+        ],
+        "subj05": [
+          "subj05_trial011976",
+          "subj05_trial012152",
+          "subj05_trial013049"
+        ],
+        "subj07": [
+          "subj07_trial011976",
+          "subj07_trial012152",
+          "subj07_trial013049"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd14931",
+      "question_id": 316450,
+      "answer_id": 316450,
+      "category": "natural yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial011161",
+          "subj01_trial013438",
+          "subj01_trial024669"
+        ],
+        "subj02": [
+          "subj02_trial011161",
+          "subj02_trial013438",
+          "subj02_trial024669"
+        ],
+        "subj05": [
+          "subj05_trial011161",
+          "subj05_trial013438",
+          "subj05_trial024669"
+        ],
+        "subj07": [
+          "subj07_trial011161",
+          "subj07_trial013438",
+          "subj07_trial024669"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd51928",
+      "question_id": 1107588,
+      "answer_id": 1107588,
+      "category": "water yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial013166",
+          "subj01_trial023143",
+          "subj01_trial023285"
+        ],
+        "subj02": [
+          "subj02_trial013166",
+          "subj02_trial023143",
+          "subj02_trial023285"
+        ],
+        "subj05": [
+          "subj05_trial013166",
+          "subj05_trial023143",
+          "subj05_trial023285"
+        ],
+        "subj07": [
+          "subj07_trial013166",
+          "subj07_trial023143",
+          "subj07_trial023285"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd62748",
+      "question_id": 1338551,
+      "answer_id": 1338551,
+      "category": "natural yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial026287",
+          "subj01_trial026504",
+          "subj01_trial026628"
+        ],
+        "subj02": [
+          "subj02_trial026287",
+          "subj02_trial026504",
+          "subj02_trial026628"
+        ],
+        "subj05": [
+          "subj05_trial026287",
+          "subj05_trial026504",
+          "subj05_trial026628"
+        ],
+        "subj07": [
+          "subj07_trial026287",
+          "subj07_trial026504",
+          "subj07_trial026628"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd68741",
+      "question_id": 1466799,
+      "answer_id": 1466799,
+      "category": "natural yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial012487",
+          "subj01_trial012762",
+          "subj01_trial012776"
+        ],
+        "subj02": [
+          "subj02_trial012487",
+          "subj02_trial012762",
+          "subj02_trial012776"
+        ],
+        "subj05": [
+          "subj05_trial012487",
+          "subj05_trial012762",
+          "subj05_trial012776"
+        ],
+        "subj07": [
+          "subj07_trial012487",
+          "subj07_trial012762",
+          "subj07_trial012776"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd06558",
+      "question_id": 138513,
+      "answer_id": 138513,
+      "category": "natural yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial000267",
+          "subj01_trial000439",
+          "subj01_trial022886"
+        ],
+        "subj02": [
+          "subj02_trial000267",
+          "subj02_trial000439",
+          "subj02_trial022886"
+        ],
+        "subj05": [
+          "subj05_trial000267",
+          "subj05_trial000439",
+          "subj05_trial022886"
+        ],
+        "subj07": [
+          "subj07_trial000267",
+          "subj07_trial000439",
+          "subj07_trial022886"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd65769",
+      "question_id": 1403479,
+      "answer_id": 1403479,
+      "category": "water yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial013165",
+          "subj01_trial013290",
+          "subj01_trial013447"
+        ],
+        "subj02": [
+          "subj02_trial013165",
+          "subj02_trial013290",
+          "subj02_trial013447"
+        ],
+        "subj05": [
+          "subj05_trial013165",
+          "subj05_trial013290",
+          "subj05_trial013447"
+        ],
+        "subj07": [
+          "subj07_trial013165",
+          "subj07_trial013290",
+          "subj07_trial013447"
+        ]
+      }
+    },
+    {
+      "image_id": "nsd19436",
+      "question_id": 412625,
+      "answer_id": 412625,
+      "category": "toy yes/no",
+      "trial_ids_by_subject": {
+        "subj01": [
+          "subj01_trial003763",
+          "subj01_trial019279",
+          "subj01_trial021717"
+        ],
+        "subj02": [
+          "subj02_trial003763",
+          "subj02_trial019279",
+          "subj02_trial021717"
+        ],
+        "subj05": [
+          "subj05_trial003763",
+          "subj05_trial019279",
+          "subj05_trial021717"
+        ],
+        "subj07": [
+          "subj07_trial003763",
+          "subj07_trial019279",
+          "subj07_trial021717"
+        ]
+      }
+    }
+  ]
+}
