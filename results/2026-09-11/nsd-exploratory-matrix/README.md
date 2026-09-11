@@ -1,6 +1,6 @@
 # Real NSD exploratory matrix: incremental results
 
-**24 of 164 cases are complete.** The remaining comparisons are running; this is
+**25 of 164 cases are complete.** The remaining comparisons are running; this is
 not a complete benchmark table. Accuracy and neural-dependence measurements
 are diagnostics, without performance stopping thresholds.
 
@@ -230,3 +230,8 @@ Subject02/seed41 NPP-sqrt-information-gain completed the matched 256-example, 16
 budget and 893 required predictions. Stratified-subset accuracy is 46.0938%
 (category macro 46.26736%), with matched NDG 10.40
 percentage points. The remaining fixed matrix continues without performance stopping thresholds.
+
+
+## Twenty-fifth completed case: subject05 CE
+
+Subject05/seed41 CE completed the matched 256-example, 16-update budget and 1,786 required predictions across the 14 evaluation conditions. Stratified-subset accuracy is 38.2812% (category macro 37.41319%), with matched NDG 1.60 percentage points. The remaining fixed matrix continues without performance stopping thresholds.

@@ -1,6 +1,6 @@
 # NSD exploratory matrix report
 
-Matrix status: **partial** (24/164 validated complete).
+Matrix status: **partial** (25/164 validated complete).
 No performance threshold filters this report.
 
 | Case | Status | Available conditions | Validation findings |
@@ -29,7 +29,7 @@ No performance threshold filters this report.
 | P4_nsd_vqa_subj02_seed41_npp-geometric | complete | 7 | none |
 | P4_nsd_vqa_subj02_seed41_npp-information-gain | complete | 7 | none |
 | P4_nsd_vqa_subj02_seed41_npp-sqrt-information-gain | complete | 7 | none |
-| P2_nsd_vqa_subj05_seed41_ce | pending | 0 | checkpoint_identity_missing |
+| P2_nsd_vqa_subj05_seed41_ce | complete | 14 | none |
 | P2_nsd_vqa_subj05_seed41_exact-image-opsd | pending | 0 | checkpoint_identity_missing |
 | P2_nsd_vqa_subj05_seed41_map-image-opsd | pending | 0 | checkpoint_identity_missing |
 | P2_nsd_vqa_subj05_seed41_uniform-mixture | pending | 0 | checkpoint_identity_missing |
@@ -376,3 +376,8 @@ Relative to subject02 CE, paired accuracy difference is 7.0312
 points (interval 0.0000 to 14.8438);
 paired delta-NDG is 8.00 points (interval
 -2.40 to 18.40).
+
+
+## Twenty-fifth completed case: subject05 CE
+
+Subject05/seed41 CE completed the matched 256-example, 16-update budget and 1,786 required predictions across the 14 evaluation conditions. Accuracy is 38.2812%, with category macro accuracy 37.41319%. Matched correct-minus-shuffled NDG is 1.60 percentage points (95% image-bootstrap interval -8.00 to 10.40; n=125). The remaining fixed matrix continues without performance stopping thresholds.

@@ -1,6 +1,6 @@
 {
-  "checked_utc": "2026-09-11T12:32:08.995153+00:00",
-  "completed_count": 24,
+  "checked_utc": "2026-09-11T15:27:41.174695+00:00",
+  "completed_count": 25,
   "declared_case_count": 164,
   "completed_cases": [
     "P2_nsd_vqa_subj01_seed41_ce",
@@ -26,7 +26,8 @@
     "P4_nsd_vqa_subj02_seed41_npp-opsd",
     "P4_nsd_vqa_subj02_seed41_npp-geometric",
     "P4_nsd_vqa_subj02_seed41_npp-information-gain",
-    "P4_nsd_vqa_subj02_seed41_npp-sqrt-information-gain"
+    "P4_nsd_vqa_subj02_seed41_npp-sqrt-information-gain",
+    "P2_nsd_vqa_subj05_seed41_ce"
   ],
   "queue_case": "P2_nsd_vqa_subj05_seed41_ce",
   "queue_status": "running",
