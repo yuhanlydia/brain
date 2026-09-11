@@ -1,4 +1,7 @@
-# NPP-OPSD Implementation Plan
+# NPP-OPSD Implementation Plan (legacy expected-log plan)
+
+> Superseded by `docs/arithmetic_npp_method.md`; old alpha and expected-log
+> requirements below are historical and must not be used for current runs.
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use
 > `superpowers:subagent-driven-development` to implement this plan task by
@@ -416,4 +419,3 @@ smoke metrics before any completion claim.
 - [ ] **Step 6: Commit documentation and scripts**
 
 Commit: `docs: add NPP-OPSD reproduction workflow`
-

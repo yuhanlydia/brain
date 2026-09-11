@@ -1,4 +1,4 @@
-# Explicit raw-strength ablation; the primary profile is configs/toy_cpu.yaml.
+# Information-gain-scaled arithmetic-ratio ablation.
 method: NPP-OPSD
 ablation: raw_strength
 backend: toy
@@ -16,5 +16,9 @@ optimizer:
 trainer:
   ce_weight: 0.0
   npp_weight: 1.0
-  alpha_scale: 1.0
-  alpha_max: null
+  pooling: arithmetic
+  ratio_strength: 1.0
+  strength_mode: information_gain
+  strength_max: null
+  score_semantics: log_likelihood
+  gradient_accumulation_steps: 1

@@ -98,26 +98,34 @@ data when any requested real asset or method is missing.
 For NPP-OPSD the runner must forward the complete `trainer` mapping into
 `NPPTrainer(adapter, optimizer, generation_config=config.get("generation", {}),
 **config.get("trainer", {}))`, or implement precisely the same field semantics.
-In particular, it must not ignore or override `trainer.alpha_scale` or
-`trainer.alpha_max`. The primary trainer and every primary toy/NSD NPP-OPSD
-profile use `alpha_scale: 1.0`, `alpha_max: 1.0`:
-`alpha = min(information_gain / alpha_scale, alpha_max)`.
-These are fixed configuration values, not a trainable gate.
+It must preserve the explicit objective fields. The primary profiles use
+`pooling: arithmetic`, `ratio_strength: 1.0`, `strength_mode: constant`, and
+`score_semantics: log_likelihood`. Thus the teacher correction is
 
-The low-level `build_npp_target(..., alpha_max=None)` default remains the raw
-mathematical option `alpha = information_gain`; in raw mode `alpha_scale`
-does not rescale the value. The dedicated
-`configs/ablations/toy_cpu_raw_strength.yaml` opts into it with
-`alpha_max: null` and can be run with:
+```math
+\log m_w(v)-\log m_r(v),\qquad
+m_w(v)=\sum_i w_iT_i(v),\quad m_r(v)=\sum_i r_iT_i(v),
+```
+
+and the detached on-policy target is
+
+```math
+\log Q(v)=\log S_{\mathrm{anchor}}(v)
++\lambda[\log m_w(v)-\log m_r(v)]-\log Z,
+\qquad \lambda=1.
+```
+
+The dedicated `configs/ablations/toy_cpu_raw_strength.yaml` changes only the
+strength rule to `information_gain`; it can be run with:
 
 ```bash
 brain-npp smoke --config configs/ablations/toy_cpu_raw_strength.yaml
 ```
 
-Label this as the raw-strength ablation, not the primary method. The toy
-fixture's information gain is below the cap, so its raw and bounded smoke
-curves can coincide; the regression suite also exercises information gain
-above one to verify that the two configurations produce distinct targets.
+Label this as an information-gain strength ablation, not the primary method.
+The historical expected-log aggregation is separately isolated in
+`configs/ablations/toy_cpu_geometric_kl.yaml`; never report it as arithmetic
+posterior-predictive mixing.
 
 Create ignored, machine-local configs from the tracked templates and fill the
 four paths in each file:

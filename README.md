@@ -7,6 +7,21 @@ manifest validation, brain-input controls and metrics, a deterministic CPU toy
 optimizer, and a fail-closed adapter boundary for local VINDEX/LLaVA-7B or
 BrainJanus-7B integrations.
 
+The primary target is the arithmetic posterior-predictive density ratio:
+
+```math
+m_w(v)=\sum_i w_iT_i(v),\quad m_r(v)=\sum_i r_iT_i(v),\quad
+Q(v)\propto S_{\mathrm{anchor}}(v)\left[\frac{m_w(v)}{m_r(v)}\right]^\lambda.
+```
+
+The default is `pooling=arithmetic`, `ratio_strength` \(\lambda=1\), and a
+true unclipped forward KL. Expected-log (geometric) aggregation and the
+official OPSD pointwise-clipped surrogate are available only through
+separately named ablations. The rollout mask is carried by an immutable
+`Rollout`; teacher construction is detached and completed before the single
+live student rollout forward. Optional CE uses gold `target_ids/target_mask`,
+never the student's own sampled tokens as labels.
+
 The repository does **not** bundle NSD, VINDEX, LLaVA-7B, BrainJanus-7B, or
 their checkpoints. No real NSD benchmark has been run from this repository,
 and this repository makes no numerical or state-of-the-art claim.
@@ -68,6 +83,9 @@ factory, not claims that core `brain_npp` implements VINDEX/BrainJanus data
 loading or the named baseline algorithms. See [the reproduction guide](docs/reproduction.md)
 for setup and commands, and [the benchmark matrix](docs/benchmark_matrix.md)
 for required comparisons and controls.
+
+The exact arithmetic objective, invariants, and evaluation matrix are recorded
+in [the method contract](docs/arithmetic_npp_method.md).
 
 ## Real experiment profiles
 

@@ -209,7 +209,12 @@ def create_adapter(config):
     config = {
         "backend": "vindex",
         "paths": {"vindex_checkout": str(checkout), "model": str(checkout), "data": str(checkout)},
-        "trainer": {"alpha_scale": 1.0, "alpha_max": 0.0},
+        "trainer": {
+            "pooling": "arithmetic",
+            "ratio_strength": 0.0,
+            "strength_mode": "constant",
+            "score_semantics": "log_likelihood",
+        },
     }
     config_path = tmp_path / "dataclass.yaml"
     config_path.write_text(yaml.safe_dump(config), encoding="utf-8")

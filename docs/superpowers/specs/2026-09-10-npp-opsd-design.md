@@ -1,4 +1,8 @@
-# NPP-OPSD Design Specification
+# NPP-OPSD Design Specification (legacy expected-log draft)
+
+> Superseded by `docs/arithmetic_npp_method.md`. This file is retained as
+> design history; its expected-log aggregation and alpha defaults are not the
+> current executable contract.
 
 **Status:** Approved for implementation  
 **Date:** 2026-09-10  
@@ -309,4 +313,3 @@ The implementation is accepted only when:
 7. CPU smoke performs a real optimization step and lowers NPP loss;
 8. a missing real backend or dataset raises an actionable error;
 9. the complete test suite and CLI smoke exit successfully from a clean clone.
-

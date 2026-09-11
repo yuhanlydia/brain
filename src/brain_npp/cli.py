@@ -91,6 +91,7 @@ def run_smoke(config: Mapping[str, Any]) -> dict[str, Any]:
     )
     batch = adapter.make_batch()
     diagnostics = [trainer.step(batch) for _ in range(steps)]
+    trainer.flush()
     losses = [step["npp_loss"] for step in diagnostics]
     if not all(math.isfinite(loss) for loss in losses):
         raise ValueError("smoke produced a non-finite NPP loss")
@@ -103,6 +104,12 @@ def run_smoke(config: Mapping[str, Any]) -> dict[str, Any]:
         )
     return {
         "method": "NPP-OPSD",
+        "objective": {
+            "pooling": trainer.pooling,
+            "ratio_strength": trainer.ratio_strength,
+            "strength_mode": trainer.strength_mode,
+            "score_semantics": trainer.score_semantics,
+        },
         "steps": steps,
         "npp_losses": losses,
         "initial_npp_loss_mean": initial_mean,

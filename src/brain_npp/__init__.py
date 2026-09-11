@@ -2,14 +2,17 @@
 
 from .posterior import (
     NeuralPosterior,
+    ScoreSemantics,
     build_neural_posterior,
     normalize_candidate_prior,
 )
-from .protocols import PosteriorTeacherStudent
+from .protocols import PosteriorTeacherStudent, Rollout
 
 __all__ = [
     "NeuralPosterior",
+    "ScoreSemantics",
     "build_neural_posterior",
     "normalize_candidate_prior",
     "PosteriorTeacherStudent",
+    "Rollout",
 ]

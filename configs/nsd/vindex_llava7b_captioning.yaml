@@ -1,7 +1,11 @@
 method: NPP-OPSD
 trainer:
-  alpha_scale: 1.0
-  alpha_max: 1.0
+  pooling: arithmetic
+  ratio_strength: 1.0
+  strength_mode: constant
+  strength_max: null
+  score_semantics: log_likelihood
+  gradient_accumulation_steps: 16
 backend: vindex
 task: nsd_captioning
 hardware_profile: configs/hardware/gpu16gb.yaml
