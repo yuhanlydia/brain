@@ -1,6 +1,6 @@
 # Real NSD exploratory matrix: incremental results
 
-**8 of 164 cases are complete.** The remaining comparisons are running; this is
+**9 of 164 cases are complete.** The remaining comparisons are running; this is
 not a complete benchmark table. Accuracy and neural-dependence measurements
 are diagnostics, without performance stopping thresholds.
 
@@ -114,3 +114,9 @@ Subject01/seed41 VAD-style full image completed the matched 256-example,
 category macro accuracy 53.76736%. Paired comparisons and uncertainty
 are recorded in `CURRENT_RESULTS.md`. This is the documented VAD-style adaptation;
 it is not an official-code reproduction.
+
+## Ninth completed case: NPP-OPSD
+
+Subject01/seed41 NPP-OPSD completed the matched 256-example, 16-update
+budget and 893 required predictions. Accuracy is 45.3125%, with
+category macro accuracy 45.32986%. Paired comparisons and uncertainty are in `CURRENT_RESULTS.md`.
