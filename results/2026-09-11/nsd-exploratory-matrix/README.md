@@ -1,6 +1,6 @@
 # Real NSD exploratory matrix: incremental results
 
-**4 of 164 cases are complete.** The remaining comparisons are running; this is
+**5 of 164 cases are complete.** The remaining comparisons are running; this is
 not a complete benchmark table. Accuracy and neural-dependence measurements
 are diagnostics, without performance stopping thresholds.
 
@@ -81,3 +81,11 @@ with 893 predictions across the required controls and repeat diagnostics.
 Accuracy is 49.21875% (63/128), and category macro accuracy is 50.98958%.
 The paired comparisons and uncertainty appear in `CURRENT_RESULTS.md`;
 these remain exploratory single-subject, single-seed results.
+
+## Fifth completed case: plain posterior mixture
+
+Subject01/seed41 plain posterior mixture completed the same 256-example,
+16-update budget and 893 required predictions. Accuracy is 49.21875%,
+with category macro accuracy 50.98958%.
+Paired differences and uncertainty are recorded in `CURRENT_RESULTS.md`.
+The remaining fixed matrix continues without performance stopping thresholds.
