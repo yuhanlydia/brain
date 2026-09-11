@@ -1,6 +1,6 @@
 # NSD exploratory matrix report
 
-Matrix status: **partial** (16/164 validated complete).
+Matrix status: **partial** (17/164 validated complete).
 No performance threshold filters this report.
 
 | Case | Status | Available conditions | Validation findings |
@@ -21,7 +21,7 @@ No performance threshold filters this report.
 | P2_nsd_vqa_subj02_seed41_exact-image-opsd | complete | 7 | none |
 | P2_nsd_vqa_subj02_seed41_map-image-opsd | complete | 7 | none |
 | P2_nsd_vqa_subj02_seed41_uniform-mixture | complete | 7 | none |
-| P2_nsd_vqa_subj02_seed41_plain-posterior-mixture | pending | 0 | checkpoint_identity_missing |
+| P2_nsd_vqa_subj02_seed41_plain-posterior-mixture | complete | 7 | none |
 | P2_nsd_vqa_subj02_seed41_credit-style-image-contrastive | pending | 0 | checkpoint_identity_missing |
 | P2_nsd_vqa_subj02_seed41_dapd-brain-text-reference | pending | 0 | checkpoint_identity_missing |
 | P2_nsd_vqa_subj02_seed41_vad-style-full-image | pending | 0 | checkpoint_identity_missing |
@@ -277,3 +277,15 @@ Relative to subject02 CE, paired accuracy difference is 10.9375
 points (interval -1.5625 to 22.6562);
 paired delta-NDG is 12.00 points (interval
 2.40 to 21.60).
+
+## Seventeenth completed case: subject02 plain-posterior-mixture
+
+Subject02/seed41 plain-posterior-mixture completed the matched 256-example, 16-update
+budget and 893 required predictions. Accuracy is 50.7812%, with category
+macro accuracy 52.98611%. Matched correct-minus-shuffled NDG is
+16.00 percentage points (95% image-bootstrap interval
+9.60 to 22.40; n=125).
+Relative to subject02 CE, paired accuracy difference is 11.7188
+points (interval -0.7812 to 23.4375);
+paired delta-NDG is 13.60 points (interval
+4.00 to 24.00).
