@@ -1,0 +1,24 @@
+# Historical expected-log teacher aggregation, isolated as an ablation.
+method: NPP-OPSD
+ablation: geometric_expected_log
+backend: toy
+seed: 314159
+steps: 30
+toy:
+  batch_size: 4
+  time_steps: 3
+  candidates: 4
+  vocab_size: 5
+generation:
+  max_new_tokens: 3
+optimizer:
+  lr: 0.08
+trainer:
+  ce_weight: 0.0
+  npp_weight: 1.0
+  pooling: geometric
+  ratio_strength: 1.0
+  strength_mode: information_gain
+  strength_max: 1.0
+  score_semantics: log_likelihood
+  gradient_accumulation_steps: 1
