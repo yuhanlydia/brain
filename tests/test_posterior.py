@@ -130,3 +130,20 @@ def test_prior_normalization_is_shift_invariant_with_representable_differences(d
     )
     baseline = normalize_candidate_prior(log_prior, mask)
     torch.testing.assert_close(normalized, baseline)
+
+
+def test_extreme_score_outside_prior_support_cannot_remove_valid_posterior():
+    result = build_neural_posterior(
+        torch.tensor([[-3e38, 3e38]]), torch.tensor([[0.0, -torch.inf]])
+    )
+    torch.testing.assert_close(result.posterior.exp(), torch.tensor([[1.0, 0.0]]))
+
+
+def test_compatibility_temperature_rescales_extreme_scores_before_centering():
+    result = build_neural_posterior(
+        torch.tensor([[-3e38, 3e38]]), torch.zeros((1, 2)),
+        score_semantics="compatibility", compatibility_temperature=1e38,
+    )
+    torch.testing.assert_close(
+        result.posterior.exp(), torch.tensor([[0.002472623, 0.997527377]])
+    )

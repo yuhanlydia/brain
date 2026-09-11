@@ -49,7 +49,7 @@ def normalize_candidate_prior(
     masked = values.masked_fill(~mask, -torch.inf)
     if not torch.isfinite(masked).any(dim=-1).all():
         raise ValueError("each row must have prior support")
-    return masked - torch.logsumexp(masked, dim=-1, keepdim=True)
+    return torch.log_softmax(masked, dim=-1)
 
 
 def build_neural_posterior(
@@ -99,9 +99,14 @@ def build_neural_posterior(
     if score_semantics == "posterior_logits":
         posterior_unnormalized = scores.masked_fill(~mask, -torch.inf)
     else:
-        evidence = scores
+        evidence = scores.masked_fill(~(mask & torch.isfinite(prior)), -torch.inf)
         if score_semantics == "compatibility":
             evidence = evidence / float(compatibility_temperature)
+        # Remove the arbitrary evidence offset before adding the prior. Ignore
+        # zero-prior candidates, and calibrate before subtracting extreme scores.
+        offset = evidence.amax(dim=-1, keepdim=True)
+        offset = torch.where(torch.isfinite(offset), offset, 0.0)
+        evidence = evidence - offset
         posterior_unnormalized = prior + evidence
         if log_proposal is not None:
             _validate_rank2_float("log_proposal", log_proposal)
@@ -120,9 +125,7 @@ def build_neural_posterior(
 
     if not torch.isfinite(posterior_unnormalized).any(dim=-1).all():
         raise ValueError("each row must have posterior support")
-    posterior = posterior_unnormalized - torch.logsumexp(
-        posterior_unnormalized, dim=-1, keepdim=True
-    )
+    posterior = torch.log_softmax(posterior_unnormalized, dim=-1)
     posterior_support = mask & torch.isfinite(posterior)
     if (posterior_support & torch.isneginf(prior)).any():
         raise ValueError("posterior support must be contained in prior support")
