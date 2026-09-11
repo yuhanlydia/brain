@@ -50,3 +50,11 @@ def test_factory_forwards_complete_options_to_core_trainer(monkeypatch):
     factory._create_trainer(object(), object(), trainer, generation)
     assert captured == {"generation_config":{"max_new_tokens":64}, "gradient_accumulation_steps":1,
                         "pooling":"geometric", "ratio_strength":.4, "strength_mode":"information_gain"}
+
+
+def test_factory_dispatches_full_phase_to_runnable_matrix_orchestrator(monkeypatch):
+    captured={}
+    monkeypatch.setattr(factory,"run_matrix_config",lambda config:captured.update(config) or {"status":"done"})
+    value=config();value["experiment"]["phase"]="matrix"
+    runner=factory.create_adapter(value)
+    assert runner.train(value)=={"status":"done"} and captured["experiment"]["phase"]=="matrix"

@@ -14,6 +14,7 @@ import torch
 from brain_npp.adapters.vindex import VindexP1Adapter, frozen_snapshot, load_validated_p1_artifacts, save_training_state
 from brain_npp.trainer import NPPTrainer
 from brain_npp.provenance import manifest_hash, realized_environment, sha256_file, sha256_tree
+from brain_npp.nsd_experiment import run_matrix_config
 
 
 def _mapping(value, name):
@@ -180,6 +181,16 @@ class VindexP1Runner:
         return result
 
 
+class VindexMatrixRunner:
+    def train(self, config: Mapping[str, Any]):
+        return run_matrix_config(config)
+
+
 def create_adapter(config):
-    _validate_scope(config)
-    return VindexP1Runner()
+    experiment = _mapping(config.get("experiment"), "experiment")
+    if experiment.get("phase") == "P1":
+        _validate_scope(config)
+        return VindexP1Runner()
+    if experiment.get("phase") in {"P2", "P3", "P4", "matrix", "captioning"}:
+        return VindexMatrixRunner()
+    raise ValueError("experiment.phase must select P1 or a full NSD matrix phase")
