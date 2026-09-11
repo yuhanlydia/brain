@@ -1,0 +1,17 @@
+{
+  "config_sha256": "9d3e49c5c75379829f924f1a63dcf48e37982819a75a0b1d2d34aca5d1e348ad",
+  "checkpoint_sha256_at_interruption": "74a6c16bea02a574ecd4ed56b7918cfd0befcc65c64ea0f26e36744124056b8d",
+  "cursor_at_interruption": 16,
+  "steps_at_interruption": 1,
+  "interrupted_process_returncode": -15,
+  "interrupted_utc": "2026-09-11T05:49:43.648704+00:00",
+  "history_before": [
+    {
+      "loss": 3.2194773014634848,
+      "micro_examples": 16,
+      "gradient_norm": 11.868424184307232,
+      "update_seconds": 9.888257734011859,
+      "peak_cuda_bytes": 7245074432
+    }
+  ]
+}
