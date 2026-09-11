@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-09-11T06:40:26.810044+00:00",
+  "completed_count": 3,
+  "declared_case_count": 164,
+  "completed_cases": [
+    "P2_nsd_vqa_subj01_seed41_ce",
+    "P2_nsd_vqa_subj01_seed41_exact-image-opsd",
+    "P2_nsd_vqa_subj01_seed41_map-image-opsd"
+  ],
+  "queue_case": "P2_nsd_vqa_subj01_seed41_uniform-mixture",
+  "queue_status": "running",
+  "note": "Point-in-time execution status; the full experiment goal remains active."
+}

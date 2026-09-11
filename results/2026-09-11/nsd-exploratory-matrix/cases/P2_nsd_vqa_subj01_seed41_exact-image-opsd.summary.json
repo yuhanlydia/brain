@@ -1,0 +1,550 @@
+{
+  "archive": "P2_nsd_vqa_subj01_seed41_exact-image-opsd.tar.gz",
+  "archive_bytes": 158570,
+  "archive_sha256": "108175e1db8950d93404fd6e2aa7af236660ab97ff3c7c17a9c4f87facdc4d32",
+  "case_id": "P2_nsd_vqa_subj01_seed41_exact-image-opsd",
+  "contents": "Predictions, per-example scores, summaries, selected examples, config, schedule and checkpoint identity; model tensors remain local.",
+  "evaluation": {
+    "cohort_examples": 128,
+    "metrics": {
+      "trained:correct:repeat1": {
+        "posterior": {
+          "conditional_brier": null,
+          "conditional_count": 0,
+          "conditional_ece": null,
+          "conditional_nll": null,
+          "conditional_nll_infinite_count": 0,
+          "conditioning": "sampled-gallery",
+          "coverage": 0.0,
+          "mean_entropy": 0.8543159232711426
+        },
+        "task": {
+          "accuracy": 0.515625,
+          "category_accuracy": {
+            "accessory yes/no": 0.5,
+            "action": 0.25,
+            "animal": 0.5,
+            "animal yes/no": 0.75,
+            "appliance yes/no": 0.75,
+            "building yes/no": 0.75,
+            "clothing yes/no": 0.5,
+            "color": 0.4,
+            "counting": 0.6666666666666666,
+            "electronic yes/no": 0.25,
+            "food": 0.0,
+            "food yes/no": 0.5,
+            "furniture yes/no": 0.75,
+            "holding": 0.0,
+            "household yes/no": 0.5,
+            "landscape yes/no": 0.25,
+            "location": 0.5,
+            "natural yes/no": 0.75,
+            "other yes/no": 0.0,
+            "person yes/no": 0.75,
+            "plant yes/no": 0.75,
+            "pose": 0.5,
+            "position": 0.75,
+            "scene": 0.75,
+            "sport yes/no": 0.5,
+            "structure yes/no": 0.75,
+            "toilet yes/no": 1.0,
+            "toy yes/no": 1.0,
+            "transport yes/no": 0.25,
+            "vehicle": 0.0,
+            "vehicle yes/no": 0.5,
+            "water yes/no": 1.0
+          },
+          "category_macro": 0.5333333333333333,
+          "reference_semantics": "auto-generated-answer-alternatives-not-human-consensus"
+        }
+      },
+      "trained:correct:repeat2": {
+        "posterior": {
+          "conditional_brier": null,
+          "conditional_count": 0,
+          "conditional_ece": null,
+          "conditional_nll": null,
+          "conditional_nll_infinite_count": 0,
+          "conditioning": "sampled-gallery",
+          "coverage": 0.0,
+          "mean_entropy": 0.9204045070636375
+        },
+        "task": {
+          "accuracy": 0.5703125,
+          "category_accuracy": {
+            "accessory yes/no": 0.5,
+            "action": 0.5,
+            "animal": 0.25,
+            "animal yes/no": 0.75,
+            "appliance yes/no": 0.75,
+            "building yes/no": 0.75,
+            "clothing yes/no": 0.5,
+            "color": 0.4,
+            "counting": 0.5555555555555556,
+            "electronic yes/no": 0.75,
+            "food": 0.0,
+            "food yes/no": 0.75,
+            "furniture yes/no": 1.0,
+            "holding": 0.0,
+            "household yes/no": 0.5,
+            "landscape yes/no": 0.0,
+            "location": 0.5,
+            "natural yes/no": 1.0,
+            "other yes/no": 0.0,
+            "person yes/no": 1.0,
+            "plant yes/no": 1.0,
+            "pose": 0.5,
+            "position": 0.5,
+            "scene": 1.0,
+            "sport yes/no": 0.25,
+            "structure yes/no": 0.75,
+            "toilet yes/no": 1.0,
+            "toy yes/no": 1.0,
+            "transport yes/no": 0.75,
+            "vehicle": 0.0,
+            "vehicle yes/no": 0.75,
+            "water yes/no": 1.0
+          },
+          "category_macro": 0.5923611111111111,
+          "reference_semantics": "auto-generated-answer-alternatives-not-human-consensus"
+        }
+      },
+      "trained:correct:repeat3": {
+        "posterior": {
+          "conditional_brier": null,
+          "conditional_count": 0,
+          "conditional_ece": null,
+          "conditional_nll": null,
+          "conditional_nll_infinite_count": 0,
+          "conditioning": "sampled-gallery",
+          "coverage": 0.0,
+          "mean_entropy": 0.9590738690532685
+        },
+        "task": {
+          "accuracy": 0.5703125,
+          "category_accuracy": {
+            "accessory yes/no": 0.5,
+            "action": 0.5,
+            "animal": 0.25,
+            "animal yes/no": 0.75,
+            "appliance yes/no": 0.75,
+            "building yes/no": 1.0,
+            "clothing yes/no": 0.5,
+            "color": 0.4,
+            "counting": 0.5555555555555556,
+            "electronic yes/no": 0.75,
+            "food": 0.0,
+            "food yes/no": 0.75,
+            "furniture yes/no": 1.0,
+            "holding": 0.0,
+            "household yes/no": 0.5,
+            "landscape yes/no": 0.0,
+            "location": 0.5,
+            "natural yes/no": 1.0,
+            "other yes/no": 0.0,
+            "person yes/no": 0.75,
+            "plant yes/no": 1.0,
+            "pose": 0.5,
+            "position": 0.5,
+            "scene": 1.0,
+            "sport yes/no": 0.25,
+            "structure yes/no": 0.75,
+            "toilet yes/no": 1.0,
+            "toy yes/no": 1.0,
+            "transport yes/no": 0.75,
+            "vehicle": 0.0,
+            "vehicle yes/no": 0.75,
+            "water yes/no": 1.0
+          },
+          "category_macro": 0.5923611111111111,
+          "reference_semantics": "auto-generated-answer-alternatives-not-human-consensus"
+        }
+      },
+      "trained:covariance-noise:repeat1": {
+        "posterior": {
+          "conditional_brier": null,
+          "conditional_count": 0,
+          "conditional_ece": null,
+          "conditional_nll": null,
+          "conditional_nll_infinite_count": 0,
+          "conditioning": "sampled-gallery",
+          "coverage": 0.0,
+          "mean_entropy": 0.8537431917042336
+        },
+        "task": {
+          "accuracy": 0.359375,
+          "category_accuracy": {
+            "accessory yes/no": 0.25,
+            "action": 0.25,
+            "animal": 0.0,
+            "animal yes/no": 0.5,
+            "appliance yes/no": 0.75,
+            "building yes/no": 0.25,
+            "clothing yes/no": 0.75,
+            "color": 0.2,
+            "counting": 0.5555555555555556,
+            "electronic yes/no": 0.5,
+            "food": 0.0,
+            "food yes/no": 0.5,
+            "furniture yes/no": 0.25,
+            "holding": 0.0,
+            "household yes/no": 0.75,
+            "landscape yes/no": 0.25,
+            "location": 0.0,
+            "natural yes/no": 0.75,
+            "other yes/no": 0.25,
+            "person yes/no": 0.0,
+            "plant yes/no": 0.25,
+            "pose": 0.5,
+            "position": 0.5,
+            "scene": 0.75,
+            "sport yes/no": 0.0,
+            "structure yes/no": 0.5,
+            "toilet yes/no": 0.0,
+            "toy yes/no": 1.0,
+            "transport yes/no": 0.0,
+            "vehicle": 0.25,
+            "vehicle yes/no": 0.75,
+            "water yes/no": 0.25
+          },
+          "category_macro": 0.35954861111111114,
+          "reference_semantics": "auto-generated-answer-alternatives-not-human-consensus"
+        }
+      },
+      "trained:shuffled:repeat1": {
+        "posterior": {
+          "conditional_brier": null,
+          "conditional_count": 0,
+          "conditional_ece": null,
+          "conditional_nll": null,
+          "conditional_nll_infinite_count": 0,
+          "conditioning": "sampled-gallery",
+          "coverage": 0.0,
+          "mean_entropy": 0.8335869319590958
+        },
+        "task": {
+          "accuracy": 0.376,
+          "category_accuracy": {
+            "accessory yes/no": 0.5,
+            "action": 0.0,
+            "animal": 0.0,
+            "animal yes/no": 0.25,
+            "appliance yes/no": 0.75,
+            "building yes/no": 1.0,
+            "clothing yes/no": 0.5,
+            "color": 0.2,
+            "counting": 0.42857142857142855,
+            "electronic yes/no": 0.5,
+            "food": 0.0,
+            "food yes/no": 0.5,
+            "furniture yes/no": 0.5,
+            "holding": 0.0,
+            "household yes/no": 0.5,
+            "landscape yes/no": 0.5,
+            "location": 0.0,
+            "natural yes/no": 0.5,
+            "other yes/no": 0.0,
+            "person yes/no": 0.25,
+            "plant yes/no": 0.75,
+            "pose": 0.25,
+            "position": 0.5,
+            "scene": 0.75,
+            "sport yes/no": 0.0,
+            "structure yes/no": 0.75,
+            "toilet yes/no": 1.0,
+            "toy yes/no": 1.0,
+            "transport yes/no": 0.0,
+            "vehicle": 0.25,
+            "vehicle yes/no": 0.25,
+            "water yes/no": 0.5
+          },
+          "category_macro": 0.40245535714285713,
+          "reference_semantics": "auto-generated-answer-alternatives-not-human-consensus"
+        }
+      },
+      "trained:wrong-subject:repeat1": {
+        "posterior": {
+          "conditional_brier": null,
+          "conditional_count": 0,
+          "conditional_ece": null,
+          "conditional_nll": null,
+          "conditional_nll_infinite_count": 0,
+          "conditioning": "sampled-gallery",
+          "coverage": 0.0,
+          "mean_entropy": 0.7786377874707839
+        },
+        "task": {
+          "accuracy": 0.515625,
+          "category_accuracy": {
+            "accessory yes/no": 0.5,
+            "action": 0.0,
+            "animal": 0.25,
+            "animal yes/no": 0.25,
+            "appliance yes/no": 0.75,
+            "building yes/no": 1.0,
+            "clothing yes/no": 0.5,
+            "color": 0.4,
+            "counting": 0.5555555555555556,
+            "electronic yes/no": 0.75,
+            "food": 0.0,
+            "food yes/no": 0.75,
+            "furniture yes/no": 1.0,
+            "holding": 0.0,
+            "household yes/no": 0.75,
+            "landscape yes/no": 0.25,
+            "location": 0.25,
+            "natural yes/no": 0.75,
+            "other yes/no": 0.0,
+            "person yes/no": 0.75,
+            "plant yes/no": 0.75,
+            "pose": 0.5,
+            "position": 0.5,
+            "scene": 0.5,
+            "sport yes/no": 0.75,
+            "structure yes/no": 0.75,
+            "toilet yes/no": 1.0,
+            "toy yes/no": 1.0,
+            "transport yes/no": 0.5,
+            "vehicle": 0.25,
+            "vehicle yes/no": 0.5,
+            "water yes/no": 0.75
+          },
+          "category_macro": 0.5376736111111111,
+          "reference_semantics": "auto-generated-answer-alternatives-not-human-consensus"
+        }
+      },
+      "trained:zero:repeat1": {
+        "posterior": {
+          "conditional_brier": null,
+          "conditional_count": 0,
+          "conditional_ece": null,
+          "conditional_nll": null,
+          "conditional_nll_infinite_count": 0,
+          "conditioning": "sampled-gallery",
+          "coverage": 0.0,
+          "mean_entropy": 1.292602032397809
+        },
+        "task": {
+          "accuracy": 0.3515625,
+          "category_accuracy": {
+            "accessory yes/no": 0.5,
+            "action": 0.0,
+            "animal": 0.0,
+            "animal yes/no": 0.25,
+            "appliance yes/no": 0.75,
+            "building yes/no": 0.5,
+            "clothing yes/no": 0.5,
+            "color": 0.2,
+            "counting": 0.4444444444444444,
+            "electronic yes/no": 0.25,
+            "food": 0.0,
+            "food yes/no": 0.5,
+            "furniture yes/no": 0.5,
+            "holding": 0.0,
+            "household yes/no": 0.75,
+            "landscape yes/no": 0.25,
+            "location": 0.0,
+            "natural yes/no": 0.5,
+            "other yes/no": 0.0,
+            "person yes/no": 0.0,
+            "plant yes/no": 0.5,
+            "pose": 0.5,
+            "position": 0.75,
+            "scene": 0.75,
+            "sport yes/no": 0.0,
+            "structure yes/no": 0.75,
+            "toilet yes/no": 1.0,
+            "toy yes/no": 1.0,
+            "transport yes/no": 0.0,
+            "vehicle": 0.25,
+            "vehicle yes/no": 0.5,
+            "water yes/no": 0.25
+          },
+          "category_macro": 0.3795138888888889,
+          "reference_semantics": "auto-generated-answer-alternatives-not-human-consensus"
+        }
+      }
+    },
+    "prediction_counts": {
+      "trained:correct:repeat1": 128,
+      "trained:correct:repeat2": 128,
+      "trained:correct:repeat3": 128,
+      "trained:covariance-noise:repeat1": 128,
+      "trained:shuffled:repeat1": 125,
+      "trained:wrong-subject:repeat1": 128,
+      "trained:zero:repeat1": 128
+    },
+    "repeat_policy": "all controls at main prefix; correct-brain mean only at prefixes2/3; repeated-mean posterior entropy is conditional under the fixed single-trial likelihood",
+    "unmatched": {
+      "trained:correct:repeat1": [],
+      "trained:correct:repeat2": [],
+      "trained:correct:repeat3": [],
+      "trained:covariance-noise:repeat1": [],
+      "trained:shuffled:repeat1": [
+        "subj01_trial000600",
+        "subj01_trial004481",
+        "subj01_trial010678"
+      ],
+      "trained:wrong-subject:repeat1": [],
+      "trained:zero:repeat1": []
+    }
+  },
+  "file_sha256": {
+    "case_manifest.json": "78d97a5afda8969faac298086dcd22bdac48a3f83b1ed2edf73a974612657051",
+    "checkpoint_identity.json": "07c3848ae6536dd70c79753adc1ba830c383f28c82dbd754f6b6eb3a95289bab",
+    "config.yaml": "311ac8ee539912e419a925ec7fc44a7d10916bf1f5565618ada1abe464263084",
+    "evaluation/summary.json": "1bbb4da88317401cd8dc90ac33dbe661e4a2f0023225fe70c68d5411a32df588",
+    "evaluation/trained_correct_repeat1.jsonl": "73e1ccf03549a4bb2a55817ddbb401221b26c9233025a6654c5355aea89c93a5",
+    "evaluation/trained_correct_repeat1.jsonl.identity.json": "7ddf407f889217e1d5cd968639d14e284476938d419484e4b590b6912fb86110",
+    "evaluation/trained_correct_repeat1.scores.jsonl": "4868ab25678706b445807325f82d0ad18364eaa8d4529bd2195a6c5ae9f4ed38",
+    "evaluation/trained_correct_repeat2.jsonl": "a3735c817453cf9dfdb4343e44d554faf6e5fae33a3de5f41f2ada9a24dead34",
+    "evaluation/trained_correct_repeat2.jsonl.identity.json": "5fc1265e62196602cce292b6f36200c0085a89e5eb6cff6f095f771a94c86f6f",
+    "evaluation/trained_correct_repeat2.scores.jsonl": "3506e1e496dc613d5f93eb83bce0532aaa5acff6ef3854cf5df561287727e6b6",
+    "evaluation/trained_correct_repeat3.jsonl": "2036527a62e468b22bdb9cce766d4c9e658f6cdc028e6dc499bbd012603bd36c",
+    "evaluation/trained_correct_repeat3.jsonl.identity.json": "099a02ab5701075f26896374f66cfcf0a367f0c074f6e9c1b5493506621e0315",
+    "evaluation/trained_correct_repeat3.scores.jsonl": "d374afdd2459f37515abb5520f041f5226d34c24565ea3003d4abffc397f58a5",
+    "evaluation/trained_covariance-noise_repeat1.jsonl": "b67249d8e48da8bb5a1bbd7eb7615d1e0b8906cd12b9b12ce4d836c1747047d7",
+    "evaluation/trained_covariance-noise_repeat1.jsonl.identity.json": "17e78cc6d5a344df43555d7c9062a9b6314c9d80c69935c6b0053856480114ba",
+    "evaluation/trained_covariance-noise_repeat1.scores.jsonl": "92e3535fa17cac6c575823d0168f838899c5bcf34dd22bdb1350cce2bf3d5a29",
+    "evaluation/trained_shuffled_repeat1.jsonl": "51395532acaaa95b9c31b42cbbc3e101ed82fdae7b7d7995b2da041f2852ab75",
+    "evaluation/trained_shuffled_repeat1.jsonl.identity.json": "1037d0d530cccb324d99c17e50ecf3b93cce78c9a2f343c99df247cdcb0e4614",
+    "evaluation/trained_shuffled_repeat1.scores.jsonl": "82c43115a8f33f368883023f8f446b3aaf6e6969dba47c9c34d090c907f8b79b",
+    "evaluation/trained_wrong-subject_repeat1.jsonl": "fbf96df6b29cb55d33e656555e5aa1a6425fe2d20189c7b73f9388721a05109b",
+    "evaluation/trained_wrong-subject_repeat1.jsonl.identity.json": "65cb0f300ebb554255433edcefd817184b43d1b7f416ecd59f6c779b3d86b898",
+    "evaluation/trained_wrong-subject_repeat1.scores.jsonl": "9e72f616c0df524a7685176c81bd69991bfe7ff275d4b95c2f1d550965e4bb24",
+    "evaluation/trained_zero_repeat1.jsonl": "67b11f87c16b5063d05853682c97898bd46ffd7157c0853fa12d309d54774e67",
+    "evaluation/trained_zero_repeat1.jsonl.identity.json": "a7067766495a53261d540fea3692f460341d96fb1a69d233d35cbcb1d52ed3b0",
+    "evaluation/trained_zero_repeat1.scores.jsonl": "a89ba17aead9e046456d211cd9145615c6d796c32f2b73b012f9a29e744260a8",
+    "result.json": "47b22a251bb1a32d056478b68568b89f7751b7ca49fa5f28bf1399e7b6176288",
+    "schedule.json": "df8f6a07d36637f80c8e3db07bddfe53f9127457cd5c49765676281296d7ce8b",
+    "selected_examples.json": "f86e916789d4d7988667c365281ff1fe46f7273075bee657067b7dc4a6f387ca"
+  },
+  "manifest_sha256": "609fd6bc1ce0cf02ab23886792cf9594a4c6b276e698835ae5d4bc6f8ddbdfcb",
+  "training": {
+    "accounting": {
+      "generated_tokens": 941,
+      "physical_forwards": 1453,
+      "sequence_views": 512,
+      "student_tokens": 941,
+      "teacher_tokens": 941
+    },
+    "cursor": 256,
+    "history": [
+      {
+        "gradient_norm": 27.40009070635846,
+        "loss": 0.9890331301139668,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7283915264,
+        "update_seconds": 22.464422630146146
+      },
+      {
+        "gradient_norm": 16.217242838496812,
+        "loss": 0.8794741802266799,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7485622272,
+        "update_seconds": 18.002473747357726
+      },
+      {
+        "gradient_norm": 14.0712100893568,
+        "loss": 0.6571975701663177,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7487669760,
+        "update_seconds": 17.375681987963617
+      },
+      {
+        "gradient_norm": 9.08425269880688,
+        "loss": 0.6790268060867675,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7484741632,
+        "update_seconds": 18.41673996904865
+      },
+      {
+        "gradient_norm": 17.718714343726404,
+        "loss": 0.3847996655258612,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7485622272,
+        "update_seconds": 16.953377343248576
+      },
+      {
+        "gradient_norm": 15.92807672684005,
+        "loss": 0.29415944597349153,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7485622272,
+        "update_seconds": 17.749330827966332
+      },
+      {
+        "gradient_norm": 7.620884363290194,
+        "loss": 0.3135453655704623,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7484741632,
+        "update_seconds": 17.942247990053147
+      },
+      {
+        "gradient_norm": 2.2266798484683723,
+        "loss": 0.35508319559448864,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7484741632,
+        "update_seconds": 17.31129322713241
+      },
+      {
+        "gradient_norm": 4.555428223564789,
+        "loss": 0.27703558758366853,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7485622272,
+        "update_seconds": 16.433951638173312
+      },
+      {
+        "gradient_norm": 3.024436327781214,
+        "loss": 0.23457919908105396,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7486502912,
+        "update_seconds": 17.01041606394574
+      },
+      {
+        "gradient_norm": 17.435699613927117,
+        "loss": 0.2996135635476094,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7485622272,
+        "update_seconds": 16.069796066265553
+      },
+      {
+        "gradient_norm": 2.7943627118963597,
+        "loss": 0.28642324005522823,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7484741632,
+        "update_seconds": 16.638807737268507
+      },
+      {
+        "gradient_norm": 2.279175369794154,
+        "loss": 0.1179360007008654,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7484741632,
+        "update_seconds": 16.28606987092644
+      },
+      {
+        "gradient_norm": 2.1394047191433785,
+        "loss": 0.22589089413486363,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7486502912,
+        "update_seconds": 16.365105401724577
+      },
+      {
+        "gradient_norm": 1.2876491561937589,
+        "loss": 0.23026214908168186,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7485622272,
+        "update_seconds": 16.52403027797118
+      },
+      {
+        "gradient_norm": 1.1821861335068582,
+        "loss": 0.32302886059187585,
+        "micro_examples": 16,
+        "peak_cuda_bytes": 7481763840,
+        "update_seconds": 16.199995080940425
+      }
+    ],
+    "method": "exact-image-opsd",
+    "optimizer_steps": 16,
+    "resumed": false
+  }
+}

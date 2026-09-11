@@ -1,0 +1,66 @@
+schema_version: 1
+backend: vindex
+task: nsd_vqa
+method: ce
+paths:
+  budget: /root/brain-assets/nsd-full/matrix/exploratory_budget.json
+  vindex_checkout: integrations/vindex
+  model: /root/brain-assets/llava-v1.5-7b
+  data: /root/brain-assets/nsd-full
+  manifest: /root/brain-assets/nsd-full/nsd_manifest.jsonl
+  image_features: /root/brain-assets/nsd-full/features/image_pooled.npy
+  image_ids: /root/brain-assets/nsd-full/features/image_ids.json
+  feature_provenance: /root/brain-assets/nsd-full/features/clip_provenance.json
+  row_mapping_binding: /root/brain-assets/nsd-full/features/row_mapping_binding.v1.json
+  calibration: /root/brain-assets/nsd-full/calibration
+  brainx_checkpoint: /root/brain-assets/umbrae/train_logs/brainx/last.pth
+  brainx_source: /root/UMBRAE/umbrae/model.py
+  projector: /root/brain-assets/vindex/src/llava/model_weights/llava-v1.5-7b/mm_projector.bin
+  vqa_train: /root/brain-assets/nsd-full/vqa_train.jsonl
+  vqa_test: /root/brain-assets/nsd-full/vqa_test.jsonl
+  captions_train: /root/brain-assets/nsd-full/captions_train.jsonl
+  captions_test: /root/brain-assets/nsd-full/captions_test.jsonl
+  evaluation_cohort: /root/brain-assets/nsd-full/matrix/evaluation_cohort.json
+  training_cohort: /root/brain-assets/nsd-full/matrix/p3_cohort.json # used only by P3 configs
+  shuffled_control: /root/brain-assets/nsd-full/matrix/controls/shuffled_seed41.json
+  wrong_subject_control: /root/brain-assets/nsd-full/matrix/controls/wrong_subject.json
+  cached_noise_dir: /root/brain-assets/nsd-full/matrix/noise
+experiment:
+  phase: matrix
+  seed: 41
+  subject: subj01
+  methods: [ce, exact-image-opsd, map-image-opsd, uniform-mixture, plain-posterior-mixture,
+    credit-style-image-contrastive, dapd-brain-text-reference, vad-style-full-image, npp-opsd,
+    npp-geometric, npp-information-gain, npp-sqrt-information-gain]
+  controls: [correct, shuffled, zero, covariance-noise, wrong-subject]
+  output_dir: outputs/nsd_matrix_seed41
+  max_examples: 256
+  max_optimizer_steps: 16
+  epochs: 1
+candidate_count: 4
+micro_batch_size: 1
+generation:
+  do_sample: true
+  temperature: 1.0
+  top_p: 1.0
+  top_k: 0
+  max_new_tokens: 64
+  vqa_instruction: "Answer with a short phrase."
+trainer:
+  gradient_accumulation_steps: 16
+  dapd_snapshot_interval: 100
+  gradient_clip: null
+optimizer:
+  name: AdamW
+  lr: 0.000005
+  weight_decay: 0.0
+evaluation:
+  main_repeat_prefix: 1
+  diagnostic_repeat_prefixes: [1, 2, 3]
+  incremental_flush_examples: 1
+  bootstrap_unit: image_id
+  development_exposed_image_ids: [nsd33245, nsd43156]
+  report_sensitivity_excluding_development_exposed: true
+cache:
+  clip_patch_dir: /root/brain-assets/nsd-full/matrix/clip-patches
+  clip_patch_max_bytes: 1073741824

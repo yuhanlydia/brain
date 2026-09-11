@@ -1,0 +1,22 @@
+{
+  "status": "trained_variants_complete_and_identity_aligned",
+  "total_predictions": 893,
+  "counts": {
+    "trained_correct_repeat1.jsonl": 128,
+    "trained_correct_repeat2.jsonl": 128,
+    "trained_correct_repeat3.jsonl": 128,
+    "trained_covariance-noise_repeat1.jsonl": 128,
+    "trained_shuffled_repeat1.jsonl": 125,
+    "trained_wrong-subject_repeat1.jsonl": 128,
+    "trained_zero_repeat1.jsonl": 128
+  },
+  "prediction_sha256": {
+    "trained_correct_repeat1.jsonl": "f58c354110935a396bfef230b14c746e6931a326f3872b2e971f7e28a67eba45",
+    "trained_correct_repeat2.jsonl": "649e77a1fc8314fec61a4c5cf47b6be6bd2499df7098882204957a538984de9e",
+    "trained_correct_repeat3.jsonl": "bdaf514fa20af6c418d150c49e937afddc9032dded02f0d31e4cc3b32e85cf1c",
+    "trained_covariance-noise_repeat1.jsonl": "0d7d78e9f6446988a9b3818fcab47de353d570d449ca86fb3d7f965bd9d09bfe",
+    "trained_shuffled_repeat1.jsonl": "bae13b762d2c7d9730418859e87dfef3fe0c55370f451948f03a1f1bce13cdb0",
+    "trained_wrong-subject_repeat1.jsonl": "df4b430482b7f0216ab9b5786968f1adf55959b540a1617c92fae9f16c3d535f",
+    "trained_zero_repeat1.jsonl": "ba987b82e879232e4c6010d639013750124e4a1c4042cd010d93d1987d9df207"
+  }
+}
