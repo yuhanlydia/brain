@@ -1,6 +1,6 @@
 # Real NSD exploratory matrix: incremental results
 
-**15 of 164 cases are complete.** The remaining comparisons are running; this is
+**16 of 164 cases are complete.** The remaining comparisons are running; this is
 not a complete benchmark table. Accuracy and neural-dependence measurements
 are diagnostics, without performance stopping thresholds.
 
@@ -165,4 +165,11 @@ percentage points. The remaining fixed matrix continues without performance stop
 Subject02/seed41 MAP-image OPSD completed the matched 256-example, 16-update budget
 and 893 required predictions. Stratified-subset accuracy is 50.7812%
 (category macro 52.98611%), with matched NDG 16.00
+percentage points. The remaining fixed matrix continues without performance stopping thresholds.
+
+## Sixteenth completed case: subject02 uniform-mixture
+
+Subject02/seed41 uniform-mixture completed the matched 256-example, 16-update budget
+and 893 required predictions. Stratified-subset accuracy is 50.0000%
+(category macro 52.20486%), with matched NDG 14.40
 percentage points. The remaining fixed matrix continues without performance stopping thresholds.
