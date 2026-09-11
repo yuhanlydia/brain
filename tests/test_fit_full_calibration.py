@@ -10,6 +10,8 @@ import sys
 import numpy as np
 import pytest
 
+from brain_npp.nsd_data import FullCalibrationStore, FullNSDData
+
 _SPEC = importlib.util.spec_from_file_location("fit_full_calibration", Path(__file__).parents[1] / "scripts/fit_full_calibration.py")
 assert _SPEC and _SPEC.loader
 _MODULE = importlib.util.module_from_spec(_SPEC); _SPEC.loader.exec_module(_MODULE)
@@ -60,3 +62,18 @@ def test_real_fit_reuse_rejects_changed_brain_and_calibration_source(tmp_path, m
     np.save(brain, np.asarray([0.1, -0.2])); source_copy.write_text(source_copy.read_text() + "\n# mutation\n")
     with pytest.raises(ValueError, match="incompatible resume inputs"):
         monkeypatch.setattr(sys, "argv", argv); _MODULE.main()
+
+
+def test_cli_artifacts_load_through_full_calibration_store(tmp_path, monkeypatch):
+    manifest, features, ids, provenance, _ = _tiny_inputs(tmp_path)
+    output = tmp_path / "out"
+    argv = ["fit_full_calibration.py", "--manifest", str(manifest), "--features", str(features),
+            "--image-ids", str(ids), "--feature-provenance", str(provenance), "--output", str(output),
+            "--subjects", "subj01", "--folds", "2"]
+    monkeypatch.setattr(sys, "argv", argv); _MODULE.main()
+    data = FullNSDData.load(manifest, features_path=features, image_ids_path=ids,
+                            feature_provenance_path=provenance)
+    store = FullCalibrationStore(output, data, fold_seed=1731, outer_folds=2)
+    record = data.records[0]
+    model = store.model_for(record)
+    assert record.image_id not in model.provenance["train_image_ids"]

@@ -1,6 +1,6 @@
 # Real NSD exploratory matrix: incremental results
 
-**1 of 164 cases is complete.** The remaining comparisons are running; this is
+**2 of 164 cases are complete.** The remaining comparisons are running; this is
 not a complete benchmark table. Accuracy and neural-dependence measurements
 are diagnostics, without performance stopping thresholds.
 
@@ -40,3 +40,21 @@ The controlled continuation test interrupted the first case after update1
 preserved the saved history prefix and produced no duplicate predictions.
 The evidence is in resume-verification/. The queue continues with the remaining
 163 fixed configs; only actual execution failures require debugging.
+
+## Second completed case: exact-image OPSD
+
+Subject01/seed41 exact-image OPSD consumed the same 256 examples and 16 updates
+and completed 893 predictions across all required trained-student controls and
+repeat diagnostics. Stratified-subset accuracy is 51.5625% (66/128).
+
+Relative to the matched CE case, the paired accuracy difference is +8.59375
+percentage points (image-bootstrap 95% interval: -3.125 to +19.53125). The joint
+125-example delta-NDG is +7.2 points (interval: -2.4 to +16.8). These exploratory
+intervals include zero; this is not a significance or generalization claim.
+The full matrix continues without selecting runs based on these outcomes.
+
+`report_snapshot.json.gz` contains the reviewed reporter's current partial
+matrix snapshot: paired comparisons, category/session and posterior summaries,
+exposure-exclusion sensitivity, coverage/status and input provenance. Its
+unfinished cases remain explicitly incomplete or pending. This snapshot is
+updated incrementally; the case archives preserve completed raw outputs.

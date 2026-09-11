@@ -69,7 +69,8 @@ def main():
     inputs_base = {"manifest_sha256": sha256(args.manifest),
                    **validated_feature_identity(args.features, args.image_ids, args.feature_provenance),
                    **fit_implementation_identity(outer_folds=args.folds, inner_folds=args.folds,
-                                                 fold_seed=args.fold_seed)}
+                                                 fold_seed=args.fold_seed),
+                   "fold_seed": args.fold_seed, "outer_folds": args.folds}
     training = [r for r in records if r.split == "train"]
     global_folds = assign_grouped_folds(training, args.folds, args.fold_seed)
     for subject in args.subjects:
