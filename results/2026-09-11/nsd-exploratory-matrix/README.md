@@ -1,6 +1,6 @@
 # Real NSD exploratory matrix: incremental results
 
-**6 of 164 cases are complete.** The remaining comparisons are running; this is
+**7 of 164 cases are complete.** The remaining comparisons are running; this is
 not a complete benchmark table. Accuracy and neural-dependence measurements
 are diagnostics, without performance stopping thresholds.
 
@@ -97,3 +97,12 @@ Subject01/seed41 CREDIT-style image contrastive completed the matched
 with category macro accuracy 52.55208%.
 This is the documented CREDIT-style adaptation; it is not an official-code
 reproduction. Paired differences and uncertainty appear in `CURRENT_RESULTS.md`.
+
+## Seventh completed case: DAPD brain/text reference
+
+Subject01/seed41 DAPD completed the matched 256-example, 16-update budget
+and 893 required predictions. Accuracy is 20.3125%, with
+category macro accuracy 20.31250%. The reference snapshot remains
+at its initial state because the fixed budget ends before its 100-update
+refresh interval. Paired comparisons and uncertainty are in `CURRENT_RESULTS.md`.
+All observed results are retained; performance does not stop the queue.
