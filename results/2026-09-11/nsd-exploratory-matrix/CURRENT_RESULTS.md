@@ -1,6 +1,6 @@
 # NSD exploratory matrix report
 
-Matrix status: **partial** (27/164 validated complete).
+Matrix status: **partial** (28/164 validated complete).
 No performance threshold filters this report.
 
 | Case | Status | Available conditions | Validation findings |
@@ -32,7 +32,7 @@ No performance threshold filters this report.
 | P2_nsd_vqa_subj05_seed41_ce | complete | 14 | none |
 | P2_nsd_vqa_subj05_seed41_exact-image-opsd | complete | {'trained_correct_repeat1': 128, 'trained_correct_repeat2': 128, 'trained_correct_repeat3': 128, 'trained_covariance-noise_repeat1': 128, 'trained_shuffled_repeat1': 125, 'trained_wrong-subject_repeat1': 128, 'trained_zero_repeat1': 128} | none |
 | P2_nsd_vqa_subj05_seed41_map-image-opsd | complete | {'trained_correct_repeat1': 128, 'trained_correct_repeat2': 128, 'trained_correct_repeat3': 128, 'trained_covariance-noise_repeat1': 128, 'trained_shuffled_repeat1': 125, 'trained_wrong-subject_repeat1': 128, 'trained_zero_repeat1': 128} | none |
-| P2_nsd_vqa_subj05_seed41_uniform-mixture | pending | 0 | checkpoint_identity_missing |
+| P2_nsd_vqa_subj05_seed41_uniform-mixture | complete | {'trained_correct_repeat1': 128, 'trained_correct_repeat2': 128, 'trained_correct_repeat3': 128, 'trained_covariance-noise_repeat1': 128, 'trained_shuffled_repeat1': 125, 'trained_wrong-subject_repeat1': 128, 'trained_zero_repeat1': 128} | none |
 | P2_nsd_vqa_subj05_seed41_plain-posterior-mixture | pending | 0 | checkpoint_identity_missing |
 | P2_nsd_vqa_subj05_seed41_credit-style-image-contrastive | pending | 0 | checkpoint_identity_missing |
 | P2_nsd_vqa_subj05_seed41_dapd-brain-text-reference | pending | 0 | checkpoint_identity_missing |
@@ -391,3 +391,8 @@ P2_nsd_vqa_subj05_seed41_exact-image-opsd completed the matched 256-example, 16-
 ## Twenty-seventh completed case: subject05 MAP-image OPSD
 
 P2_nsd_vqa_subj05_seed41_map-image-opsd completed the matched 256-example, 16-update budget and {'trained_correct_repeat1': 128, 'trained_correct_repeat2': 128, 'trained_correct_repeat3': 128, 'trained_covariance-noise_repeat1': 128, 'trained_shuffled_repeat1': 125, 'trained_wrong-subject_repeat1': 128, 'trained_zero_repeat1': 128} evaluation conditions. Accuracy is 48.4375%, with category macro accuracy 51.07639%. Matched correct-minus-shuffled NDG is 15.20 percentage points (95% image-bootstrap interval 7.20 to 23.20; n=125). Relative to its CE baseline, paired accuracy difference is 10.1562 points and paired delta-NDG is 13.60 points. The remaining fixed matrix continues without performance stopping thresholds.
+
+
+## Twenty-eighth completed case: subject05 uniform-mixture
+
+P2_nsd_vqa_subj05_seed41_uniform-mixture completed the matched 256-example, 16-update budget and {'trained_correct_repeat1': 128, 'trained_correct_repeat2': 128, 'trained_correct_repeat3': 128, 'trained_covariance-noise_repeat1': 128, 'trained_shuffled_repeat1': 125, 'trained_wrong-subject_repeat1': 128, 'trained_zero_repeat1': 128} evaluation conditions. Accuracy is 49.2188%, with category macro accuracy 51.42361%. Matched correct-minus-shuffled NDG is 16.00 percentage points (95% image-bootstrap interval 8.80 to 24.00; n=125). Relative to its CE baseline, paired accuracy difference is 10.9375 points and paired delta-NDG is 14.40 points. The remaining fixed matrix continues without performance stopping thresholds.
