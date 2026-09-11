@@ -1,6 +1,6 @@
 # NSD exploratory matrix report
 
-Matrix status: **partial** (17/164 validated complete).
+Matrix status: **partial** (18/164 validated complete).
 No performance threshold filters this report.
 
 | Case | Status | Available conditions | Validation findings |
@@ -22,7 +22,7 @@ No performance threshold filters this report.
 | P2_nsd_vqa_subj02_seed41_map-image-opsd | complete | 7 | none |
 | P2_nsd_vqa_subj02_seed41_uniform-mixture | complete | 7 | none |
 | P2_nsd_vqa_subj02_seed41_plain-posterior-mixture | complete | 7 | none |
-| P2_nsd_vqa_subj02_seed41_credit-style-image-contrastive | pending | 0 | checkpoint_identity_missing |
+| P2_nsd_vqa_subj02_seed41_credit-style-image-contrastive | complete | 7 | none |
 | P2_nsd_vqa_subj02_seed41_dapd-brain-text-reference | pending | 0 | checkpoint_identity_missing |
 | P2_nsd_vqa_subj02_seed41_vad-style-full-image | pending | 0 | checkpoint_identity_missing |
 | P4_nsd_vqa_subj02_seed41_npp-opsd | pending | 0 | checkpoint_identity_missing |
@@ -289,3 +289,16 @@ Relative to subject02 CE, paired accuracy difference is 11.7188
 points (interval -0.7812 to 23.4375);
 paired delta-NDG is 13.60 points (interval
 4.00 to 24.00).
+
+## Eighteenth completed case: subject02 CREDIT-style
+
+Subject02/seed41 CREDIT-style image contrastive completed the matched 256-example,
+16-update budget and 893 required predictions. Accuracy is 51.5625%, with
+category macro accuracy 53.76736%. Matched correct-minus-shuffled
+NDG is 17.60 percentage points (95% image-bootstrap interval
+11.20 to 24.80; n=125).
+Relative to subject02 CE, paired accuracy difference is 12.5000
+points (interval 0.0000 to 24.2188);
+paired delta-NDG is 15.20 points (interval
+5.60 to 25.60). This is the
+documented CREDIT-style adaptation, not an official-code reproduction.
