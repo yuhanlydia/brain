@@ -1,6 +1,6 @@
 # NSD exploratory matrix report
 
-Matrix status: **partial** (12/164 validated complete).
+Matrix status: **partial** (13/164 validated complete).
 No performance threshold filters this report.
 
 | Case | Status | Available conditions | Validation findings |
@@ -17,7 +17,7 @@ No performance threshold filters this report.
 | P4_nsd_vqa_subj01_seed41_npp-geometric | complete | 7 | none |
 | P4_nsd_vqa_subj01_seed41_npp-information-gain | complete | 7 | none |
 | P4_nsd_vqa_subj01_seed41_npp-sqrt-information-gain | complete | 7 | none |
-| P2_nsd_vqa_subj02_seed41_ce | pending | 0 | checkpoint_identity_missing |
+| P2_nsd_vqa_subj02_seed41_ce | complete | 14 | none |
 | P2_nsd_vqa_subj02_seed41_exact-image-opsd | pending | 0 | checkpoint_identity_missing |
 | P2_nsd_vqa_subj02_seed41_map-image-opsd | pending | 0 | checkpoint_identity_missing |
 | P2_nsd_vqa_subj02_seed41_uniform-mixture | pending | 0 | checkpoint_identity_missing |
@@ -231,3 +231,13 @@ paired delta-NDG is 4.00 points (interval
 -4.80 to 13.60).
 These are exploratory single-subject, single-seed measurements; the full matrix
 continues without performance stopping thresholds.
+
+## Thirteenth completed case: subject02 CE
+
+Subject02/seed41 CE completed the matched 256-example, 16-update budget and
+1,786 required predictions (trained and original student controls). Accuracy is
+39.0625%, with category macro accuracy 40.10417%.
+Matched correct-minus-shuffled NDG is 2.40 percentage points
+(95% image-bootstrap interval -5.60 to 11.20;
+n=125). This is a descriptive subject-level baseline; the
+remaining fixed matrix continues without performance stopping thresholds.
