@@ -1,6 +1,6 @@
 # Real NSD exploratory matrix: incremental results
 
-**18 of 164 cases are complete.** The remaining comparisons are running; this is
+**19 of 164 cases are complete.** The remaining comparisons are running; this is
 not a complete benchmark table. Accuracy and neural-dependence measurements
 are diagnostics, without performance stopping thresholds.
 
@@ -187,3 +187,11 @@ Subject02/seed41 CREDIT-style image contrastive completed the matched 256-exampl
 16-update budget and 893 required predictions. Stratified-subset accuracy is 51.5625%
 (category macro 53.76736%), with matched NDG 17.60
 percentage points. This is the documented CREDIT-style adaptation; it is not an official-code reproduction.
+
+## Nineteenth completed case: subject02 DAPD
+
+Subject02/seed41 DAPD completed the matched 256-example, 16-update budget and
+893 required predictions. Stratified-subset accuracy is 30.4688%
+(category macro 29.60069%), with matched NDG 4.80
+percentage points. The reference snapshot remains at its initial state because the
+fixed budget ends before its 100-update refresh interval.
