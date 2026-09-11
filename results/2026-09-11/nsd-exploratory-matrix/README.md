@@ -1,6 +1,6 @@
 # Real NSD exploratory matrix: incremental results
 
-**13 of 164 cases are complete.** The remaining comparisons are running; this is
+**14 of 164 cases are complete.** The remaining comparisons are running; this is
 not a complete benchmark table. Accuracy and neural-dependence measurements
 are diagnostics, without performance stopping thresholds.
 
@@ -152,3 +152,10 @@ Subject02/seed41 CE completed the matched 256-example, 16-update budget and
 accuracy is 39.0625% (category macro 40.10417%),
 with matched NDG 2.40 percentage points. The remaining fixed
 matrix continues without performance stopping thresholds.
+
+## Fourteenth completed case: subject02 exact-image OPSD
+
+Subject02/seed41 exact-image OPSD completed the matched 256-example, 16-update
+budget and 893 required predictions. Stratified-subset accuracy is 50.0000%
+(category macro 52.20486%), with matched NDG 16.00
+percentage points. The remaining fixed matrix continues without performance stopping thresholds.
