@@ -1,6 +1,6 @@
 # Real NSD exploratory matrix: incremental results
 
-**5 of 164 cases are complete.** The remaining comparisons are running; this is
+**6 of 164 cases are complete.** The remaining comparisons are running; this is
 not a complete benchmark table. Accuracy and neural-dependence measurements
 are diagnostics, without performance stopping thresholds.
 
@@ -89,3 +89,11 @@ Subject01/seed41 plain posterior mixture completed the same 256-example,
 with category macro accuracy 50.98958%.
 Paired differences and uncertainty are recorded in `CURRENT_RESULTS.md`.
 The remaining fixed matrix continues without performance stopping thresholds.
+
+## Sixth completed case: CREDIT-style image contrastive
+
+Subject01/seed41 CREDIT-style image contrastive completed the matched
+256-example, 16-update budget and 893 required predictions. Accuracy is 50.78125%,
+with category macro accuracy 52.55208%.
+This is the documented CREDIT-style adaptation; it is not an official-code
+reproduction. Paired differences and uncertainty appear in `CURRENT_RESULTS.md`.
