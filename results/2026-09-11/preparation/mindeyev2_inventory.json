@@ -1,0 +1,246 @@
+{
+  "repo": "pscotti/mindeyev2",
+  "revision": "26421f100e4c6012a35ecadb272a0ec1d999202d",
+  "matching_files": [
+    {
+      "path": "betas_all_subj01_fp32_renorm.hdf5",
+      "size": 1886882048
+    },
+    {
+      "path": "betas_all_subj02_fp32_renorm.hdf5",
+      "size": 1713362048
+    },
+    {
+      "path": "betas_all_subj03_fp32_renorm.hdf5",
+      "size": 1461698048
+    },
+    {
+      "path": "betas_all_subj04_fp32_renorm.hdf5",
+      "size": 1183772048
+    },
+    {
+      "path": "betas_all_subj05_fp32_renorm.hdf5",
+      "size": 1564682048
+    },
+    {
+      "path": "betas_all_subj06_fp32_renorm.hdf5",
+      "size": 1719074048
+    },
+    {
+      "path": "betas_all_subj07_fp32_renorm.hdf5",
+      "size": 1521842048
+    },
+    {
+      "path": "betas_all_subj08_fp32_renorm.hdf5",
+      "size": 1294742048
+    },
+    {
+      "path": "coco_images_224_float16.hdf5",
+      "size": 21977090048
+    },
+    {
+      "path": "evals/final_subj01_pretrained_1sess_24bs/final_subj01_pretrained_1sess_24bs_all_enhancedrecons.pt",
+      "size": 3145729538
+    },
+    {
+      "path": "evals/final_subj01_pretrained_40sess_24bs/final_subj01_pretrained_40sess_24bs_all_enhancedrecons.pt",
+      "size": 3145729607
+    },
+    {
+      "path": "evals/final_subj01_pretrained_40sess_24bs/final_subj01_pretrained_40sess_24bs_all_recons.pt",
+      "size": 786433503
+    },
+    {
+      "path": "shared1000.npy",
+      "size": 73128
+    },
+    {
+      "path": "subj01_annots.npy",
+      "size": 24360128
+    },
+    {
+      "path": "train_logs/final_multisubject_subj01/last.pth",
+      "size": 10301091408
+    },
+    {
+      "path": "train_logs/final_subj01_pretrained_1sess_24bs/last.pth",
+      "size": 8909277522
+    },
+    {
+      "path": "train_logs/final_subj01_pretrained_40sess_24bs/last.pth",
+      "size": 8909277522
+    },
+    {
+      "path": "train_logs/multisubject_subj01_1024hid_nolow_300ep/last.pth",
+      "size": 2857443016
+    },
+    {
+      "path": "wds/subj01/new_test/0.tar",
+      "size": 38410240
+    },
+    {
+      "path": "wds/subj01/test/0.tar",
+      "size": 35461120
+    },
+    {
+      "path": "wds/subj01/train/0.tar",
+      "size": 8816640
+    },
+    {
+      "path": "wds/subj01/train/1.tar",
+      "size": 8581120
+    },
+    {
+      "path": "wds/subj01/train/10.tar",
+      "size": 8540160
+    },
+    {
+      "path": "wds/subj01/train/11.tar",
+      "size": 8570880
+    },
+    {
+      "path": "wds/subj01/train/12.tar",
+      "size": 8837120
+    },
+    {
+      "path": "wds/subj01/train/13.tar",
+      "size": 8529920
+    },
+    {
+      "path": "wds/subj01/train/14.tar",
+      "size": 8488960
+    },
+    {
+      "path": "wds/subj01/train/15.tar",
+      "size": 8540160
+    },
+    {
+      "path": "wds/subj01/train/16.tar",
+      "size": 8724480
+    },
+    {
+      "path": "wds/subj01/train/17.tar",
+      "size": 8478720
+    },
+    {
+      "path": "wds/subj01/train/18.tar",
+      "size": 8714240
+    },
+    {
+      "path": "wds/subj01/train/19.tar",
+      "size": 8468480
+    },
+    {
+      "path": "wds/subj01/train/2.tar",
+      "size": 8847360
+    },
+    {
+      "path": "wds/subj01/train/20.tar",
+      "size": 8714240
+    },
+    {
+      "path": "wds/subj01/train/21.tar",
+      "size": 8847360
+    },
+    {
+      "path": "wds/subj01/train/22.tar",
+      "size": 8642560
+    },
+    {
+      "path": "wds/subj01/train/23.tar",
+      "size": 8765440
+    },
+    {
+      "path": "wds/subj01/train/24.tar",
+      "size": 8734720
+    },
+    {
+      "path": "wds/subj01/train/25.tar",
+      "size": 8591360
+    },
+    {
+      "path": "wds/subj01/train/26.tar",
+      "size": 8622080
+    },
+    {
+      "path": "wds/subj01/train/27.tar",
+      "size": 8744960
+    },
+    {
+      "path": "wds/subj01/train/28.tar",
+      "size": 8826880
+    },
+    {
+      "path": "wds/subj01/train/29.tar",
+      "size": 8642560
+    },
+    {
+      "path": "wds/subj01/train/3.tar",
+      "size": 8560640
+    },
+    {
+      "path": "wds/subj01/train/30.tar",
+      "size": 8314880
+    },
+    {
+      "path": "wds/subj01/train/31.tar",
+      "size": 8560640
+    },
+    {
+      "path": "wds/subj01/train/32.tar",
+      "size": 8591360
+    },
+    {
+      "path": "wds/subj01/train/33.tar",
+      "size": 8663040
+    },
+    {
+      "path": "wds/subj01/train/34.tar",
+      "size": 8775680
+    },
+    {
+      "path": "wds/subj01/train/35.tar",
+      "size": 8519680
+    },
+    {
+      "path": "wds/subj01/train/36.tar",
+      "size": 8376320
+    },
+    {
+      "path": "wds/subj01/train/37.tar",
+      "size": 8622080
+    },
+    {
+      "path": "wds/subj01/train/38.tar",
+      "size": 8663040
+    },
+    {
+      "path": "wds/subj01/train/39.tar",
+      "size": 8591360
+    },
+    {
+      "path": "wds/subj01/train/4.tar",
+      "size": 8878080
+    },
+    {
+      "path": "wds/subj01/train/5.tar",
+      "size": 8488960
+    },
+    {
+      "path": "wds/subj01/train/6.tar",
+      "size": 8744960
+    },
+    {
+      "path": "wds/subj01/train/7.tar",
+      "size": 8785920
+    },
+    {
+      "path": "wds/subj01/train/8.tar",
+      "size": 8734720
+    },
+    {
+      "path": "wds/subj01/train/9.tar",
+      "size": 8693760
+    }
+  ]
+}

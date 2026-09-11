@@ -1,0 +1,142 @@
+{
+  "type": "preparatory_real_brain_encoder_forward_only",
+  "not_full_P1": true,
+  "optimizer_steps": 0,
+  "llava_loaded": false,
+  "strict_checkpoint_load": true,
+  "checkpoint_repo_revision": "ae1c5993cee072950869486391c3d2603fd8fcd8",
+  "architecture_source": "weihaox/UMBRAE",
+  "architecture_revision": "8c1795c434a41cdd38ce6628b7e1a774f31d9483",
+  "device": "NVIDIA GeForce RTX 3090",
+  "rows": [
+    {
+      "sample": "sample000000300.nsdgeneral.npy",
+      "repeat_axis_index": 0,
+      "input_shape": [
+        1,
+        15724
+      ],
+      "output_shape": [
+        1,
+        256,
+        1024
+      ],
+      "finite": true,
+      "output_norm": 157.34214782714844,
+      "zero_input_difference_norm": 94.8972396850586
+    },
+    {
+      "sample": "sample000000301.nsdgeneral.npy",
+      "repeat_axis_index": 0,
+      "input_shape": [
+        1,
+        15724
+      ],
+      "output_shape": [
+        1,
+        256,
+        1024
+      ],
+      "finite": true,
+      "output_norm": 209.63006591796875,
+      "zero_input_difference_norm": 140.13160705566406
+    },
+    {
+      "sample": "sample000000302.nsdgeneral.npy",
+      "repeat_axis_index": 0,
+      "input_shape": [
+        1,
+        15724
+      ],
+      "output_shape": [
+        1,
+        256,
+        1024
+      ],
+      "finite": true,
+      "output_norm": 158.09048461914062,
+      "zero_input_difference_norm": 101.17807006835938
+    },
+    {
+      "sample": "sample000000303.nsdgeneral.npy",
+      "repeat_axis_index": 0,
+      "input_shape": [
+        1,
+        15724
+      ],
+      "output_shape": [
+        1,
+        256,
+        1024
+      ],
+      "finite": true,
+      "output_norm": 227.46060180664062,
+      "zero_input_difference_norm": 153.4073028564453
+    },
+    {
+      "sample": "sample000000304.nsdgeneral.npy",
+      "repeat_axis_index": 0,
+      "input_shape": [
+        1,
+        15724
+      ],
+      "output_shape": [
+        1,
+        256,
+        1024
+      ],
+      "finite": true,
+      "output_norm": 145.9489288330078,
+      "zero_input_difference_norm": 127.72455596923828
+    },
+    {
+      "sample": "sample000000305.nsdgeneral.npy",
+      "repeat_axis_index": 0,
+      "input_shape": [
+        1,
+        15724
+      ],
+      "output_shape": [
+        1,
+        256,
+        1024
+      ],
+      "finite": true,
+      "output_norm": 239.56175231933594,
+      "zero_input_difference_norm": 172.3338623046875
+    },
+    {
+      "sample": "sample000000306.nsdgeneral.npy",
+      "repeat_axis_index": 0,
+      "input_shape": [
+        1,
+        15724
+      ],
+      "output_shape": [
+        1,
+        256,
+        1024
+      ],
+      "finite": true,
+      "output_norm": 189.24472045898438,
+      "zero_input_difference_norm": 131.4138641357422
+    },
+    {
+      "sample": "sample000000307.nsdgeneral.npy",
+      "repeat_axis_index": 0,
+      "input_shape": [
+        1,
+        15724
+      ],
+      "output_shape": [
+        1,
+        256,
+        1024
+      ],
+      "finite": true,
+      "output_norm": 271.64263916015625,
+      "zero_input_difference_norm": 212.23724365234375
+    }
+  ],
+  "max_memory_allocated_bytes": 471245824
+}

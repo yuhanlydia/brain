@@ -1,0 +1,12 @@
+{
+  "pscotti/naturalscenesdataset": {
+    "sha": "421fb80ea4ca5600c7364ed400f9a5941380c387",
+    "gated": false,
+    "private": false
+  },
+  "weihaox/vindex": {
+    "sha": "ae1c5993cee072950869486391c3d2603fd8fcd8",
+    "gated": false,
+    "private": false
+  }
+}

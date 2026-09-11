@@ -1,0 +1,51 @@
+{
+  "repo": "liuhaotian/llava-v1.5-7b",
+  "revision": "4481d270cc22fd5c4d1bb5df129622006ccd9234",
+  "gated": false,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 1519
+    },
+    {
+      "path": "README.md",
+      "size": 1397
+    },
+    {
+      "path": "config.json",
+      "size": 1161
+    },
+    {
+      "path": "generation_config.json",
+      "size": 124
+    },
+    {
+      "path": "mm_projector.bin",
+      "size": 41961085
+    },
+    {
+      "path": "pytorch_model-00001-of-00002.bin",
+      "size": 9976634558
+    },
+    {
+      "path": "pytorch_model-00002-of-00002.bin",
+      "size": 3542276251
+    },
+    {
+      "path": "pytorch_model.bin.index.json",
+      "size": 27068
+    },
+    {
+      "path": "special_tokens_map.json",
+      "size": 438
+    },
+    {
+      "path": "tokenizer.model",
+      "size": 499723
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 749
+    }
+  ]
+}

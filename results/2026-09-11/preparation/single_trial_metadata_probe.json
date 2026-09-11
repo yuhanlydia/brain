@@ -1,0 +1,71 @@
+{
+  "source_repo": "pscotti/mindeyev2",
+  "revision": "26421f100e4c6012a35ecadb272a0ec1d999202d",
+  "shard": "wds/subj01/train/0.tar",
+  "sample_members": [
+    {
+      "name": "sample000000000.behav.npy",
+      "shape": [
+        1,
+        17
+      ],
+      "dtype": "float64",
+      "identity_columns": {
+        "image_index": 61882.0,
+        "subject": 1.0,
+        "session": 1.0,
+        "run": 1.0,
+        "trial_in_run": 2.0,
+        "global_trial": 1.0
+      }
+    },
+    {
+      "name": "sample000000000.future_behav.npy",
+      "shape": [
+        15,
+        17
+      ],
+      "dtype": "float64",
+      "identity_columns": {
+        "image_index": 828.0,
+        "subject": 1.0,
+        "session": 1.0,
+        "run": 1.0,
+        "trial_in_run": 3.0,
+        "global_trial": 2.0
+      }
+    },
+    {
+      "name": "sample000000000.olds_behav.npy",
+      "shape": [
+        3,
+        17
+      ],
+      "dtype": "float64",
+      "identity_columns": {
+        "image_index": 61882.0,
+        "subject": 1.0,
+        "session": 13.0,
+        "run": 2.0,
+        "trial_in_run": 26.0,
+        "global_trial": 9088.0
+      }
+    },
+    {
+      "name": "sample000000000.past_behav.npy",
+      "shape": [
+        15,
+        17
+      ],
+      "dtype": "float64",
+      "identity_columns": {
+        "image_index": 46002.0,
+        "subject": 1.0,
+        "session": 1.0,
+        "run": 1.0,
+        "trial_in_run": 1.0,
+        "global_trial": 0.0
+      }
+    }
+  ]
+}

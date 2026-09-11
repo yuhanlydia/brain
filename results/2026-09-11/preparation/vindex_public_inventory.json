@@ -1,0 +1,74 @@
+{
+  "source": "https://huggingface.co/api/datasets/weihaox/vindex/tree/main?recursive=true&limit=1000",
+  "next_page": null,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 2461
+    },
+    {
+      "path": "README.md",
+      "size": 31
+    },
+    {
+      "path": "src/denseconnector/model_weights/dc-llava-v1.5-13b/mm_projector.bin",
+      "size": 87840824
+    },
+    {
+      "path": "src/denseconnector/model_weights/dc-llava-v1.5-7b/mm_projector.bin",
+      "size": 61884472
+    },
+    {
+      "path": "src/llava/model_weights/llava-next-vicuna-13b/mm_projector.bin",
+      "size": 62937144
+    },
+    {
+      "path": "src/llava/model_weights/llava-next-vicuna-7b/mm_projector.bin",
+      "size": 41961528
+    },
+    {
+      "path": "src/llava/model_weights/llava-v1.5-13b/mm_projector.bin",
+      "size": 62936701
+    },
+    {
+      "path": "src/llava/model_weights/llava-v1.5-7b/mm_projector.bin",
+      "size": 41961085
+    },
+    {
+      "path": "src/matryoshka-mm/model_weights/m3-llava-next-7b/mm_projector.bin",
+      "size": 41961528
+    },
+    {
+      "path": "src/matryoshka-mm/model_weights/m3-llava-v1.5-7b/mm_projector.bin",
+      "size": 41961528
+    },
+    {
+      "path": "src/mmvp/model_weights/mof-llava-v1.5-13b/mm_projector.bin",
+      "size": 125873340
+    },
+    {
+      "path": "train_logs/specific_sub/sub01_dim1024/clip_224/config.json",
+      "size": 715
+    },
+    {
+      "path": "train_logs/specific_sub/sub01_dim1024/clip_224/last.pth",
+      "size": 1267285134
+    },
+    {
+      "path": "train_logs/specific_sub/sub01_dim1024/dino_224/config.json",
+      "size": 881
+    },
+    {
+      "path": "train_logs/specific_sub/sub01_dim1024/dino_224/last.pth",
+      "size": 1267279246
+    },
+    {
+      "path": "train_logs/specific_sub/sub01_dim3456/siglip_384/config.json",
+      "size": 935
+    },
+    {
+      "path": "train_logs/specific_sub/sub01_dim3456/siglip_384/last.pth",
+      "size": 1322207054
+    }
+  ]
+}
