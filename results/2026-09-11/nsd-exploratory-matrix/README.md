@@ -1,6 +1,6 @@
 # Real NSD exploratory matrix: incremental results
 
-**26 of 164 cases are complete.** The remaining comparisons are running; this is
+**27 of 164 cases are complete.** The remaining comparisons are running; this is
 not a complete benchmark table. Accuracy and neural-dependence measurements
 are diagnostics, without performance stopping thresholds.
 
@@ -240,3 +240,8 @@ Subject05/seed41 CE completed the matched 256-example, 16-update budget and 1,78
 ## Twenty-sixth completed case: subject05 exact-image OPSD
 
 P2_nsd_vqa_subj05_seed41_exact-image-opsd completed the matched 256-example, 16-update budget and {'trained_correct_repeat1': 128, 'trained_correct_repeat2': 128, 'trained_correct_repeat3': 128, 'trained_covariance-noise_repeat1': 128, 'trained_shuffled_repeat1': 125, 'trained_wrong-subject_repeat1': 128, 'trained_zero_repeat1': 128} evaluation conditions. Accuracy is 50.0000%, with category macro accuracy 52.63889%. Matched correct-minus-shuffled NDG is 16.80 percentage points (95% image-bootstrap interval 8.80 to 25.60; n=125). Relative to its CE baseline, paired accuracy difference is 11.7188 points and paired delta-NDG is 15.20 points. The remaining fixed matrix continues without performance stopping thresholds.
+
+
+## Twenty-seventh completed case: subject05 MAP-image OPSD
+
+P2_nsd_vqa_subj05_seed41_map-image-opsd completed the matched 256-example, 16-update budget and {'trained_correct_repeat1': 128, 'trained_correct_repeat2': 128, 'trained_correct_repeat3': 128, 'trained_covariance-noise_repeat1': 128, 'trained_shuffled_repeat1': 125, 'trained_wrong-subject_repeat1': 128, 'trained_zero_repeat1': 128} evaluation conditions. Accuracy is 48.4375%, with category macro accuracy 51.07639%. Matched correct-minus-shuffled NDG is 15.20 percentage points (95% image-bootstrap interval 7.20 to 23.20; n=125). Relative to its CE baseline, paired accuracy difference is 10.1562 points and paired delta-NDG is 13.60 points. The remaining fixed matrix continues without performance stopping thresholds.
