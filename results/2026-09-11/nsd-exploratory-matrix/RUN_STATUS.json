@@ -1,6 +1,6 @@
 {
-  "checked_utc": "2026-09-11T08:24:02.110019+00:00",
-  "completed_count": 9,
+  "checked_utc": "2026-09-11T08:42:44.115902+00:00",
+  "completed_count": 10,
   "declared_case_count": 164,
   "completed_cases": [
     "P2_nsd_vqa_subj01_seed41_ce",
@@ -11,9 +11,10 @@
     "P2_nsd_vqa_subj01_seed41_credit-style-image-contrastive",
     "P2_nsd_vqa_subj01_seed41_dapd-brain-text-reference",
     "P2_nsd_vqa_subj01_seed41_vad-style-full-image",
-    "P4_nsd_vqa_subj01_seed41_npp-opsd"
+    "P4_nsd_vqa_subj01_seed41_npp-opsd",
+    "P4_nsd_vqa_subj01_seed41_npp-geometric"
   ],
-  "queue_case": "P4_nsd_vqa_subj01_seed41_npp-geometric",
+  "queue_case": "P4_nsd_vqa_subj01_seed41_npp-information-gain",
   "queue_status": "running",
   "note": "Point-in-time execution status; the full experiment goal remains active."
 }
