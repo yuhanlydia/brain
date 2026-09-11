@@ -1,0 +1,216 @@
+[
+  {
+    "subject": "subj01",
+    "trial_id": "subj01_trial008867",
+    "image_id": "nsd33245",
+    "question_id": 708039,
+    "answer_id": 708039,
+    "question": "Is the tile in the foreground or the background?",
+    "references": [
+      "background"
+    ],
+    "prediction": "The tile in the foreground is the background.",
+    "token_ids": [
+      450,
+      25900,
+      297,
+      278,
+      363,
+      18128,
+      338,
+      278,
+      3239,
+      29889,
+      2
+    ],
+    "active_tokens": 11,
+    "seconds": 1.9877817630767822,
+    "brain_array_sha256": "706e08238a365a9c2339317632795e37a282cb38d932bb59a4f894557640841c"
+  },
+  {
+    "subject": "subj01",
+    "trial_id": "subj01_trial022615",
+    "image_id": "nsd43156",
+    "question_id": 920318,
+    "answer_id": 920318,
+    "question": "What is the person holding?",
+    "references": [
+      "tennis racket"
+    ],
+    "prediction": "The person is holding a cell phone.",
+    "token_ids": [
+      450,
+      2022,
+      338,
+      13587,
+      263,
+      3038,
+      9008,
+      29889,
+      2
+    ],
+    "active_tokens": 9,
+    "seconds": 0.6570130148902535,
+    "brain_array_sha256": "af4a9e5e71604772cd3e9122a5494e8e587ae40c4d5e476fbe96c29d7f0dffb8"
+  },
+  {
+    "subject": "subj02",
+    "trial_id": "subj02_trial008867",
+    "image_id": "nsd33245",
+    "question_id": 708039,
+    "answer_id": 708039,
+    "question": "Is the tile in the foreground or the background?",
+    "references": [
+      "background"
+    ],
+    "prediction": "The tile in the foreground.",
+    "token_ids": [
+      450,
+      25900,
+      297,
+      278,
+      363,
+      18128,
+      29889,
+      2
+    ],
+    "active_tokens": 8,
+    "seconds": 0.45389171317219734,
+    "brain_array_sha256": "2289a9661a4c351958e6a8a0bb518bce343dde642f2acdbd660896cb5ec6e5d8"
+  },
+  {
+    "subject": "subj02",
+    "trial_id": "subj02_trial022615",
+    "image_id": "nsd43156",
+    "question_id": 920318,
+    "answer_id": 920318,
+    "question": "What is the person holding?",
+    "references": [
+      "tennis racket"
+    ],
+    "prediction": "The person is holding a tennis racket.",
+    "token_ids": [
+      450,
+      2022,
+      338,
+      13587,
+      263,
+      22556,
+      1153,
+      3522,
+      29889,
+      2
+    ],
+    "active_tokens": 10,
+    "seconds": 0.5435588620603085,
+    "brain_array_sha256": "3ca3a5529ec5e9681d48cb05a335f96760abb0efc4e2ab9954fa776a31977c74"
+  },
+  {
+    "subject": "subj05",
+    "trial_id": "subj05_trial008867",
+    "image_id": "nsd33245",
+    "question_id": 708039,
+    "answer_id": 708039,
+    "question": "Is the tile in the foreground or the background?",
+    "references": [
+      "background"
+    ],
+    "prediction": "The tile is in the foreground.",
+    "token_ids": [
+      450,
+      25900,
+      338,
+      297,
+      278,
+      363,
+      18128,
+      29889,
+      2
+    ],
+    "active_tokens": 9,
+    "seconds": 0.5111821158789098,
+    "brain_array_sha256": "91fc6a481aac0d32268908bd0f76b483de1f8b3aea4fc8a9ff33c0e0a9c5812d"
+  },
+  {
+    "subject": "subj05",
+    "trial_id": "subj05_trial022615",
+    "image_id": "nsd43156",
+    "question_id": 920318,
+    "answer_id": 920318,
+    "question": "What is the person holding?",
+    "references": [
+      "tennis racket"
+    ],
+    "prediction": "The person is holding a tennis racket.",
+    "token_ids": [
+      450,
+      2022,
+      338,
+      13587,
+      263,
+      22556,
+      1153,
+      3522,
+      29889,
+      2
+    ],
+    "active_tokens": 10,
+    "seconds": 0.5479227378964424,
+    "brain_array_sha256": "cab9f323153da069277a3acbd6e5a0cf4fc2ff3129ae5aed974ce1ed3493c31b"
+  },
+  {
+    "subject": "subj07",
+    "trial_id": "subj07_trial008867",
+    "image_id": "nsd33245",
+    "question_id": 708039,
+    "answer_id": 708039,
+    "question": "Is the tile in the foreground or the background?",
+    "references": [
+      "background"
+    ],
+    "prediction": "The tile in the foreground is the table.",
+    "token_ids": [
+      450,
+      25900,
+      297,
+      278,
+      363,
+      18128,
+      338,
+      278,
+      1591,
+      29889,
+      2
+    ],
+    "active_tokens": 11,
+    "seconds": 0.6003392338752747,
+    "brain_array_sha256": "fc83a4c1dc63472478437a31d13cf66f6951f69056166b6f5f612fc2755a6624"
+  },
+  {
+    "subject": "subj07",
+    "trial_id": "subj07_trial022615",
+    "image_id": "nsd43156",
+    "question_id": 920318,
+    "answer_id": 920318,
+    "question": "What is the person holding?",
+    "references": [
+      "tennis racket"
+    ],
+    "prediction": "The person is holding a tennis racket.",
+    "token_ids": [
+      450,
+      2022,
+      338,
+      13587,
+      263,
+      22556,
+      1153,
+      3522,
+      29889,
+      2
+    ],
+    "active_tokens": 10,
+    "seconds": 0.5796838118694723,
+    "brain_array_sha256": "05c1b9948c3d454ff5d2561b7c6452158534282f65b7fda4933d79405074fe08"
+  }
+]

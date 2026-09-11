@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "status": "predeclared_before_comparative_training",
+  "purpose": "complete exploratory method/subject/seed/control matrix with explicit finite training coverage",
+  "seeds": [
+    41,
+    42,
+    43
+  ],
+  "subjects": [
+    "subj01",
+    "subj02",
+    "subj05",
+    "subj07"
+  ],
+  "vqa_methods": [
+    "ce",
+    "exact-image-opsd",
+    "map-image-opsd",
+    "uniform-mixture",
+    "plain-posterior-mixture",
+    "credit-style-image-contrastive",
+    "dapd-brain-text-reference",
+    "vad-style-full-image",
+    "npp-opsd",
+    "npp-geometric",
+    "npp-information-gain",
+    "npp-sqrt-information-gain"
+  ],
+  "training": {
+    "max_examples": 256,
+    "max_optimizer_steps": 16,
+    "gradient_accumulation_steps": 16,
+    "micro_batch_size": 1,
+    "epochs": 1,
+    "optimizer": "AdamW",
+    "lr": 5e-06,
+    "weight_decay": 0.0,
+    "gradient_clip": null,
+    "trainable": "original projector plus LoRA q/v r8 alpha16 dropout0; frozen NF4 LLaVA7B and released BrainX",
+    "qa_selection": "deterministic seed/trial selection among all available questions, identical acrossmethods",
+    "inference_controls_are_not_separate_training_runs": true
+  },
+  "p3": {
+    "methods": [
+      "ce",
+      "exact-image-opsd"
+    ],
+    "seed": 41,
+    "image_group_fraction": 0.1,
+    "consume": "all trials in deterministic10% TRAIN image-group subset, one saved QA per trial, one pass",
+    "max_updates": "ceil(selected_trials/16), including correctly scaled partial final window",
+    "scope_note": "P3 consumes its entire selected subset; it does not inherit the256example cap"
+  },
+  "captioning": {
+    "methods": [
+      "npp-opsd"
+    ],
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "subjects": [
+      "subj01",
+      "subj02",
+      "subj05",
+      "subj07"
+    ],
+    "training_examples": 256,
+    "optimizer_updates": 16,
+    "max_new_tokens": 96,
+    "metrics": [
+      "CIDEr",
+      "SPICE",
+      "METEOR",
+      "ROUGE-L",
+      "SPICE object precision/recall proxy"
+    ]
+  },
+  "generation": {
+    "vqa_max_new_tokens": 64,
+    "vqa_instruction": "Answer with a short phrase.",
+    "train_do_sample": true,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "evaluation_do_sample": false
+  },
+  "candidate_policy": {
+    "count": 4,
+    "selection": "deterministic uniform samples without replacement from subject TRAIN image bank, independent of brain/true image/answer",
+    "prior": "uniform",
+    "posterior_scope": "conditional on sampled gallery; no true-target NLL if target not in support"
+  },
+  "evaluation": {
+    "cohort_sha256": "5ea7635e5ffe2c901ba9df0d16f59c76acb6976dd8506c027f8715e151b4231f",
+    "controls": [
+      "correct",
+      "shuffled",
+      "zero",
+      "covariance-noise",
+      "wrong-subject"
+    ],
+    "main_repeat_prefix": 1,
+    "diagnostic_repeat_prefixes": [
+      1,
+      2,
+      3
+    ],
+    "development_exposed_image_ids": [
+      "nsd33245",
+      "nsd43156"
+    ],
+    "report_sensitivity_excluding_development_exposed": true,
+    "pretrained_student_baseline": true,
+    "performance_gates": "diagnostics only; continue all runs regardless of accuracy/NDG gains",
+    "coverage_note": "128category-stratified testimages; not exhaustive full-test or full-training-data benchmark"
+  },
+  "compute_evidence": {
+    "pilot_report_sha256": "6af87055713904f8ee1e7e43efdf2cf453c2273e8132a9c1019a2fc94e14f240",
+    "pilot_scope": "one-update engineering timing only; CE/NPP/DAPD finite nonzero updates"
+  },
+  "storage": {
+    "shared_patch_cache_max_bytes": 1073741824,
+    "checkpoint_policy": "latest atomic resumable trainables+optimizer+RNG/cursor only perrun; no frozenbase duplication",
+    "dapd_snapshot_interval": 100
+  },
+  "brainjanus": "complete verified backend/checkpoint still release-dependent; continue all available backend runs"
+}

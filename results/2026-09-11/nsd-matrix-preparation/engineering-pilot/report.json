@@ -1,0 +1,14 @@
+{
+  "purpose": "first2predeclaredcohort images x4subjects; frozen originalweights; engineering inference pilot, not fullbenchmark",
+  "cohort_sha256": "5ea7635e5ffe2c901ba9df0d16f59c76acb6976dd8506c027f8715e151b4231f",
+  "generation": {
+    "max_new_tokens": 64,
+    "do_sample": false,
+    "use_cache": true
+  },
+  "torch": "2.13.0+cu126",
+  "cases": 8,
+  "peak_cuda_bytes": 5164656640,
+  "mean_seconds": 0.7351716565899551,
+  "encoder_provenance": null
+}

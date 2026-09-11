@@ -1,0 +1,231 @@
+{
+  "controls": {
+    "41": {
+      "matched": 11780,
+      "total": 12000,
+      "first_repeat_cohort_matched": {
+        "subj01": 125,
+        "subj02": 125,
+        "subj05": 125,
+        "subj07": 125
+      },
+      "sha256": "8627799cdcdf1a6955d87ec0287e96e99be098f274d2cfe5cfdff7ebba486e58"
+    },
+    "42": {
+      "matched": 11780,
+      "total": 12000,
+      "first_repeat_cohort_matched": {
+        "subj01": 125,
+        "subj02": 125,
+        "subj05": 125,
+        "subj07": 125
+      },
+      "sha256": "1f07ba898f3c20806287e72af8c693997257e9e8a5d7ba90666d010e77ee78e5"
+    },
+    "43": {
+      "matched": 11780,
+      "total": 12000,
+      "first_repeat_cohort_matched": {
+        "subj01": 125,
+        "subj02": 125,
+        "subj05": 125,
+        "subj07": 125
+      },
+      "sha256": "91a9214ba6b4f5675c24be635d58343e276f2e207339992c02cc0c60fe53e027"
+    },
+    "wrong-subject": {
+      "matched": 12000,
+      "total": 12000,
+      "sha256": "e9cdc51a4bcac0036a1606701c079810fb640f846c34f577ebb33457d4fedd5a"
+    }
+  },
+  "noise": {
+    "subj01": {
+      "identity": {
+        "manifest_sha256": "394427194584ea1fc6b54195a8e0c8ca0b44eef0a0e83b2fb278c23a7bf4797c",
+        "cohort_sha256": "5ea7635e5ffe2c901ba9df0d16f59c76acb6976dd8506c027f8715e151b4231f",
+        "trial_provenance_sha256": "34a693fd1da7d9441a746ab33339873787fe77f78a424c49ea528859193d7aa4",
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "subject": "subj01",
+        "code_sha256": "95b1146a1fbd2706dd72d75bea9e53e546198809fc22e8d31e7f35010d64053e",
+        "torch": "2.13.0+cu126"
+      },
+      "training_trials": 24459,
+      "full_provenance_sha256": "c5af826d5556f223c586f758e8263d09513c17f9a9a1d7bbc8bd2daf56f0f742",
+      "outputs": {
+        "41": {
+          "sha256": "959743499b072d9b0d7b7e1a18a92fdfe45e4da25d1319bfd93c785bebbfa673",
+          "shape": [
+            128,
+            15724
+          ],
+          "dtype": "float32",
+          "finite": true
+        },
+        "42": {
+          "sha256": "d34037891ff06e9cbb7a702140ece741a449c8e737a9f2ebd8e919e2793cefda",
+          "shape": [
+            128,
+            15724
+          ],
+          "dtype": "float32",
+          "finite": true
+        },
+        "43": {
+          "sha256": "799677c4122155d3270dc84bd5c2edb7c4567c9193da5acd387aa0a77ed08e23",
+          "shape": [
+            128,
+            15724
+          ],
+          "dtype": "float32",
+          "finite": true
+        }
+      }
+    },
+    "subj02": {
+      "identity": {
+        "manifest_sha256": "394427194584ea1fc6b54195a8e0c8ca0b44eef0a0e83b2fb278c23a7bf4797c",
+        "cohort_sha256": "5ea7635e5ffe2c901ba9df0d16f59c76acb6976dd8506c027f8715e151b4231f",
+        "trial_provenance_sha256": "a46b893c8442aece5eb3ac43c3ff0cb950a6d567680d551428d00a73bea5fb88",
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "subject": "subj02",
+        "code_sha256": "95b1146a1fbd2706dd72d75bea9e53e546198809fc22e8d31e7f35010d64053e",
+        "torch": "2.13.0+cu126"
+      },
+      "training_trials": 24273,
+      "full_provenance_sha256": "5f65a7603b80b24ddab823ae611d6fcca4450e4d72ff37ef5d257514246f623b",
+      "outputs": {
+        "41": {
+          "sha256": "f47c4c6c3e4f33dc23574a595b6d0e24835e1fe9a7eb0352f381ff69aa41522c",
+          "shape": [
+            128,
+            14278
+          ],
+          "dtype": "float32",
+          "finite": true
+        },
+        "42": {
+          "sha256": "3fa1580899bf052f0cb10ea5a8d50543fdf3c3338b078c6d39f8a1aab4525739",
+          "shape": [
+            128,
+            14278
+          ],
+          "dtype": "float32",
+          "finite": true
+        },
+        "43": {
+          "sha256": "f2b5d6d54b57369842d39f21ab43d95803c03874aecc2629db59aa07f83964a0",
+          "shape": [
+            128,
+            14278
+          ],
+          "dtype": "float32",
+          "finite": true
+        }
+      }
+    },
+    "subj05": {
+      "identity": {
+        "manifest_sha256": "394427194584ea1fc6b54195a8e0c8ca0b44eef0a0e83b2fb278c23a7bf4797c",
+        "cohort_sha256": "5ea7635e5ffe2c901ba9df0d16f59c76acb6976dd8506c027f8715e151b4231f",
+        "trial_provenance_sha256": "205239a7aa70ee8dd3adec6dec31c35b0d9a1cc5c8a79f83d5bbf0734177ce24",
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "subject": "subj05",
+        "code_sha256": "95b1146a1fbd2706dd72d75bea9e53e546198809fc22e8d31e7f35010d64053e",
+        "torch": "2.13.0+cu126"
+      },
+      "training_trials": 24375,
+      "full_provenance_sha256": "9547d87d79fc84fc30d5dca93c6d705e4e38635399f92f0204da4f6136bcc8f3",
+      "outputs": {
+        "41": {
+          "sha256": "c425a47afe8db28dd33af115a538206619146228b4383f48d02aff86a09c2eb9",
+          "shape": [
+            128,
+            13039
+          ],
+          "dtype": "float32",
+          "finite": true
+        },
+        "42": {
+          "sha256": "ba3071ce8da99bb08022677134d44769a9d8bec220ae12ee2913dc1ab2907f05",
+          "shape": [
+            128,
+            13039
+          ],
+          "dtype": "float32",
+          "finite": true
+        },
+        "43": {
+          "sha256": "7a7d9cd491d4ad5c4a9b7f0468d213a32dddc79ae0524b5ffed9ba73ac8003fb",
+          "shape": [
+            128,
+            13039
+          ],
+          "dtype": "float32",
+          "finite": true
+        }
+      }
+    },
+    "subj07": {
+      "identity": {
+        "manifest_sha256": "394427194584ea1fc6b54195a8e0c8ca0b44eef0a0e83b2fb278c23a7bf4797c",
+        "cohort_sha256": "5ea7635e5ffe2c901ba9df0d16f59c76acb6976dd8506c027f8715e151b4231f",
+        "trial_provenance_sha256": "397a1170773248bdf0f21de6c7cc56361b9a76ba4c30117dfcc4642fab54aa3e",
+        "seeds": [
+          41,
+          42,
+          43
+        ],
+        "subject": "subj07",
+        "code_sha256": "95b1146a1fbd2706dd72d75bea9e53e546198809fc22e8d31e7f35010d64053e",
+        "torch": "2.13.0+cu126"
+      },
+      "training_trials": 24405,
+      "full_provenance_sha256": "0c3afe948538968e2579ccccf75766a5b98f6781c130f3577c2dc6040b230176",
+      "outputs": {
+        "41": {
+          "sha256": "3e7b9028c1616896a3c6d32b084590f31051112676437d6cdf7625d6b2661ada",
+          "shape": [
+            128,
+            12682
+          ],
+          "dtype": "float32",
+          "finite": true
+        },
+        "42": {
+          "sha256": "2f0adcb28b31e089bd174056209d3dea9d8ca9ecf3d16bd7a86be2ac4e1b4a53",
+          "shape": [
+            128,
+            12682
+          ],
+          "dtype": "float32",
+          "finite": true
+        },
+        "43": {
+          "sha256": "4c079e7e02f0fae145b2802be917c39a0d01b2eb924f739147246f6f9c53fb2a",
+          "shape": [
+            128,
+            12682
+          ],
+          "dtype": "float32",
+          "finite": true
+        }
+      }
+    }
+  },
+  "provenance_sha256": "d8b40b83a8224dac1ffaed2d05f987e2fb1e045dea42e4fd567593dc8d2be558",
+  "policy": "Fixed pre-outcome controls; zero-mean Gaussian covariance fit only on TRAIN references; no test tensor used to estimate covariance",
+  "reproduction": "All5control JSON artifacts reproduced byte-for-byte; noise completed-cache reuse independently invoked"
+}

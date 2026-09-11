@@ -1,0 +1,38 @@
+{
+  "purpose": "real one-update engineering pilot, not comparison",
+  "trial_id": "subj01_trial000001",
+  "question_id": 1320373,
+  "prompt_instruction": "Answer with a short phrase.",
+  "results": [
+    {
+      "method": "ce",
+      "seconds": 1.6277797888033092,
+      "peak_cuda_bytes": 9314235392,
+      "loss": 4.974328994750977,
+      "gradient_norm": 65.05860137939453,
+      "delta_norm": 0.024118416011333466,
+      "sequence_views": 1,
+      "generated_tokens": 0
+    },
+    {
+      "method": "npp",
+      "seconds": 1.637546488083899,
+      "peak_cuda_bytes": 9313068544,
+      "loss": 0.02111714333295822,
+      "gradient_norm": 3.5818159580230713,
+      "delta_norm": 0.024092864245176315,
+      "sequence_views": 5,
+      "generated_tokens": 2
+    },
+    {
+      "method": "dapd",
+      "seconds": 2.6399378669448197,
+      "peak_cuda_bytes": 16874381312,
+      "loss": 0.07262814044952393,
+      "gradient_norm": 2.2778966426849365,
+      "delta_norm": 0.024093514308333397,
+      "sequence_views": 10,
+      "generated_tokens": 2
+    }
+  ]
+}

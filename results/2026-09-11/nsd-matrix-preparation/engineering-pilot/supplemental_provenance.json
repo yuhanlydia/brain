@@ -1,0 +1,39 @@
+{
+  "purpose": "Supplement actual frozen inference pilot with full model/data/code hashes; original report/predictions unchanged",
+  "files_sha256": {
+    "/root/brain-assets/nsd-full/nsd_manifest.jsonl": "394427194584ea1fc6b54195a8e0c8ca0b44eef0a0e83b2fb278c23a7bf4797c",
+    "/root/brain-assets/nsd-full/vqa_test.jsonl": "da6227a90f68ee0532de021c07516a2eb1ab84d7395996ce69bf97bb3a45c81a",
+    "/root/brain-assets/nsd-full/matrix/evaluation_cohort.json": "5ea7635e5ffe2c901ba9df0d16f59c76acb6976dd8506c027f8715e151b4231f",
+    "/root/brain-assets/umbrae/train_logs/brainx/last.pth": "dc0929ab38d8f47279140b6120cb861d2b50476b080ee5a3fd0f7837f0bba26c",
+    "/root/brain-assets/vindex/src/llava/model_weights/llava-v1.5-7b/mm_projector.bin": "be33a3b477e091832a3c8a9fabf5769c43b4cb2c161fc8c464b7bb214f16143a",
+    "/root/brain/artifacts/pretrained_inference_pilot.py": "39ddf846c64738fc962c2dbe8f6d22b129a4909e90b378e053137af3980d8d27",
+    "/root/brain/artifacts/verification/pretrained_inference_pilot/predictions.json": "929eb58a46132275d463a245760a65637344c355cbe00343742fa6a647dbd42d",
+    "/root/brain/artifacts/verification/pretrained_inference_pilot/report.json": "3b9d30d99220c8ffe7c2b7600a278e869efd967d6f78cdb31848753821f78919"
+  },
+  "llava_model_tree_sha256": "6b038459cbf3ca21d15db8f5ef39c10af7787b78aca2662a474b99efe8c9b799",
+  "brainx_source_sha256": {
+    "model.py": "d18e2e03d96c95371db3a21bce22a9dbd513b6df81a0fb72511640db786d0cd6",
+    "perceiver.py": "7a5fac8f4b22ec1937a84a966342c3af09a22e53f4404031c302288dbfc927ff"
+  },
+  "environment": {
+    "python": "3.10.12",
+    "packages": {
+      "torch": "2.13.0+cu126",
+      "transformers": "4.45.2",
+      "bitsandbytes": "0.50.2",
+      "numpy": "2.2.6"
+    },
+    "torch_cuda": "12.6",
+    "cuda_runtime": "NVIDIA GeForce RTX 3090",
+    "cudnn": 91002
+  },
+  "development_exposed_image_ids": [
+    "nsd33245",
+    "nsd43156"
+  ],
+  "comparative_reporting": "retain128cohort and report additional sensitivity excluding these2engineeringpilot images; pilot prompt differs from planned short-answer prompt",
+  "notes": [
+    "Original report encoder_provenance is null because the logging helper queried the wrong attribute; actual encoder checkpoint and source hashes are supplied here.",
+    "Initial attempt stopped on token-mask logging AttributeError; no optimizer update or benchmark metric was produced."
+  ]
+}
