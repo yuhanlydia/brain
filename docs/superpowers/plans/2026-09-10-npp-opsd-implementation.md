@@ -401,8 +401,10 @@ until the external checkpoints/data have been run.
 
 The matrix includes CE, exact-image OPSD, MAP-image OPSD, uniform mixture,
 plain posterior mixture, CREDIT-style, DAPD, VAD-style, and NPP-OPSD under
-correct/shuffled/zero/covariance-noise/wrong-subject controls. Primary success
-requires both task quality and NDG improvement.
+correct/shuffled/zero/covariance-noise/wrong-subject controls. Updated on
+2026-09-11: the user removed performance stop conditions and the requirement
+for joint task-quality/NDG improvement. Report each metric independently and
+continue every available experiment.
 
 - [ ] **Step 5: Run fresh full verification**
 

@@ -261,13 +261,15 @@ Report:
 - correct-trial versus shuffled-trial retrieval R@1/R@5;
 - posterior entropy by VQA question category.
 
-### 6.4 Go/no-go criterion
+### 6.4 Exploratory continuation policy (updated 2026-09-11)
 
-Before a full NPP-OPSD run, establish whether exact-image OPSD improves task
-quality while leaving NDG unchanged or worse. If this neural-bypass phenomenon
-does not occur and NPP-OPSD does not improve both task quality and NDG over
-strong OPSD controls, the method claim is stopped rather than reframed after
-the fact.
+The user superseded the original performance go/no-go rule. Measure whether
+exact-image OPSD improves task quality while leaving NDG unchanged or worse,
+but continue the full matrix regardless. Report task-quality and NDG changes
+separately; a positive change in either is an exploratory finding, with no
+fixed threshold or joint-improvement requirement. Preserve negative outcomes
+and distinguish task-quality gains from evidence of neural dependence.
+Numerical correctness and data isolation remain requirements.
 
 ## 7. Resource profiles
 

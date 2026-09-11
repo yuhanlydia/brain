@@ -183,9 +183,10 @@ exact-image OPSD under correct and shuffled inputs:
 brain-npp train --config configs/nsd/local_p3_vindex_bypass_seed41.yaml
 ```
 
-Proceed to the full NPP claim only after checking whether exact-image OPSD
-improves task quality while NDG is unchanged or worse, as specified by the
-go/no-go rule.
+Record whether exact-image OPSD improves task quality while NDG is unchanged
+or worse as a bypass diagnostic. Continue P4 and every remaining experiment
+regardless of this pattern; the user removed performance stop conditions on
+2026-09-11.
 
 ### P4: NPP-OPSD seeds 41, 42, and 43
 
@@ -199,8 +200,10 @@ done
 
 Aggregate across the three completed runs only after verifying each run used
 the same split, trainable parameters, update budget, and teacher-forward budget.
-Success requires NPP-OPSD to improve both task quality and NDG over the stated
-comparators; improvement in only one is not a positive method result.
+Report task quality and NDG changes separately, with uncertainty and negative
+results. An improvement in either can be a positive exploratory finding; there
+is no fixed threshold or requirement that both improve. Task-quality gains
+alone do not establish neural dependence.
 
 ## 5. Captioning and BrainJanus profiles
 
