@@ -1,6 +1,6 @@
 # NSD exploratory matrix report
 
-Matrix status: **partial** (20/164 validated complete).
+Matrix status: **partial** (21/164 validated complete).
 No performance threshold filters this report.
 
 | Case | Status | Available conditions | Validation findings |
@@ -25,7 +25,7 @@ No performance threshold filters this report.
 | P2_nsd_vqa_subj02_seed41_credit-style-image-contrastive | complete | 7 | none |
 | P2_nsd_vqa_subj02_seed41_dapd-brain-text-reference | complete | 7 | none |
 | P2_nsd_vqa_subj02_seed41_vad-style-full-image | complete | 7 | none |
-| P4_nsd_vqa_subj02_seed41_npp-opsd | pending | 0 | checkpoint_identity_missing |
+| P4_nsd_vqa_subj02_seed41_npp-opsd | complete | 7 | none |
 | P4_nsd_vqa_subj02_seed41_npp-geometric | pending | 0 | checkpoint_identity_missing |
 | P4_nsd_vqa_subj02_seed41_npp-information-gain | pending | 0 | checkpoint_identity_missing |
 | P4_nsd_vqa_subj02_seed41_npp-sqrt-information-gain | pending | 0 | checkpoint_identity_missing |
@@ -328,3 +328,15 @@ points (interval 1.5625 to 24.2188);
 paired delta-NDG is 14.40 points (interval
 4.00 to 24.80). This is the
 documented VAD-style adaptation, not an official-code reproduction.
+
+## Twenty-first completed case: subject02 NPP-OPSD
+
+Subject02/seed41 NPP-OPSD completed the matched 256-example, 16-update budget and
+893 required predictions. Accuracy is 46.0938%, with category macro
+accuracy 46.11111%. Matched correct-minus-shuffled NDG is
+13.60 percentage points (95% image-bootstrap interval
+3.20 to 24.80; n=125).
+Relative to subject02 CE, paired accuracy difference is 7.0312
+points (interval -0.7812 to 14.8438);
+paired delta-NDG is 11.20 points (interval
+0.00 to 22.40).
