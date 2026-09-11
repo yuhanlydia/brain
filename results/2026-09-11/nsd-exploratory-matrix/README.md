@@ -1,6 +1,6 @@
 # Real NSD exploratory matrix: incremental results
 
-**19 of 164 cases are complete.** The remaining comparisons are running; this is
+**20 of 164 cases are complete.** The remaining comparisons are running; this is
 not a complete benchmark table. Accuracy and neural-dependence measurements
 are diagnostics, without performance stopping thresholds.
 
@@ -195,3 +195,10 @@ Subject02/seed41 DAPD completed the matched 256-example, 16-update budget and
 (category macro 29.60069%), with matched NDG 4.80
 percentage points. The reference snapshot remains at its initial state because the
 fixed budget ends before its 100-update refresh interval.
+
+## Twentieth completed case: subject02 VAD-style
+
+Subject02/seed41 VAD-style full-image adaptation completed the matched 256-example,
+16-update budget and 893 required predictions. Stratified-subset accuracy is 52.3438%
+(category macro 54.98264%), with matched NDG 16.80
+percentage points. This is the documented VAD-style adaptation; it is not an official-code reproduction.

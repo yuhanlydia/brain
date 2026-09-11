@@ -1,6 +1,6 @@
 # NSD exploratory matrix report
 
-Matrix status: **partial** (19/164 validated complete).
+Matrix status: **partial** (20/164 validated complete).
 No performance threshold filters this report.
 
 | Case | Status | Available conditions | Validation findings |
@@ -24,7 +24,7 @@ No performance threshold filters this report.
 | P2_nsd_vqa_subj02_seed41_plain-posterior-mixture | complete | 7 | none |
 | P2_nsd_vqa_subj02_seed41_credit-style-image-contrastive | complete | 7 | none |
 | P2_nsd_vqa_subj02_seed41_dapd-brain-text-reference | complete | 7 | none |
-| P2_nsd_vqa_subj02_seed41_vad-style-full-image | pending | 0 | checkpoint_identity_missing |
+| P2_nsd_vqa_subj02_seed41_vad-style-full-image | complete | 7 | none |
 | P4_nsd_vqa_subj02_seed41_npp-opsd | pending | 0 | checkpoint_identity_missing |
 | P4_nsd_vqa_subj02_seed41_npp-geometric | pending | 0 | checkpoint_identity_missing |
 | P4_nsd_vqa_subj02_seed41_npp-information-gain | pending | 0 | checkpoint_identity_missing |
@@ -315,3 +315,16 @@ points (interval -14.8438 to -3.1250);
 paired delta-NDG is 2.40 points (interval
 -5.60 to 12.00). The reference
 snapshot remains at its initial state because this fixed budget ends before its 100-update refresh interval.
+
+## Twentieth completed case: subject02 VAD-style
+
+Subject02/seed41 VAD-style full-image adaptation completed the matched 256-example,
+16-update budget and 893 required predictions. Accuracy is 52.3438%, with
+category macro accuracy 54.98264%. Matched correct-minus-shuffled
+NDG is 16.80 percentage points (95% image-bootstrap interval
+8.80 to 25.60; n=125).
+Relative to subject02 CE, paired accuracy difference is 13.2812
+points (interval 1.5625 to 24.2188);
+paired delta-NDG is 14.40 points (interval
+4.00 to 24.80). This is the
+documented VAD-style adaptation, not an official-code reproduction.
