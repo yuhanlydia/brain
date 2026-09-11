@@ -1,6 +1,6 @@
 # Real NSD exploratory matrix: incremental results
 
-**3 of 164 cases are complete.** The remaining comparisons are running; this is
+**4 of 164 cases are complete.** The remaining comparisons are running; this is
 not a complete benchmark table. Accuracy and neural-dependence measurements
 are diagnostics, without performance stopping thresholds.
 
@@ -73,3 +73,11 @@ and seed; the full set of methods, subjects and seeds is still running.
 
 `CURRENT_RESULTS.md` provides the readable completed-case metric tables and
 full partial-matrix status, using the same reviewed values as the snapshot.
+
+## Fourth completed case: uniform mixture
+
+Subject01/seed41 uniform mixture completed the same 256 examples and 16 updates,
+with 893 predictions across the required controls and repeat diagnostics.
+Accuracy is 49.21875% (63/128), and category macro accuracy is 50.98958%.
+The paired comparisons and uncertainty appear in `CURRENT_RESULTS.md`;
+these remain exploratory single-subject, single-seed results.
