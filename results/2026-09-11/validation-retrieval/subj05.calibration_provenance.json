@@ -1,0 +1,61 @@
+{
+  "subject": "subj05",
+  "purpose": "full training-only likelihood fitting; no benchmark task scores",
+  "model_semantics": "p(projected_brain | fixed_image_features, subject)",
+  "train_trials": 24375,
+  "train_images": 8125,
+  "validation_test_used_in_fitting": false,
+  "all_oof_scores_finite": true,
+  "oof_log_density_mean": -82.65622605834328,
+  "artifacts": {
+    "0": {
+      "path": "/root/brain-assets/nsd-full/calibration/subj05/0.npz",
+      "sha256": "0ad21a2450642a8829e3082b30f29aff1fd8807c8ee3f83c9214e86e05ad579f",
+      "train_images": 6559,
+      "train_trials": 19677,
+      "reused": false
+    },
+    "1": {
+      "path": "/root/brain-assets/nsd-full/calibration/subj05/1.npz",
+      "sha256": "75b0af6fbe7d7c7f5153860971636d148a71436bfad8d7d48b84715ca0a9d098",
+      "train_images": 6446,
+      "train_trials": 19338,
+      "reused": false
+    },
+    "2": {
+      "path": "/root/brain-assets/nsd-full/calibration/subj05/2.npz",
+      "sha256": "53fc437843272c0607fc5571f11e3255d9310ef56b0009ac304efd20d0bbaf96",
+      "train_images": 6452,
+      "train_trials": 19356,
+      "reused": false
+    },
+    "3": {
+      "path": "/root/brain-assets/nsd-full/calibration/subj05/3.npz",
+      "sha256": "be0b623d788f858f96cdf7f3c47b6430dd7de37531719bd034b100fcf0ed7f4a",
+      "train_images": 6544,
+      "train_trials": 19632,
+      "reused": false
+    },
+    "4": {
+      "path": "/root/brain-assets/nsd-full/calibration/subj05/4.npz",
+      "sha256": "dde47e0be78171d1af47391cef35dc5605e65790ff761da075e2d028d279ecaa",
+      "train_images": 6499,
+      "train_trials": 19497,
+      "reused": false
+    },
+    "final": {
+      "path": "/root/brain-assets/nsd-full/calibration/subj05/final.npz",
+      "sha256": "2a81fb445c150ac48b145f9ac4f886202aa018bfcb0d2984afa0ad2d08ef8f14",
+      "train_images": 8125,
+      "train_trials": 24375,
+      "reused": false
+    }
+  },
+  "manifest_sha256": "394427194584ea1fc6b54195a8e0c8ca0b44eef0a0e83b2fb278c23a7bf4797c",
+  "image_features_sha256": "1a938e03d851098626ab571f21c580e89a6ea2075b8549e6aaf63ee8e8d821ad",
+  "fold_seed": 1731,
+  "outer_folds": 5,
+  "inner_folds": 5,
+  "calibration_code_sha256": "1959bc4faf3b81e4b851072805e951e1d808ec8a7fce099d42a168f6ca2f31fd",
+  "beta_sha256": "c4947217424a4de254100026c9d710b40f83e95d03f2eafd9f9abf1e3fbf29d5"
+}

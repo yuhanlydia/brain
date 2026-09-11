@@ -1,0 +1,15 @@
+{
+  "input_hashes": {
+    "images": "1379a6dc5bb1a932d5195f76df8194a3d7c212b0d0c9fd9233128898a7a2409c",
+    "config.json": "8a09b467700c58138c29d53c605b34ebc69beaadd13274a8a2af8ad2c2f4032a",
+    "preprocessor_config.json": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+    "pytorch_model.bin": "f1a17cdbe0f36fec524f5cafb1c261ea3bbbc13e346e0f74fc9eb0460dedd0d3"
+  },
+  "completed_images": 37000,
+  "total_images": 37000,
+  "purpose": "fixed image features only; no brain/label fitting",
+  "clip_revision": "32bd64288804d66eefd0ccbe215aa642df71cc41",
+  "feature_sha256": "1a938e03d851098626ab571f21c580e89a6ea2075b8549e6aaf63ee8e8d821ad",
+  "all_finite": true,
+  "max_memory_allocated_bytes": 1361533440
+}

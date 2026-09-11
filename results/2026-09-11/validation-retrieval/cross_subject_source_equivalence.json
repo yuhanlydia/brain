@@ -1,0 +1,19 @@
+{
+  "purpose": "source-level equivalence supporting released cross-subject checkpoint routing",
+  "vindex_revision": "ad0dab49e99d18a179097e9b79246f7ca3559f1b",
+  "umbrae_revision": "8c1795c434a41cdd38ce6628b7e1a774f31d9483",
+  "components": {
+    "BrainX": {
+      "ast_equal": true,
+      "ast_sha256": "e9f5f1f72076f97dc02080818b0f92c38080060fdccf015f62eba040d567bdf7"
+    },
+    "Perceiver": {
+      "ast_equal": true,
+      "ast_sha256": "334b555fe617f5649638ac3910e5f941c5d74b0d4f9a220a79f9f4e9c033d9bd"
+    },
+    "perceiver_module": {
+      "ast_equal": true,
+      "ast_sha256": "a870f69ee1a2dba72c218209b9a3204b82d4cd40bc05fc845bc54f4edca778ef"
+    }
+  }
+}
