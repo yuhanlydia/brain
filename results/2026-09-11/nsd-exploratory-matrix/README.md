@@ -1,6 +1,6 @@
 # Real NSD exploratory matrix: incremental results
 
-**2 of 164 cases are complete.** The remaining comparisons are running; this is
+**3 of 164 cases are complete.** The remaining comparisons are running; this is
 not a complete benchmark table. Accuracy and neural-dependence measurements
 are diagnostics, without performance stopping thresholds.
 
@@ -58,3 +58,18 @@ matrix snapshot: paired comparisons, category/session and posterior summaries,
 exposure-exclusion sensitivity, coverage/status and input provenance. Its
 unfinished cases remain explicitly incomplete or pending. This snapshot is
 updated incrementally; the case archives preserve completed raw outputs.
+
+## Third completed case: MAP-image OPSD
+
+Subject01/seed41 MAP-image OPSD completed the same 256-example, 16-update
+budget and 893 required predictions. Accuracy is 48.4375% (62/128), with
+category macro accuracy 50.20833%. Its matched 125-example NDG is 12.8 points
+(image-bootstrap 95% interval: 4.8 to 20.8).
+
+Relative to matched CE, the paired accuracy difference is +5.46875 points
+(interval: -7.03125 to +17.1875), and delta-NDG is +5.6 points
+(interval: -4.0 to +15.2). These are exploratory comparisons from one subject
+and seed; the full set of methods, subjects and seeds is still running.
+
+`CURRENT_RESULTS.md` provides the readable completed-case metric tables and
+full partial-matrix status, using the same reviewed values as the snapshot.

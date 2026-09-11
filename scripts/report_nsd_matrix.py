@@ -235,6 +235,28 @@ def write_report(report,json_path,markdown_path):
     jp,md=Path(json_path),Path(markdown_path);jp.parent.mkdir(parents=True,exist_ok=True);md.parent.mkdir(parents=True,exist_ok=True);jp.write_text(json.dumps(report,indent=2,sort_keys=True,allow_nan=False)+"\n");c=report["coverage"]
     text=["# NSD exploratory matrix report","",f"Matrix status: **{'complete' if c['complete'] else 'partial'}** ({c['complete_cases']}/{c['expected_cases']} validated complete).","No performance threshold filters this report.","","| Case | Status | Available conditions | Validation findings |","|---|---|---:|---|"]
     for r in report["cases"]:text.append(f"| {r['case_id']} | {r['status']} | {len(r['available_conditions'])} | {', '.join(r['validation_findings']) or 'none'} |")
+    completed=[r for r in report["cases"] if r["status"]=="complete" and r["scientific_identity_valid"]]
+    def number(value):return "undefined" if value is None else f"{value:.4f}"
+    def estimate(value):
+        if not value:return "undefined"
+        ci=value.get("ci95");interval=f" [{number(ci[0])}, {number(ci[1])}]" if ci else ""
+        count=value.get("matched_examples",value.get("joint_four_way_examples"));suffix=f" (n={count})" if count is not None else ""
+        return f"{number(value.get('difference'))}{interval}{suffix}"
+    vqa=[r for r in completed if r["task_name"]=="nsd_vqa"]
+    if vqa:
+        text += ["","## Completed VQA results","","Accuracy and category macro are proportions. Brackets are 95% image-cluster bootstrap intervals.","","| Case | Subject | Seed | Accuracy (n) | Category macro | Matched NDG [95% CI] (n) | Method − CE [95% CI] (n) | ΔNDG [95% CI] (n) |","|---|---|---:|---:|---:|---:|---:|---:|"]
+        for r in vqa:
+            primary=r["analysis"]["primary"]["exact_match"];ndg=r["analysis"]["ndg"].get("exact_match");comparison=r.get("comparison_to_ce",{}).get("metrics",{}).get("exact_match",{})
+            text.append(f"| {r['case_id']} | {r['subject']} | {r['seed']} | {number(primary.get('mean'))} (n={primary.get('defined_count',0)}) | {number(primary.get('category_macro'))} | {estimate(ndg)} | {estimate(comparison.get('method_minus_ce'))} | {estimate(comparison.get('delta_ndg'))} |")
+    captions=[r for r in completed if r["task_name"]=="nsd_captioning"]
+    if captions:
+        text += ["","## Completed captioning results","","Values use each canonical metric's native units. Brackets are 95% image-cluster bootstrap intervals; n is the jointly defined paired count for differences.","","| Case | Subject | Seed | Metric | Trained mean (defined/total) | Matched NDG [95% CI] (n) | Trained − pretrained [95% CI] (n) | ΔNDG vs pretrained [95% CI] (n) |","|---|---|---:|---|---:|---:|---:|---:|"]
+        for r in captions:
+            comparison=r.get("comparison_to_pretrained",{}).get("metrics",{})
+            for metric in CAPTION:
+                primary=r["analysis"]["primary"].get(metric,{});paired_values=comparison.get(metric,{})
+                total=primary.get("defined_count",0)+primary.get("undefined_count",0)
+                text.append(f"| {r['case_id']} | {r['subject']} | {r['seed']} | {metric} | {number(primary.get('mean'))} ({primary.get('defined_count',0)}/{total}) | {estimate(r['analysis']['ndg'].get(metric))} | {estimate(paired_values.get('trained_minus_pretrained'))} | {estimate(paired_values.get('trained_minus_pretrained_delta_ndg'))} |")
     text += ["","Exact original identities are joined before image-cluster bootstrap. Cross-seed summaries use seed means and sample SD.","Caption comparisons retain jointly defined canonical values. CIDEr IDF is fixed-corpus dependent. SPICE object metrics are reference-grounded proxies.","TRAIN-only gallery target-conditioned metrics remain explicitly undefined when unavailable.",""];md.write_text("\n".join(text))
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument("--run-manifest",required=True,type=Path);p.add_argument("--nsd-manifest",required=True,type=Path);p.add_argument("--output-json",required=True,type=Path);p.add_argument("--output-markdown",required=True,type=Path);p.add_argument("--bootstrap-samples",type=int,default=2000);p.add_argument("--bootstrap-seed",type=int,default=1729);p.add_argument("--external-retrieval",type=Path);a=p.parse_args()
