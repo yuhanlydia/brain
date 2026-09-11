@@ -17,7 +17,7 @@ Caption evaluation uses these same 128 images and their full held-out references
 Report micro accuracy as **stratified-subset accuracy**, alongside category
 macro accuracy and image-cluster uncertainty. It is not full-test prevalence-
 weighted accuracy. Preserve unmatched controls and their denominators. Training
-update budgets will be declared after the real resource pilot and before any
+update budgets below were declared after the real resource pilot and before any
 comparative runs; neither this subset nor observed accuracy is a stopping gate.
 
 `prepare_matrix_eval_cohort.py` reproduces the exact selection from the complete
@@ -88,3 +88,17 @@ with finite nonzero gradients/parameter changes. They measured resource use to
 choose this budget. These engineering commands exercise model primitives; the
 production configuration-to-run binding must be completed and checked before
 comparative execution. They are not comparative accuracy results.
+
+`p3_cohort_summary.json` pins the complete P3 subset and traversal sizes;
+`prepare_p3_cohort.py` regenerates the full ordered trial/image lists. Subjects
+01/02/05/07 consume 2,445/2,427/2,436/2,439 trials, requiring
+153/152/153/153 updates at accumulation16. Both P3 methods consume each
+subject's same ordered subset, with the final partial window scaled by its
+actual example count.
+
+`materialize_matrix_configs.py` expands the reviewed schedule template and fixed
+budget into 164 individual configs, with their identities in `run_manifest.json`.
+The complete matrix consumes 59,430 training examples and 3,718 optimizer
+updates. This manifest declares work to execute; it does not assert completion.
+Absolute paths record this execution environment and can be regenerated for a
+different installation using the script arguments.

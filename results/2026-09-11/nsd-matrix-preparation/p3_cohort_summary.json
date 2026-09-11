@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "seed": 41,
+  "image_fraction": 0.1,
+  "policy": "per-subject TRAIN images ranked by SHA256(p3:41:image_id); first floor(0.10*N) groups; all their trials consumed once",
+  "manifest_sha256": "394427194584ea1fc6b54195a8e0c8ca0b44eef0a0e83b2fb278c23a7bf4797c",
+  "cohort_sha256": "0f8bc0158aef3a2d3aaa173eb29fffad7afea77f7e7dcb1b68f1717ed2671d25",
+  "subjects": {
+    "subj01": {
+      "eligible_training_images": 8153,
+      "selected_images": 815,
+      "selected_trials": 2445,
+      "optimizer_updates": 153,
+      "final_window_examples": 13
+    },
+    "subj02": {
+      "eligible_training_images": 8091,
+      "selected_images": 809,
+      "selected_trials": 2427,
+      "optimizer_updates": 152,
+      "final_window_examples": 11
+    },
+    "subj05": {
+      "eligible_training_images": 8125,
+      "selected_images": 812,
+      "selected_trials": 2436,
+      "optimizer_updates": 153,
+      "final_window_examples": 4
+    },
+    "subj07": {
+      "eligible_training_images": 8135,
+      "selected_images": 813,
+      "selected_trials": 2439,
+      "optimizer_updates": 153,
+      "final_window_examples": 7
+    }
+  }
+}
