@@ -1,6 +1,6 @@
 # Real NSD exploratory matrix: incremental results
 
-**7 of 164 cases are complete.** The remaining comparisons are running; this is
+**8 of 164 cases are complete.** The remaining comparisons are running; this is
 not a complete benchmark table. Accuracy and neural-dependence measurements
 are diagnostics, without performance stopping thresholds.
 
@@ -106,3 +106,11 @@ category macro accuracy 20.31250%. The reference snapshot remains
 at its initial state because the fixed budget ends before its 100-update
 refresh interval. Paired comparisons and uncertainty are in `CURRENT_RESULTS.md`.
 All observed results are retained; performance does not stop the queue.
+
+## Eighth completed case: VAD-style full image
+
+Subject01/seed41 VAD-style full image completed the matched 256-example,
+16-update budget and 893 required predictions. Accuracy is 51.5625%, with
+category macro accuracy 53.76736%. Paired comparisons and uncertainty
+are recorded in `CURRENT_RESULTS.md`. This is the documented VAD-style adaptation;
+it is not an official-code reproduction.
