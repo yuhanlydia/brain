@@ -1,6 +1,6 @@
 # NSD exploratory matrix report
 
-Matrix status: **partial** (21/164 validated complete).
+Matrix status: **partial** (22/164 validated complete).
 No performance threshold filters this report.
 
 | Case | Status | Available conditions | Validation findings |
@@ -26,7 +26,7 @@ No performance threshold filters this report.
 | P2_nsd_vqa_subj02_seed41_dapd-brain-text-reference | complete | 7 | none |
 | P2_nsd_vqa_subj02_seed41_vad-style-full-image | complete | 7 | none |
 | P4_nsd_vqa_subj02_seed41_npp-opsd | complete | 7 | none |
-| P4_nsd_vqa_subj02_seed41_npp-geometric | pending | 0 | checkpoint_identity_missing |
+| P4_nsd_vqa_subj02_seed41_npp-geometric | complete | 7 | none |
 | P4_nsd_vqa_subj02_seed41_npp-information-gain | pending | 0 | checkpoint_identity_missing |
 | P4_nsd_vqa_subj02_seed41_npp-sqrt-information-gain | pending | 0 | checkpoint_identity_missing |
 | P2_nsd_vqa_subj05_seed41_ce | pending | 0 | checkpoint_identity_missing |
@@ -340,3 +340,15 @@ Relative to subject02 CE, paired accuracy difference is 7.0312
 points (interval -0.7812 to 14.8438);
 paired delta-NDG is 11.20 points (interval
 0.00 to 22.40).
+
+## Twenty-second completed case: subject02 NPP-geometric
+
+Subject02/seed41 NPP-geometric completed the matched 256-example, 16-update budget
+and 893 required predictions. Accuracy is 46.0938%, with category macro
+accuracy 46.26736%. Matched correct-minus-shuffled NDG is
+12.00 percentage points (95% image-bootstrap interval
+1.60 to 22.40; n=125).
+Relative to subject02 CE, paired accuracy difference is 7.0312
+points (interval 0.0000 to 14.8438);
+paired delta-NDG is 9.60 points (interval
+-0.80 to 20.00).
